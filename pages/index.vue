@@ -1,9 +1,26 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Navbar />
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'IndexPage'
-}
+import Navbar from '../components/head-navbar.vue';
+import  gsap  from 'gsap';
+
+  export default {
+    name:'Home',
+    components: { 
+      Navbar
+    },
+    methods: {
+      simpleFade(){
+        gsap.fromTo('',{autoAlpha:1},{autoAlpha:0, duration: 0.35});
+      }
+    },
+  }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
