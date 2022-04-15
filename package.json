@@ -15,6 +15,8 @@
     "gsap": "^3.10.3",
     "hover.css": "^2.3.2",
     "nuxt": "^2.15.8",
+    "sass": "^1.50.0",
+    "sass-loader": "^10.2.1",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
