@@ -34,6 +34,7 @@
 import * as gsap from "../utils/animations/header.js";
 
 export default {
+  name:"MainHeader",
   mounted() {
     this.initAnimations();
   },

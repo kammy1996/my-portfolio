@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <template class="hero-area">
       <div class="space-30"></div>
       <b-img
@@ -65,7 +64,7 @@
 
     <template class="current-mind">
       <b-container>
-        <div class="mx-20">
+        <div class="mx-20 current-working">
           <b-row>
             <b-col col lg="2"></b-col>
             <b-col col lg="1">
@@ -95,10 +94,11 @@
     <div class="space-50"></div>
 
     <template class="tech-stack">
-      
-      <h2 class="text-center"><span class="tech">Tech</span> Stack</h2>
-      <p class="text-center">The Tools I love to build In.</p>
-   
+      <h2 class="text-center">
+        <span class="title-highlight">Tech</span> Stack
+      </h2>
+      <p class="text-center mt-n1">The Tools I love to build In.</p>
+
       <div class="space-20"></div>
       <b-img
         class="image-bg-left"
@@ -108,7 +108,7 @@
       <b-container>
         <template class="stack-images">
           <b-row>
-            <b-col lg="2" > </b-col>
+            <b-col lg="2"> </b-col>
             <b-col lg="1" class="mx-2">
               <div class="stack-box">
                 <b-img
@@ -172,7 +172,7 @@
             <b-col lg="1" class="mx-2">
               <div class="stack-box">
                 <b-img
-                  class="stack-image "
+                  class="stack-image"
                   src="@/static/images/tech-stack/stack-mongo.png"
                   width="18px"
                   id="mongo"
@@ -183,7 +183,7 @@
           </b-row>
           <div class="space-30"></div>
           <b-row>
-            <b-col lg="3" > </b-col>
+            <b-col lg="3"> </b-col>
             <b-col lg="1" class="mx-2">
               <div class="stack-box">
                 <b-img
@@ -234,45 +234,134 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="3" > </b-col>
+            <b-col lg="3"> </b-col>
           </b-row>
         </template>
       </b-container>
+    </template>
+
+    <div class="space-100"></div>
+    <div class="space-50"></div>
+    <template class="projects">
+      <h2 class="text-center">
+        Latest <span class="title-highlight">Projects</span>
+      </h2>
+      <p class="text-center">some of my best work.</p>
+      <div class="space-40"></div>
+      <b-row>
+        <b-col lg="2"></b-col>
+        <b-col lg="4" class="mx-2">
+          <b-img
+            width="500px"
+            class="project-img"
+            src="~/static/images/projects/bikeme.jpg"
+          ></b-img>
+          <ImageOverlay 
+            :project="projects[0]"
+          />
+        </b-col>
+        <b-col lg="4" class="mx-2">
+          <b-img
+            width="500px"
+            class="project-img"
+            src="~/static/images/projects/todoers.jpg"
+          ></b-img>
+          <ImageOverlay 
+            :project="projects[1]"
+          />
+        </b-col>
+        <b-col lg="2"></b-col>
+      </b-row>
+
+
+      <div class="space-30"></div>
+      <b-row>
+        <b-col lg="2"></b-col>
+        <b-col lg="4" class="mx-2">
+          <b-img
+            width="500px"
+            class="project-img"
+            src="~/static/images/projects/kj-academy.jpg"
+          ></b-img>
+          <ImageOverlay 
+            :project="projects[2]"
+          />
+        </b-col>
+        <b-col lg="4" class="mx-2">
+          <b-img
+            width="500px"
+            class="project-img"
+            src="~/static/images/projects/merchant-uk.jpg"
+          ></b-img>
+            <ImageOverlay 
+            :project="projects[3]"
+          />
+        </b-col>
+        <b-col lg="2"></b-col>
+      </b-row>
+      <div class="space-50"></div>
+      <b-btn class="projects-btn"> View all Projects </b-btn>
     </template>
     <div class="space-100"></div>
   </div>
 </template>
 
 <script>
-import Navbar from "../components/head-navbar.vue";
 import * as gsap from "~/utils/animations/home.js";
+import ImageOverlay from "../components/project-overlay.vue";
 
 export default {
   name: "Home",
   components: {
-    Navbar,
   },
   data() {
     return {
-      techStack: [
+      projects:[
         {
-          name: "bitbucket",
-          src: "~/static/images/stack-bitbucket.png",
-          id: "bitbucket",
+          name:'BikeMe',
+          date:'April 2019',
+          id:1,
+          text:'Bikeme is an cycling Brand, which sells Cycles and accessories all over India',
+          stackImages: ["/images/tech-stack/stack-vue.png","/images/tech-stack/stack-vuetify.png","/images/tech-stack/stack-laravel.png","/images/tech-stack/stack-sql.png",]
         },
-      ],
+        {
+          name:'To Doers',
+          date:'October 2020',
+          id:1,
+          text:'A mid-Level To-do List application with all the major features like grouping, Sub-tasks and much more..',
+          stackImages: ["/images/tech-stack/stack-vue.png","/images/tech-stack/stack-vuetify.png","/images/tech-stack/stack-node.png","/images/tech-stack/stack-sql.png"]
+        },
+        {
+          name:'KJ Academy',
+          date:'March 2018',
+          id:1,
+          text:'A full Fledged Judo Academy Website.',
+          stackImages: ["/images/tech-stack/stack-html.png","/images/tech-stack/stack-css.png","/images/tech-stack/stack-bootstrap.png","/images/tech-stack/stack-jquery.png"]
+        },
+        {
+          name:'Merchant & Associates',
+          date:'September 2018',
+          id:1,
+          text:'A Portfolio Website of an Architect Based in UK.',
+          stackImages: ["/images/tech-stack/stack-html.png","/images/tech-stack/stack-css.png","/images/tech-stack/stack-bootstrap.png","/images/tech-stack/stack-jquery.png"]
+        }
+      ]
     };
+  },
+  components: { 
+    ImageOverlay
   },
   methods: {
     initAnimations() {
-      gsap.heroArea();
-      gsap.typeWriting();
+      gsap.animateHome();
     },
     playIntroAudio() {
       const audio_file = require("../static/assets/intro-audio.mp3").default;
       const beep = new Audio(audio_file);
       beep.play();
     },
+
+
   },
   mounted() {
     this.initAnimations();
@@ -338,6 +427,7 @@ export default {
 
 .image-bg-left {
   position: absolute;
+  z-index: -1;
 }
 
 .stack-box {
@@ -355,8 +445,24 @@ export default {
   padding-top: 5px;
 }
 
-.tech {
+.title-highlight {
   font-weight: 700;
   color: $primary-color;
 }
+
+.current-working {
+  position: relative;
+  top: 0;
+}
+
+.projects-btn  { 
+  display:block;
+  margin:auto;
+  background:transparent;
+  color:black;
+  border-radius:50px;
+  padding:12px 18px;
+}
+
+
 </style>
