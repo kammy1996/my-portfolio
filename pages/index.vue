@@ -256,9 +256,7 @@
             class="project-img"
             src="~/static/images/projects/bikeme.jpg"
           ></b-img>
-          <ImageOverlay 
-            :project="projects[0]"
-          />
+          <ImageOverlay :project="projects[0]" />
         </b-col>
         <b-col lg="4" class="mx-2">
           <b-img
@@ -266,13 +264,10 @@
             class="project-img"
             src="~/static/images/projects/todoers.jpg"
           ></b-img>
-          <ImageOverlay 
-            :project="projects[1]"
-          />
+          <ImageOverlay :project="projects[1]" />
         </b-col>
         <b-col lg="2"></b-col>
       </b-row>
-
 
       <div class="space-30"></div>
       <b-row>
@@ -283,9 +278,7 @@
             class="project-img"
             src="~/static/images/projects/kj-academy.jpg"
           ></b-img>
-          <ImageOverlay 
-            :project="projects[2]"
-          />
+          <ImageOverlay :project="projects[2]" />
         </b-col>
         <b-col lg="4" class="mx-2">
           <b-img
@@ -293,16 +286,70 @@
             class="project-img"
             src="~/static/images/projects/merchant-uk.jpg"
           ></b-img>
-            <ImageOverlay 
-            :project="projects[3]"
-          />
+          <ImageOverlay :project="projects[3]" />
         </b-col>
         <b-col lg="2"></b-col>
       </b-row>
       <div class="space-50"></div>
-      <b-btn class="projects-btn"> View all Projects </b-btn>
+      <div class="space-30"></div>
+      <div class="text-center">
+         <a>
+          <b-btn
+            class="projects-btn hvr-bounce-to-top "
+            @mouseover="hoverBtn"
+            @mouseleave="unHoverBtn"
+            >View all Projects</b-btn
+          >
+        </a>
+      </div>
+       
     </template>
     <div class="space-100"></div>
+    <div class="space-50"></div>
+    <template class="hire-me">
+      <b-img
+        class="hire-me-bg-img"
+       
+        width="600px"
+        src="~/static/images/image-bg-right.png"
+      ></b-img>
+      <b-container>
+        <b-row>
+          <b-col lg="7">
+            <b-row>
+              <b-col lg="3">
+                <h3 class="mt-1 hire-title">I can do</h3>
+              </b-col>
+              <b-col lg="9">
+                <div class="main-hire-area offset-sm-3">
+                  <h3>
+                    <ul class="hire-me-area">
+                      <li class="hire-text">UI/UX Design</li>
+                      <li class="hire-text">Frontend Development</li>
+                      <li class="hire-text">Backend Development</li>
+                      <li class="hire-text">App Architecture</li>
+                    </ul>
+                  </h3>
+                </div>
+              </b-col>
+            </b-row>
+
+            <div class="space-10"></div>
+            <p>
+              3+ years of experience in Building Web Applications in Various
+              Domains including Finance, Healthcare. I Enjoy More of Frontend
+              Development and Consider it as my Strongest Side.
+            </p>
+            <div class="space-10"></div>
+            <b-btn class="hire-me-btn hvr-underline-from-left">Hire Me <font-awesome-icon class="project-link-icon" size="sm" :icon="['fa', 'arrow-right-long']"/></b-btn>
+          </b-col>
+        </b-row>
+      </b-container>
+    </template>
+
+    <div class="space-100"></div>
+    <div class="space-100"></div>
+    <div class="space-50"></div>
   </div>
 </template>
 
@@ -312,44 +359,63 @@ import ImageOverlay from "../components/project-overlay.vue";
 
 export default {
   name: "Home",
-  components: {
-  },
+  components: {},
   data() {
     return {
-      projects:[
+      projects: [
         {
-          name:'BikeMe',
-          date:'April 2019',
-          id:1,
-          text:'Bikeme is an cycling Brand, which sells Cycles and accessories all over India',
-          stackImages: ["/images/tech-stack/stack-vue.png","/images/tech-stack/stack-vuetify.png","/images/tech-stack/stack-laravel.png","/images/tech-stack/stack-sql.png",]
+          name: "BikeMe",
+          date: "April 2019",
+          id: 1,
+          text: "Bikeme is an cycling Brand, which sells Cycles and accessories all over India",
+          stackImages: [
+            "/images/tech-stack/stack-vue.png",
+            "/images/tech-stack/stack-vuetify.png",
+            "/images/tech-stack/stack-laravel.png",
+            "/images/tech-stack/stack-sql.png",
+          ],
         },
         {
-          name:'To Doers',
-          date:'October 2020',
-          id:1,
-          text:'A mid-Level To-do List application with all the major features like grouping, Sub-tasks and much more..',
-          stackImages: ["/images/tech-stack/stack-vue.png","/images/tech-stack/stack-vuetify.png","/images/tech-stack/stack-node.png","/images/tech-stack/stack-sql.png"]
+          name: "To Doers",
+          date: "October 2020",
+          id: 1,
+          text: "A mid-Level To-do List application with all the major features like grouping, Sub-tasks and much more..",
+          stackImages: [
+            "/images/tech-stack/stack-vue.png",
+            "/images/tech-stack/stack-vuetify.png",
+            "/images/tech-stack/stack-node.png",
+            "/images/tech-stack/stack-sql.png",
+          ],
         },
         {
-          name:'KJ Academy',
-          date:'March 2018',
-          id:1,
-          text:'A full Fledged Judo Academy Website.',
-          stackImages: ["/images/tech-stack/stack-html.png","/images/tech-stack/stack-css.png","/images/tech-stack/stack-bootstrap.png","/images/tech-stack/stack-jquery.png"]
+          name: "KJ Academy",
+          date: "March 2018",
+          id: 1,
+          text: "A full Fledged Judo Academy Website.",
+          stackImages: [
+            "/images/tech-stack/stack-html.png",
+            "/images/tech-stack/stack-css.png",
+            "/images/tech-stack/stack-bootstrap.png",
+            "/images/tech-stack/stack-jquery.png",
+          ],
         },
         {
-          name:'Merchant & Associates',
-          date:'September 2018',
-          id:1,
-          text:'A Portfolio Website of an Architect Based in UK.',
-          stackImages: ["/images/tech-stack/stack-html.png","/images/tech-stack/stack-css.png","/images/tech-stack/stack-bootstrap.png","/images/tech-stack/stack-jquery.png"]
-        }
-      ]
+          name: "Merchant & Associates",
+          date: "September 2018",
+          id: 1,
+          text: "A Portfolio Website of an Architect Based in UK.",
+          stackImages: [
+            "/images/tech-stack/stack-html.png",
+            "/images/tech-stack/stack-css.png",
+            "/images/tech-stack/stack-bootstrap.png",
+            "/images/tech-stack/stack-jquery.png",
+          ],
+        },
+      ],
     };
   },
-  components: { 
-    ImageOverlay
+  components: {
+    ImageOverlay,
   },
   methods: {
     initAnimations() {
@@ -360,8 +426,12 @@ export default {
       const beep = new Audio(audio_file);
       beep.play();
     },
-
-
+    hoverBtn() {
+      gsap.hoverBtn();
+    },
+    unHoverBtn() {
+      gsap.unHoverBtn();
+    },
   },
   mounted() {
     this.initAnimations();
@@ -372,6 +442,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/static/scss/main.scss";
+@import "~/static/scss/hover.css";
 
 .sub-text {
   font-size: 18px;
@@ -455,14 +526,49 @@ export default {
   top: 0;
 }
 
-.projects-btn  { 
-  display:block;
-  margin:auto;
-  background:transparent;
-  color:black;
-  border-radius:50px;
-  padding:12px 18px;
+.projects-btn {
+  background: transparent;
+  color: black;
+  border-radius: 50px;
+  padding:10px 20px;
+  cursor: pointer;
+  border:1px solid black;
 }
 
+.main-hire-area {
+height: 45px;
+overflow: hidden;
+margin-left: -42px;
 
+  .hire-me-area {
+    list-style-type: none;
+    transform: translateY(50px);
+    padding: 0;
+
+    .hire-text {
+      font-size: 27px;
+      line-height: 45px;
+      color: $primary-color;
+      font-weight: 500;
+    }
+  }
+}
+
+.hire-title {
+font-weight: 300;
+}
+
+.hire-me-btn { 
+background:white !important;
+color:black !important;
+border-radius:0px;
+padding:5px 15px;
+}
+
+.hire-me-bg-img { 
+  position:absolute;
+  right: 0%;
+  margin-top:-200px;
+  width:40%;
+}
 </style>

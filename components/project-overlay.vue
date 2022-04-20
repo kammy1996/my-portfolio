@@ -33,7 +33,7 @@
             </div>
         </b-col>
         <b-col lg="6">
-          <a class="project-link" 
+          <a class="project-link " 
             >View Project
             <font-awesome-icon class="project-link-icon" :icon="['fa', 'arrow-up-right-from-square']"
           /></a>
