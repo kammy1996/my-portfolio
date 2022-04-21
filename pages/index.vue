@@ -295,7 +295,7 @@
       <div class="text-center">
          <a>
           <b-btn
-            class="projects-btn hvr-bounce-to-top "
+            class="projects-btn hvr-bounce-to-top"
             @mouseover="hoverBtn"
             @mouseleave="unHoverBtn"
             >View all Projects</b-btn

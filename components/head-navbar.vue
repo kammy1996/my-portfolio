@@ -11,18 +11,22 @@
         </b-navbar-brand>
 
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#" class="custom-nav"
-            >Home <span class="underline"></span
+          <b-nav-item class="custom-nav"
+            ><NuxtLink to="/">Home <span class="underline"></span></NuxtLink
           ></b-nav-item>
 
-          <b-nav-item href="#" class="custom-nav"
-            >About <span class="underline"></span
+          <b-nav-item class="custom-nav">
+            <NuxtLink to="/about"
+              >About <span class="underline"></span></NuxtLink
           ></b-nav-item>
-          <b-nav-item href="#" class="custom-nav"
-            >Work <span class="underline"></span
+
+          <b-nav-item class="custom-nav"
+            ><NuxtLink to="/work">Work <span class="underline"></span></NuxtLink
           ></b-nav-item>
-          <b-nav-item href="#" class="custom-nav"
-            >Contact<span class="underline"></span>
+          <b-nav-item class="custom-nav"
+            ><NuxtLink to="/contact"
+              >Contact<span class="underline"></span
+            ></NuxtLink>
           </b-nav-item>
         </b-navbar-nav>
       </b-navbar>
@@ -34,7 +38,7 @@
 import * as gsap from "../utils/animations/header.js";
 
 export default {
-  name:"MainHeader",
+  name: "MainHeader",
   mounted() {
     this.initAnimations();
   },
@@ -48,14 +52,13 @@ export default {
 </script>
 
 <style scoped>
-
 .custom-nav {
   margin: 0px 7px;
 }
 
 .navbar-nav .nav-link {
   color: black;
-  font-weight:300
+  font-weight: 300;
 }
 
 .underline {

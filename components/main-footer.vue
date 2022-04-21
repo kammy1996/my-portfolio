@@ -38,10 +38,10 @@
                 <li><a href="">Contact</a></li>
               </ul>
               <div class="space-10"></div>
-              <div class="footer-social-icons ml-4">
-                <a  class="mx-1" href=""><b-img width="30%" src="~/static/images/github-outline.png"></b-img></a>
-                <a class="mx-1" href=""> <b-img width="25%" src="~/static/images/instagram-outline.png"></b-img></a>
-                <a class="mx-1" href=""><b-img width="30%" src="~/static/images/linkedin-outline.png"></b-img></a>
+              <div class="footer-social-icons">
+                <a  href=""> <b-img width="30%" src="https://img.icons8.com/dotty/80/000000/instagram-new.png"></b-img></a>
+                <a   href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/github.png"></b-img></a>
+                <a href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/linkedin.png"></b-img></a>
               </div>
             </b-col>  
         </b-row>
@@ -121,5 +121,9 @@ export default {
       font-weight:300
     }
   }
+}
+
+.footer-social-icons { 
+  margin-left:40px;
 }
 </style>

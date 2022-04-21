@@ -1,0 +1,313 @@
+<template>
+  <div>
+    <div class="space-30"></div>
+
+    <template class="title-area">
+      <b-row>
+        <b-col lg="6 mr-4">
+          <div class="img-holder">
+            <b-img
+            class="title-img"
+            width="800px"
+            src="~/static/images/about-title-img.jpg"
+          ></b-img>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="title-area">
+            <div class="space-100"></div>
+            <h1 class="title-heading">Hello</h1>
+            <h1 class="title-heading">I'm Kamran</h1>
+
+            <div class="space-50"></div>
+            <p class="title-sub-text">
+              I am an Indian Full Stack Web Developer and a Technology
+              Enthusiast. Want to Know more about me keep Scrolling!
+            </p>
+            <div class="space-50"></div>
+          </div>
+        </b-col>
+      </b-row>
+    </template>
+
+    <div class="space-100"></div>
+
+    <template class="journey-area">
+      <div class="journey text-center">
+        <h3 class="area-title">
+          The <span class="area-sub-title">Journey</span>
+        </h3>
+        <div class="space-10"></div>
+        <p class="journey-text">
+          I Started my Journey with the first tool Photoshop, that kind of gave
+          me the Super power. Then onwards It was no stopping by, learning and
+          growing Digitally became my Second Nature.
+        </p>
+      </div>
+    </template>
+    <div class="space-100"></div>
+
+    <template class="work-history-area">
+      <b-img
+        width="600px"
+        class="image-bg-right"
+        src="~/static/images/image-bg-right.png"
+      ></b-img>
+      <b-container>
+        <a class="resume-btn" href="/assets/my-resume.pdf"  target="_blank"
+          ><font-awesome-icon
+            class="project-link-icon"
+            size="sm"
+            :icon="['fa', 'arrow-down']"
+          />
+          Download Resume</a
+        >
+        <div class="space-50"></div>
+        <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[0]" />
+        <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[1]" />
+        <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[2]" />
+        <div class="line"></div>
+      </b-container>
+    </template>
+
+    <div class="space-100"></div>
+
+    <template class="more-about-me">
+      <div class="text-center">
+        <h3 class="area-title">
+          More <span class="area-sub-title">About</span> Me
+        </h3>
+        <div class="space-10"></div>
+        <p class="journey-text">
+          Apart from being a Developer, I am an Avid book reader and a Finance
+          Enthusiasts. Half of the things I learned in Life personally and
+          professionally comes from Reading books.
+        </p>
+      </div>
+    </template>
+    <div class="space-100"></div>
+
+    <template class="inspiration">
+      <b-img
+        width="600px"
+        class="image-bg-left"
+        src="~/static/images/image-bg-left.png"
+      ></b-img>
+      <b-container>
+        <h3 class="inspiration-title">Inspiration</h3>
+        <p class="inspiration-text">
+          The People I have been stealing Ideas from.
+        </p>
+
+        <div class="space-30"></div>
+        <div class="text-center">
+          <b-row>
+            <b-col lg="4">
+              <div class="inspiration-box">
+                <b-img width="50%" src="~/static/images/web-dev.png"></b-img>
+                <div class="space-20"></div>
+                <h4 class="inspiration-list-title">Web Development</h4>
+                <div class="space-20"></div>
+                <div class="line"></div>
+                <p class="inspiration-list-text">James Q Quick</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">Web Dev Simplified</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">ProgrammingErik</p>
+                <div class="line"></div>
+              </div>
+            </b-col>
+            <b-col lg="4">
+              <div class="inspiration-box">
+                <b-img width="55%" src="~/static/images/books.png"></b-img>
+                <div class="space-20"></div>
+                <h4 class="inspiration-list-title">Books</h4>
+                <div class="space-20"></div>
+                <div class="line"></div>
+                <p class="inspiration-list-text">Steal like an artist.</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">The pyschology of Money.</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">
+                  The Alamanack of Naval Ravikant.
+                </p>
+                <div class="line"></div>
+              </div>
+            </b-col>
+            <b-col lg="4">
+              <div class="inspiration-box">
+                <b-img width="55%" src="~/static/images/finance.png" style="opacity:0.8"></b-img>
+                <div class="space-20"></div>
+                <h4 class="inspiration-list-title">Finance</h4>
+                <div class="space-20"></div>
+                <div class="line"></div>
+                <p class="inspiration-list-text">Warren Buffet</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">Akshat Srivastava</p>
+                <div class="line"></div>
+                <p class="inspiration-list-text">Ankur Warikoo</p>
+                <div class="line"></div>
+              </div>
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </template>
+
+    <div class="space-100"></div>
+    <div class="space-50"></div>
+  </div>
+</template>
+
+<script>
+import WorkHistoryElement from "@/components/work-history-element";
+import * as gsap from "@/utils/animations/about"
+
+export default {
+  name: "About",
+  components: {
+    WorkHistoryElement,
+  },
+  mounted() { 
+    this.initAnimations();
+  },
+  methods : { 
+    initAnimations() {
+      gsap.animateAbout();
+    }
+  },
+  data() {
+    return {
+      workHistory: [
+        {
+          company: "aventior",
+          logo: "/images/work-history/aventior.png",
+          designation: "Frontend Lead",
+          period: "Nov 2020 - Present",
+          location: "Remote",
+          width: "130px",
+          desc: "Working on an Enterprise Level Application based on Clinical Trial in the Healthcare.",
+          current: true,
+        },
+        {
+          company: "weizmann",
+          logo: "/images/work-history/weizmann.png",
+          designation: "Web & Graphic Designer",
+          period: "April 2019 - Nov 2020",
+          location: "Mumbai",
+          width: "130px",
+          desc: "Maintaining and updating Primary Websites of the Associate Businesses.",
+        },
+        {
+          company: "rugby-india",
+          logo: "/images/work-history/rugby-india.png",
+          designation: "Digital Administrator",
+          period: "June 2017 - April 2019",
+          location: "Mumbai",
+          width: "60px",
+          desc: "Handling the primary Website, Creating and managing creatives for Social Media. ",
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+@import "~/static/scss/main.scss";
+
+.title-area {
+  background: rgba(0, 0, 0, 0.05);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  .title-heading {
+    margin-left: -50px;
+    letter-spacing: 3px;
+  }
+}
+
+.title-heading {
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.title-sub-text {
+  font-size: 22px;
+  margin: auto;
+  width: 400px;
+}
+
+.journey {
+  text-align: center;
+}
+
+.area-title {
+  font-size: 25px;
+}
+
+.area-sub-title {
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.journey-text {
+  font-size: 20px;
+  margin: 0 25%;
+}
+
+.resume-btn {
+  float: right;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.line {
+  height: 0.5px;
+  background: black;
+  width: 100%;
+}
+
+.image-bg-right {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.image-bg-left {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.inspiration-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.inspiration-text {
+  font-size: 15px;
+}
+
+.inspiration-list-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.inspiration-list-text {
+  margin: 20px 0px;
+}
+
+.inspiration-box { 
+  margin:0px 30px;
+}
+
+
+
+
+</style>
