@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="overlay">
+    <div class="overlay ">
       <b-row class="pt-3">
         <b-col lg="8">
           <h5 class="overlay-title">{{ project.name }}</h5></b-col
@@ -33,7 +33,7 @@
             </div>
         </b-col>
         <b-col lg="6">
-          <a class="project-link " 
+          <a class="project-link"  :href="project.link"
             >View Project
             <font-awesome-icon class="project-link-icon" :icon="['fa', 'arrow-up-right-from-square']"
           /></a>
@@ -86,7 +86,7 @@ export default {
   }
 
   .project-link { 
-    color:white;
+    color:white !important;
     font-size:14px;
     font-weight:300;
     float:right;

@@ -356,63 +356,15 @@
 <script>
 import * as gsap from "~/utils/animations/home.js";
 import ImageOverlay from "../components/project-overlay.vue";
+import projects from "../model/projects"
 
 export default {
   name: "Home",
   components: {},
-  data() {
-    return {
-      projects: [
-        {
-          name: "BikeMe",
-          date: "April 2019",
-          id: 1,
-          text: "Bikeme is an cycling Brand, which sells Cycles and accessories all over India",
-          stackImages: [
-            "/images/tech-stack/stack-vue.png",
-            "/images/tech-stack/stack-vuetify.png",
-            "/images/tech-stack/stack-laravel.png",
-            "/images/tech-stack/stack-sql.png",
-          ],
-        },
-        {
-          name: "To Doers",
-          date: "October 2020",
-          id: 1,
-          text: "A mid-Level To-do List application with all the major features like grouping, Sub-tasks and much more..",
-          stackImages: [
-            "/images/tech-stack/stack-vue.png",
-            "/images/tech-stack/stack-vuetify.png",
-            "/images/tech-stack/stack-node.png",
-            "/images/tech-stack/stack-sql.png",
-          ],
-        },
-        {
-          name: "KJ Academy",
-          date: "March 2018",
-          id: 1,
-          text: "A full Fledged Judo Academy Website.",
-          stackImages: [
-            "/images/tech-stack/stack-html.png",
-            "/images/tech-stack/stack-css.png",
-            "/images/tech-stack/stack-bootstrap.png",
-            "/images/tech-stack/stack-jquery.png",
-          ],
-        },
-        {
-          name: "Merchant & Associates",
-          date: "September 2018",
-          id: 1,
-          text: "A Portfolio Website of an Architect Based in UK.",
-          stackImages: [
-            "/images/tech-stack/stack-html.png",
-            "/images/tech-stack/stack-css.png",
-            "/images/tech-stack/stack-bootstrap.png",
-            "/images/tech-stack/stack-jquery.png",
-          ],
-        },
-      ],
-    };
+  computed: { 
+    projects () { 
+      return projects;
+    }
   },
   components: {
     ImageOverlay,
