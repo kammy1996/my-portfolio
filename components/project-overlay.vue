@@ -3,20 +3,19 @@
     <div class="overlay ">
       <b-row class="pt-3">
         <b-col lg="8">
-          <h5 class="overlay-title">{{ project.name }}</h5></b-col
+          <h5 class="overlay-title" >{{ project.name }}</h5></b-col
         >
         <b-col lg="4">
-          <p class="project-date">
+          <p class="project-date" style="text-shadow:3px 3px 10px black">
             <font-awesome-icon :icon="[`fa`, 'clock-rotate-left']" />
             {{ project.date }}
           </p>
         </b-col>
       </b-row>
 
-      <p class="overlay-text mt-n2">
+      <p class="overlay-text mt-n3" style="text-shadow:3px 3px 10px black">
         {{ project.text }}
       </p>
-      <div class="space-10"></div>
       <p class="stack-title">Tech Stack</p>
       <div class="line mt-n2 mb-2"  ></div>
       <b-row >
@@ -58,8 +57,11 @@ export default {
 
 <style lang="scss" scoped>
 
+
+
+
 .overlay {
-  background: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) ,rgba(0,0,0,1) );
   height: auto;
   width: 500px;
   color: white;
@@ -67,23 +69,22 @@ export default {
   position:absolute;
   bottom:0;
 
+  .overlay-title { 
+    text-shadow:2px 2px 10px black;
+  }
 
   .overlay-text {
-    font-size: 13px;
+    font-size: 14px;
     width: 350px;
-    text-shadow:2px 2px solid black;
+    text-shadow:5px 5px 10px solid black;
   }
 
   .stack-title {
     text-transform: uppercase;
-    text-shadow:2px 2px solid black;
+    text-shadow:3px 3px 5px solid black;
   }
 
-  .project-date { 
-    float:right;
-    font-size:14px;
-    text-shadow:2px 2px solid black;
-  }
+
 
   .project-link { 
     color:white !important;
@@ -105,7 +106,13 @@ export default {
     margin-left:5px;
   }
 
+.project-date { 
+  float:right;
+  font-size:14px;
+
+}
  
 }
+
 
 </style>

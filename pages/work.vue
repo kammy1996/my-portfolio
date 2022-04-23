@@ -37,7 +37,7 @@
               <b-img
                 width="500px"
                 class="project-img"
-                src="~/static/images/projects/kj-academy.jpg"
+                src="~/static/images/projects/ace-visas.jpg"
               ></b-img>
               <ImageOverlay :project="projects[2]" />
             </b-col>
@@ -46,7 +46,7 @@
               <b-img
                 width="500px"
                 class="project-img"
-                src="~/static/images/projects/merchant-uk.jpg"
+                src="~/static/images/projects/tp-visa.jpg"
               ></b-img>
               <ImageOverlay :project="projects[3]" />
             </b-col>
@@ -60,7 +60,7 @@
               <b-img
                 width="500px"
                 class="project-img"
-                src="~/static/images/projects/ace-visas.jpg"
+                src="~/static/images/projects/kj-academy.jpg"
               ></b-img>
               <ImageOverlay :project="projects[4]" />
             </b-col>
@@ -69,7 +69,7 @@
               <b-img
                 width="500px"
                 class="project-img"
-                src="~/static/images/projects/tp-visa.jpg"
+                src="~/static/images/projects/merchant-uk.jpg"
               ></b-img>
               <ImageOverlay :project="projects[5]" />
             </b-col>

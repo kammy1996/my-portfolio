@@ -276,7 +276,7 @@
           <b-img
             width="500px"
             class="project-img"
-            src="~/static/images/projects/kj-academy.jpg"
+            src="~/static/images/projects/ace-visas.jpg"
           ></b-img>
           <ImageOverlay :project="projects[2]" />
         </b-col>
@@ -284,7 +284,7 @@
           <b-img
             width="500px"
             class="project-img"
-            src="~/static/images/projects/merchant-uk.jpg"
+            src="~/static/images/projects/tp-visa.jpg"
           ></b-img>
           <ImageOverlay :project="projects[3]" />
         </b-col>
@@ -293,23 +293,21 @@
       <div class="space-50"></div>
       <div class="space-30"></div>
       <div class="text-center">
-         <a>
+        <NuxtLink to="/work">
           <b-btn
             class="projects-btn hvr-bounce-to-top"
             @mouseover="hoverBtn"
             @mouseleave="unHoverBtn"
             >View all Projects</b-btn
           >
-        </a>
+        </NuxtLink>
       </div>
-       
     </template>
     <div class="space-100"></div>
     <div class="space-50"></div>
     <template class="hire-me">
       <b-img
         class="hire-me-bg-img"
-       
         width="600px"
         src="~/static/images/image-bg-right.png"
       ></b-img>
@@ -341,7 +339,14 @@
               Development and Consider it as my Strongest Side.
             </p>
             <div class="space-10"></div>
-            <b-btn class="hire-me-btn hvr-underline-from-left">Hire Me <font-awesome-icon class="project-link-icon" size="sm" :icon="['fa', 'arrow-right-long']"/></b-btn>
+            <NuxtLink to="/contact">
+              <b-btn class="hire-me-btn hvr-underline-from-left"
+                >Hire Me
+                <font-awesome-icon
+                  class="project-link-icon"
+                  size="sm"
+                  :icon="['fa', 'arrow-right-long']" /></b-btn
+            ></NuxtLink>
           </b-col>
         </b-row>
       </b-container>
@@ -356,15 +361,15 @@
 <script>
 import * as gsap from "~/utils/animations/home.js";
 import ImageOverlay from "../components/project-overlay.vue";
-import projects from "../model/projects"
+import projects from "../model/projects";
 
 export default {
   name: "Home",
   components: {},
-  computed: { 
-    projects () { 
+  computed: {
+    projects() {
       return projects;
-    }
+    },
   },
   components: {
     ImageOverlay,
@@ -482,15 +487,15 @@ export default {
   background: transparent;
   color: black;
   border-radius: 50px;
-  padding:10px 20px;
+  padding: 10px 20px;
   cursor: pointer;
-  border:1px solid black;
+  border: 1px solid black;
 }
 
 .main-hire-area {
-height: 45px;
-overflow: hidden;
-margin-left: -42px;
+  height: 45px;
+  overflow: hidden;
+  margin-left: -42px;
 
   .hire-me-area {
     list-style-type: none;
@@ -507,20 +512,20 @@ margin-left: -42px;
 }
 
 .hire-title {
-font-weight: 300;
+  font-weight: 300;
 }
 
-.hire-me-btn { 
-background:white !important;
-color:black !important;
-border-radius:0px;
-padding:5px 15px;
+.hire-me-btn {
+  background: white !important;
+  color: black !important;
+  border-radius: 0px;
+  padding: 5px 15px;
 }
 
-.hire-me-bg-img { 
-  position:absolute;
+.hire-me-bg-img {
+  position: absolute;
   right: 0%;
-  margin-top:-200px;
-  width:40%;
+  margin-top: -200px;
+  width: 40%;
 }
 </style>

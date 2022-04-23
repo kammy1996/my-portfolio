@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 
-gsap.registerPlugin(TextPlugin, ScrollTrigger, );
+gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
 export const animateHome = () => {
   heroArea();

@@ -30,13 +30,27 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxtjs/fontawesome"],
+  buildModules: [
+    "@nuxtjs/fontawesome",
+    [
+      // Simple usage
+      "@nuxtjs/vuetify",
+
+      // With options
+      [
+        "@nuxtjs/vuetify",
+        {
+          /* module options */
+        },
+      ],
+    ],
+  ],
 
   fontawesome: {
     icons: {
       solid: true,
-      brands:true
-    }
+      brands: true,
+    },
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules

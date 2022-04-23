@@ -32,10 +32,23 @@
             </b-col>  
             <b-col lg="4">
               <ul class="footer-links">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+                <li
+                  ><NuxtLink to="/">Home <span class="underline"></span></NuxtLink
+                ></li>
+
+                <li>
+                  <NuxtLink to="/about"
+                    >About <span class="underline"></span></NuxtLink
+                ></li>
+
+                <li
+                  ><NuxtLink to="/work">Work <span class="underline"></span></NuxtLink
+                ></li>
+                <li
+                  ><NuxtLink to="/contact"
+                    >Contact<span class="underline"></span
+                  ></NuxtLink>
+                </li>
               </ul>
               <div class="space-10"></div>
               <div class="footer-social-icons">
@@ -124,6 +137,6 @@ export default {
 }
 
 .footer-social-icons { 
-  margin-left:40px;
+  
 }
 </style>

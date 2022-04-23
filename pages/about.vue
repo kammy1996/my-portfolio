@@ -207,7 +207,7 @@ export default {
           designation: "Digital Administrator",
           period: "June 2017 - April 2019",
           location: "Mumbai",
-          width: "60px",
+          width: "70px",
           desc: "Handling the primary Website, Creating and managing creatives for Social Media. ",
         },
       ],
