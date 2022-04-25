@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="space-30"></div>
-      <b-img
-        class="image-bg-right"
-        width="600px"
-        src="~/static/images/image-bg-right.png"
-      ></b-img>
+    <b-img
+      class="image-bg-right"
+      width="600px"
+      src="~/static/images/image-bg-right.png"
+    ></b-img>
     <b-container>
       <p class="page-title">Contact</p>
       <h1 class="contact-title">Let's make it <br />happen</h1>
@@ -15,34 +15,83 @@
       </p>
 
       <div class="space-50"></div>
-      <div class="contact-form">  
-          <v-form>
-            <v-text-field label="What's your name? "></v-text-field>
-            <div class="space-10"></div>
-            <v-text-field label="Your Email "></v-text-field>
-            <div class="space-10"></div>
-            <v-textarea rows="3" label="Tell us about your Project?"></v-textarea>
-            <div class="space-50"></div>
-            <b-btn class="send-btn hvr-underline-from-left" style="color:black;">Send Email</b-btn>
-          </v-form>
+      <div class="contact-form" v-if="!isFormSubmitted">
+        <v-form v-model="contactForm" ref="contact-form">
+          <v-text-field
+            :rules="[(v) => !!v || 'Name is required']"
+            v-model="contact.name"
+            label="What's your name? "
+          ></v-text-field>
+          <div class="space-10"></div>
+          <v-text-field
+            :rules="[(v) => !!v || 'Email is required']"
+            v-model="contact.email"
+            label="Your Email "
+          ></v-text-field>
+          <div class="space-10"></div>
+          <v-textarea
+            :rules="[(v) => !!v || 'Project details is required']"
+            rows="3"
+            v-model="contact.details"
+            label="Tell us about your Project?"
+          ></v-textarea>
+          <div class="space-50"></div>
+          <b-btn
+            class="send-btn hvr-underline-from-left"
+            style="color: black"
+            @click="sendEmail"
+            >Send Email</b-btn
+          >
+        </v-form>
       </div>
+      <div v-else>
+        <p class="contact-submitted-text">
+         <span class="contact-sub-text"> Thank you for showing Interest</span>. I will get back to you shortly!
+          <font-awesome-icon
+            class="project-link-icon"
+            size="sm"
+            :icon="['fa', 'face-smile']"
+          />
+        </p>
+      </div>
+    </b-container>
+    <div class="space-50"></div>
 
-      </b-container>
-      <div class="space-50"></div>
-    
-      <b-img class="contact-img" src="~/static/images/contact-img.jpg"></b-img>
-   
+    <b-img class="contact-img" src="~/static/images/contact-img.jpg"></b-img>
   </div>
 </template>
 
 <script>
-import * as gsap from "~/utils/animations/contact.js"
+import * as gsap from "~/utils/animations/contact.js";
 
 export default {
   name: "Contact",
-  mounted() { 
+  mounted() {
     gsap.initAnime();
-  }
+  },
+  data() {
+    return {
+      contact: {},
+      isFormSubmitted: false,
+      contactForm: false,
+    };
+  },
+  methods: {
+    sendEmail() {
+      this.$refs[`contact-form`].validate();
+      if (this.contactForm) {
+        this.$mail
+          .send({
+            from: this.contact.email,
+            subject: `message from ${this.contact.name}`,
+            text: this.contact.details,
+          })
+          .then(() => {
+            this.isFormSubmitted = true;
+          });
+      }
+    },
+  },
 };
 </script>
 
@@ -67,37 +116,46 @@ export default {
   text-decoration: underline;
 }
 
-.contact-form { 
-  width:600px;
+.contact-form {
+  width: 600px;
 
-  
-
-  .custom-field:hover { 
+  .custom-field:hover {
     box-shadow: none !important;
   }
 
-  .custom-field:focus { 
+  .custom-field:focus {
     box-shadow: none !important;
   }
 
-  .send-btn { 
-    background:transparent;
-    border:none;
+  .send-btn {
+    background: transparent;
+    border: none;
   }
 
-  .send-btn:focus { 
+  .send-btn:focus {
     box-shadow: none;
   }
 }
 
-.contact-img { 
-  width:100%
+.contact-img {
+  width: 100%;
 }
 
 .image-bg-right {
   position: absolute;
   z-index: -1;
-  right:0
+  right: 0;
 }
+
+.contact-submitted-text { 
+    font-size:18px;
+
+  .contact-sub-text{ 
+  color:$primary-color;
+  font-weight:500;
+  
+}
+}
+
 
 </style>
