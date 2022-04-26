@@ -25,12 +25,12 @@
 
       <b-container class="mt-n5">
         <b-row>
-            <b-col lg="8">
+            <b-col lg="7">
               <h1 class="got-project">Got a Project ? <br> Let's Connect</h1>
               <div class="space-20"></div>
               <h3 class="footer-email" >kamranmemon25@gmail.com</h3>
             </b-col>  
-            <b-col lg="4">
+            <b-col lg="5">
               <ul class="footer-links">
                 <li
                   ><NuxtLink to="/">Home <span class="underline"></span></NuxtLink
@@ -51,7 +51,7 @@
                 </li>
               </ul>
               <div class="space-10"></div>
-              <div class="footer-social-icons">
+              <div class="footer-social-icons text-center">
                 <a  href=""> <b-img width="30%" src="https://img.icons8.com/dotty/80/000000/instagram-new.png"></b-img></a>
                 <a   href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/github.png"></b-img></a>
                 <a href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/linkedin.png"></b-img></a>
@@ -72,7 +72,7 @@ export default {
 <style lang="scss" scoped>
 .footer-wrapper {
   background: rgba(0, 0, 0, 0.05);
-  height: 500px;
+  padding-bottom:80px;
 }
 
 .marquee {
@@ -122,6 +122,7 @@ export default {
 
 .footer-links { 
   list-style-type:none;
+  text-align:center;
 
   li { 
     margin-top:15px;

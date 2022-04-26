@@ -1,7 +1,7 @@
 <template>
-   <div>
-    <mobile-navbar
-    <MainHeader />
+  <div class="ma-0 pa-0">
+    <MobileNavbar v-if="isMobile && getWidth"/>
+    <MainHeader v-else/>
     <Nuxt />
     <MainFooter />
   </div>
@@ -10,15 +10,31 @@
 <script>
 import MainHeader from "../components/head-navbar.vue";
 import MainFooter from "../components/main-footer.vue";
-import MobileNavbar from "../components/mobile-navbar.vue"
+import MobileNavbar from "../components/mobile-navbar.vue";
 
-  export default {
-    components : { 
-      MainHeader,
-      MainFooter,
-      MobileNavbar
+export default {
+  components: {
+    MainHeader,
+    MainFooter,
+    MobileNavbar,
+  },
+   computed: {
+    getWidth () {
+      console.log(`getting the width`);
+      if (process.browser){
+        let width = window.outerWidth;
+
+        if(width <= 800) { 
+          this.$store.commit(`changeMobileState`,true)
+        }
+        return width;
+      } 
+    },
+    isMobile() { 
+      return this.$store.getters[`getMobileState`];
     }
-  }
+  },
+};
 </script>
 
 <style lang="scss" >

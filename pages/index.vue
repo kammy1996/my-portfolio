@@ -11,11 +11,13 @@
         <div class="space-50"></div>
         <b-row>
           <b-col lg="5">
-            <b-img
-              class="profile-img"
-              width="400px"
-              src="~/static/images/profile-img.png"
-            ></b-img>
+            <div class="text-center">
+              <b-img
+                class="profile-img"
+                width="400px"
+                src="~/static/images/profile-img.png"
+              ></b-img>
+            </div>
           </b-col>
           <b-col lg="6">
             <div class="space-50"></div>
@@ -28,10 +30,11 @@
                 <span class="box mt-n1"></span>
               </h3>
               <p class="sub-text">
-                I'm a Fullstack Web Developer who is addicted to Learning and
-                loves Javascript.
+                I'm a Fullstack Web Developer and a Tech Enthusiast who is
+                addicted to Learning and loves Javascript. I live by the motto
+                <b>Learn build and grow,</b> So I'm Excited to share my Journey.
               </p>
-              <div class="social-icons mt-n2">
+              <div class="social-icons mt-n1">
                 <a href="#"
                   ><b-img
                     width="22px"
@@ -66,20 +69,28 @@
       <b-container>
         <div class="mx-20 current-working">
           <b-row>
-            <b-col col lg="2"></b-col>
-            <b-col col lg="1">
-              <div class="space-50"></div>
-              <b-img width="70%" src="~/static/images/avatar.png"></b-img>
+            <b-col lg="3" sm="2" xs="2">
+              <div class="text-center">
+                <div class="space-50"></div>
+                <b-img
+                  class="avatar-img"
+                  width="70%"
+                  src="~/static/images/avatar.png"
+                ></b-img>
+              </div>
             </b-col>
-            <b-col col lg="8">
-              <p class="ml-2">What's on my mind?</p>
+            <b-col lg="9" sm="10" xs="10">
+              <div >
+                <p class="ml-2 text-center mind-text">What's on my mind?</p>
+              </div>
               <div class="tweet-box">
                 <p class="type-write">
                   Currently I’m working on a FinTech App to Manage Personal
                   Financing.
                 </p>
+                
                 <b-img
-                  class="mt-4"
+                  class="tweet-options"
                   width="200px"
                   src="~/static/images/tweet-options.png"
                 ></b-img>
@@ -108,8 +119,8 @@
       <b-container>
         <template class="stack-images">
           <b-row>
-            <b-col lg="2"> </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -119,7 +130,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -129,7 +140,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -139,7 +150,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -149,7 +160,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -159,7 +170,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -169,7 +180,12 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col lg="2" v-if="!isMobile"> </b-col>
+          </b-row>
+          <div class="space-30"></div>
+          <b-row>
+            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -179,12 +195,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="2"> </b-col>
-          </b-row>
-          <div class="space-30"></div>
-          <b-row>
-            <b-col lg="3"> </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -194,7 +205,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -204,7 +215,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -214,7 +225,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -224,7 +235,7 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="1" class="mx-2">
+            <b-col>
               <div class="stack-box">
                 <b-img
                   class="stack-image"
@@ -234,7 +245,8 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="3"> </b-col>
+
+            <b-col lg="2" v-if="!isMobile"> </b-col>
           </b-row>
         </template>
       </b-container>
@@ -249,46 +261,50 @@
       <p class="text-center">some of my best work.</p>
       <div class="space-40"></div>
       <b-row>
-        <b-col lg="2"></b-col>
+        <b-col lg="2" v-if="!isMobile"></b-col>
         <b-col lg="4" class="mx-2">
-          <b-img
-            width="500px"
-            class="project-img"
-            src="~/static/images/projects/bikeme.jpg"
-          ></b-img>
-          <ImageOverlay :project="projects[0]" />
+          <div class="project-box">
+            <b-img
+              class="project-img"
+              src="~/static/images/projects/bikeme.jpg"
+            ></b-img>
+            <ImageOverlay :project="projects[0]" />
+          </div>
         </b-col>
         <b-col lg="4" class="mx-2">
-          <b-img
-            width="500px"
-            class="project-img"
-            src="~/static/images/projects/todoers.jpg"
-          ></b-img>
-          <ImageOverlay :project="projects[1]" />
+          <div class="project-box">
+            <b-img
+              class="project-img"
+              src="~/static/images/projects/todoers.jpg"
+            ></b-img>
+            <ImageOverlay :project="projects[1]" />
+          </div>
         </b-col>
-        <b-col lg="2"></b-col>
+        <b-col lg="2" v-if="!isMobile"></b-col>
       </b-row>
 
       <div class="space-30"></div>
       <b-row>
-        <b-col lg="2"></b-col>
+        <b-col lg="2" v-if="!isMobile"></b-col>
         <b-col lg="4" class="mx-2">
-          <b-img
-            width="500px"
-            class="project-img"
-            src="~/static/images/projects/ace-visas.jpg"
-          ></b-img>
-          <ImageOverlay :project="projects[2]" />
+          <div class="project-box">
+            <b-img
+              class="project-img"
+              src="~/static/images/projects/ace-visas.jpg"
+            ></b-img>
+            <ImageOverlay :project="projects[2]" />
+          </div>
         </b-col>
         <b-col lg="4" class="mx-2">
-          <b-img
-            width="500px"
-            class="project-img"
-            src="~/static/images/projects/tp-visa.jpg"
-          ></b-img>
-          <ImageOverlay :project="projects[3]" />
+          <div class="project-box">
+            <b-img
+              class="project-img"
+              src="~/static/images/projects/tp-visa.jpg"
+            ></b-img>
+            <ImageOverlay :project="projects[3]" />
+          </div>
         </b-col>
-        <b-col lg="2"></b-col>
+        <b-col lg="2" v-if="!isMobile"></b-col>
       </b-row>
       <div class="space-50"></div>
       <div class="space-30"></div>
@@ -333,7 +349,7 @@
             </b-row>
 
             <div class="space-10"></div>
-            <p>
+            <p class="hire-me-text" >
               3+ years of experience in Building Web Applications in Various
               Domains including Finance, Healthcare. I Enjoy More of Frontend
               Development and Consider it as my Strongest Side.
@@ -370,10 +386,14 @@ export default {
     projects() {
       return projects;
     },
+    isMobile() {
+      return this.$store.getters[`getMobileState`];
+    },
   },
   components: {
     ImageOverlay,
   },
+
   methods: {
     initAnimations() {
       gsap.animateHome();
@@ -403,6 +423,7 @@ export default {
 
 .sub-text {
   font-size: 18px;
+  line-height: 28px;
 }
 
 .image-bg {
@@ -412,7 +433,7 @@ export default {
 
 .tweet-box {
   height: 120px;
-  width: 700px;
+  max-width: 700px;
   background: rgba(0, 0, 0, 0.06);
   border-radius: 30px;
   padding: 15px 20px 0px 20px;
@@ -483,6 +504,11 @@ export default {
   top: 0;
 }
 
+.project-box img {
+  width: auto;
+  max-width: 500px;
+}
+
 .projects-btn {
   background: transparent;
   color: black;
@@ -490,12 +516,12 @@ export default {
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid black;
+  z-index:1;
 }
 
 .main-hire-area {
   height: 45px;
   overflow: hidden;
-  margin-left: -42px;
 
   .hire-me-area {
     list-style-type: none;
@@ -525,7 +551,42 @@ export default {
 .hire-me-bg-img {
   position: absolute;
   right: 0%;
-  margin-top: -200px;
-  width: 40%;
 }
+
+.hire-me-text { 
+  font-size:18px;
+}
+
+
+// Media only for desktop 
+@media only screen and (min-width: 800px) {
+ .avatar-img { 
+  float:right;
+}
+
+  .mind-text { 
+    text-align:left !important;
+  }
+
+  .tweet-options { 
+    margin-top:25px;
+  }
+
+  .main-hire-area { 
+    margin-left: -42px;
+  }
+
+  .hire-me-bg-img {
+    margin-top: -200px;
+  }
+}
+
+//media only for Mobile 
+@media only screen and (max-width: 800px) {
+
+  .main-hire-area { 
+    margin-top: -25px;
+  }
+}
+
 </style>

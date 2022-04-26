@@ -2,10 +2,10 @@
   <div>
     <div class="overlay ">
       <b-row class="pt-3">
-        <b-col lg="8">
+        <b-col >
           <h5 class="overlay-title" >{{ project.name }}</h5></b-col
         >
-        <b-col lg="4">
+        <b-col >
           <p class="project-date" style="text-shadow:3px 3px 10px black">
             <font-awesome-icon :icon="[`fa`, 'clock-rotate-left']" />
             {{ project.date }}
@@ -19,7 +19,7 @@
       <p class="stack-title">Tech Stack</p>
       <div class="line mt-n2 mb-2"  ></div>
       <b-row >
-        <b-col lg="6"
+        <b-col 
           ><div class="project-stack-images">
           
               <b-img
@@ -31,7 +31,7 @@
 
             </div>
         </b-col>
-        <b-col lg="6">
+        <b-col >
           <a class="project-link"  :href="project.link"
             >View Project
             <font-awesome-icon class="project-link-icon" :icon="['fa', 'arrow-up-right-from-square']"
@@ -109,10 +109,16 @@ export default {
 .project-date { 
   float:right;
   font-size:14px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+ .overlay { 
+    width:auto;
+    padding:8px 36px 20px 20px;
+  }
 }
- 
-}
+
 
 
 </style>

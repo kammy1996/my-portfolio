@@ -8,7 +8,6 @@
           <div class="img-holder">
             <b-img
             class="title-img"
-            width="800px"
             src="~/static/images/about-title-img.jpg"
           ></b-img>
           </div>
@@ -226,7 +225,6 @@ export default {
   z-index: -1;
 
   .title-heading {
-    margin-left: -50px;
     letter-spacing: 3px;
   }
 }
@@ -258,7 +256,7 @@ export default {
 
 .journey-text {
   font-size: 20px;
-  margin: 0 25%;
+  margin:0% 5%
 }
 
 .resume-btn {
@@ -307,6 +305,28 @@ export default {
   margin:0px 30px;
 }
 
+.img-holder img { 
+  width:800px;
+}
+
+
+//media only for Desktop 
+@media only screen and (min-width: 800px) {
+  .title-heading {
+    margin-left: -50px;
+  }
+
+  .journey-text {
+    margin: 0 25%;
+  }
+}
+
+//media only for Mobile 
+@media only screen and (max-width: 800px) {
+  .img-holder img { 
+    width:400px;
+  }
+}
 
 
 
