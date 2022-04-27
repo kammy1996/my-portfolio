@@ -52,9 +52,9 @@
               </ul>
               <div class="space-10"></div>
               <div class="footer-social-icons text-center">
-                <a  href=""> <b-img width="30%" src="https://img.icons8.com/dotty/80/000000/instagram-new.png"></b-img></a>
-                <a   href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/github.png"></b-img></a>
-                <a href=""><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/linkedin.png"></b-img></a>
+                <a  href="https://www.instagram.com/kamranmemon99/"> <b-img width="30%" src="https://img.icons8.com/dotty/80/000000/instagram-new.png"></b-img></a>
+                <a   href="https://github.com/kammy1996"><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/github.png"></b-img></a>
+                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/"><b-img width="30%" src="https://img.icons8.com/dotty/80/000000/linkedin.png"></b-img></a>
               </div>
             </b-col>  
         </b-row>

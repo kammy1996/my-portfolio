@@ -35,21 +35,21 @@
                 <b>Learn build and grow,</b> So I'm Excited to share my Journey.
               </p>
               <div class="social-icons mt-n1">
-                <a href="#"
+                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
                   ><b-img
                     width="22px"
                     class="mr-1"
                     src="~/static/images/linkedin.png"
                   ></b-img
                 ></a>
-                <a href="#"
+                <a href="https://www.instagram.com/kamranmemon99/"
                   ><b-img
                     width="21px"
                     class="mr-1"
                     src="~/static/images/instagram.png"
                   ></b-img
                 ></a>
-                <a href="#"
+                <a href="https://github.com/kammy1996"
                   ><b-img
                     width="22px"
                     class="mr-1"
@@ -507,6 +507,7 @@ export default {
 .project-box img {
   width: auto;
   max-width: 500px;
+  min-width:300px;
 }
 
 .projects-btn {

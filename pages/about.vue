@@ -326,6 +326,15 @@ export default {
   .img-holder img { 
     width:400px;
   }
+
+  .inspiration-title { 
+    text-align:center;
+  }
+
+  .inspiration-text { 
+    text-align:center;
+  }
+
 }
 
 

@@ -56,13 +56,7 @@ export default {
   font-size: 18px;
 }
 
-.period { 
-  float:right;
 
-  .location { 
-    float:right;
-  }
-}
 
 .company-work-desc { 
   font-size:14px;
@@ -74,6 +68,25 @@ export default {
   padding:2px;
   font-size:10px;
 }
+
+//media only for Desktop 
+@media only screen and (min-width: 800px) {
+
+  .period { 
+  float:right;
+
+  .location { 
+    float:right;
+  }
+}
+}
+
+//media only for Mobile 
+@media only screen and (max-width: 800px) {
+
+ 
+}
+
 
 
 </style>

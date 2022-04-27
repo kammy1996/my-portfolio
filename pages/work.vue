@@ -12,7 +12,7 @@
             <b-col lg="6" class="project-col" >
               <div class="project-box">
                 <b-img
-                  width="500px"
+                 
                   class="project-img"
                   src="~/static/images/projects/bikeme.jpg"
                 ></b-img>
@@ -21,12 +21,15 @@
             </b-col>
             
             <b-col lg="6" class="project-col">
+              <div class="project-box">
+
               <b-img
-                width="500px"
+                
                 class="project-img"
                 src="~/static/images/projects/todoers.jpg"
               ></b-img>
               <ImageOverlay :project="projects[1]" />
+              </div>
             </b-col>
           </b-row>
 
@@ -34,44 +37,51 @@
           <b-row class="project-row" no-gutters>
             
             <b-col lg="6" class="project-col" >
+              <div class="project-box">
               <b-img
-                width="500px"
                 class="project-img"
                 src="~/static/images/projects/ace-visas.jpg"
               ></b-img>
               <ImageOverlay :project="projects[2]" />
+              </div>
             </b-col>
             
             <b-col lg="6"  class="project-col">
+              <div class="project-box">
+
               <b-img
-                width="500px"
+                
                 class="project-img"
                 src="~/static/images/projects/tp-visa.jpg"
               ></b-img>
               <ImageOverlay :project="projects[3]" />
+              </div>
             </b-col>
             
           </b-row>
 
           <div class="space-40"></div>
           <b-row class="project-row" no-gutters>
-            
             <b-col lg="6" class="project-col" >
+              <div class="project-box">
               <b-img
-                width="500px"
                 class="project-img"
                 src="~/static/images/projects/kj-academy.jpg"
               ></b-img>
               <ImageOverlay :project="projects[4]" />
+              </div>
             </b-col>
             
             <b-col lg="6" class="project-col">
+              <div class="project-box">
+
               <b-img
-                width="500px"
+                
                 class="project-img"
                 src="~/static/images/projects/merchant-uk.jpg"
               ></b-img>
               <ImageOverlay :project="projects[5]" />
+              </div>
             </b-col>
             
           </b-row>
@@ -116,10 +126,26 @@ export default {
   color: $primary-color;
 }
 
-.projects-container { 
-  margin-left:50px;
+
+
+
+
+.project-img { 
+  max-width:500px;
 }
 
+
+@media only screen and (min-width: 800px) {
+  .projects-container { 
+    margin-left:50px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .project-box { 
+    margin-top:50px;
+  }
+}
 
 
 

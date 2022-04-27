@@ -52,19 +52,19 @@
           </ul>
         </nav>
         <div class="social">
-          <a href="">
+          <a href="https://www.instagram.com/kamranmemon99/">
             <b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
             ></b-img
           ></a>
-          <a href=""
+          <a href="https://github.com/kammy1996"
             ><b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/github.png"
             ></b-img
           ></a>
-          <a href=""
+          <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
             ><b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/linkedin.png"
@@ -211,4 +211,14 @@ nav a:hover {
 .fa:hover {
   color: #f24738;
 }
+
+// Media only for desktop 
+@media only screen and (min-width: 800px) {
+ .navbar { 
+    display:none !important;
+    
+  }
+}
+
+
 </style>

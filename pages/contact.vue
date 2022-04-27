@@ -117,7 +117,7 @@ export default {
 }
 
 .contact-form {
-  width: 600px;
+  max-width: 600px;
 
   .custom-field:hover {
     box-shadow: none !important;
