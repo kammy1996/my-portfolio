@@ -14,7 +14,6 @@
             <div class="text-center">
               <b-img
                 class="profile-img"
-                width="400px"
                 src="~/static/images/profile-img.png"
               ></b-img>
             </div>
@@ -254,21 +253,22 @@
 
     <div class="space-100"></div>
     <div class="space-50"></div>
-    <template class="projects">
+      
+    <template class="projects pr-10" >
       <h2 class="text-center">
         Latest <span class="title-highlight">Projects</span>
       </h2>
       <p class="text-center">some of my best work.</p>
       <div class="space-40"></div>
       <b-row>
-        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
+        <b-col lg="2" class="d-none d-md-block d-lg-block"></b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
               class="project-img "
               src="~/static/images/projects/bikeme.jpg"
             ></b-img>
-            <ImageOverlay style="margin-top:-220px;" :project="projects[0]" />
+            <ImageOverlay style="margin-top:-200px;" :project="projects[0]" />
           </div>
         </b-col>
         <b-col lg="4" class="mx-2">
@@ -280,7 +280,7 @@
             <ImageOverlay style="margin-top:-200px;" :project="projects[1]" />
           </div>
         </b-col>
-        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
+        <b-col lg="2" class=" d-none d-md-block d-lg-block"></b-col>
       </b-row>
 
       <div class="space-30"></div>
@@ -518,7 +518,7 @@ export default {
   top: 0;
 }
 
-.project-box img {
+.project-img {
   max-width: 100%;
   height:auto;
 }
@@ -569,6 +569,11 @@ export default {
 
 .hire-me-text { 
   font-size:18px;
+}
+
+.profile-img { 
+  max-width:80%;
+  height:auto;
 }
 
 

@@ -1,12 +1,12 @@
 <template>
   <div>
-
+    <div class="space-10"></div>
     <template class="title-area">
-      <b-row>
-        <b-col lg="6 mr-4">
-          <div class="img-holder">
+      <b-row no-gutters>
+        <b-col lg="6">
+          <div class="img-holder ">
             <b-img
-            class="title-img d-none d-md-block d-lg-block"
+            class="title-img"
             src="~/static/images/about-title-img.jpg"
           ></b-img>
           </div>
@@ -317,7 +317,7 @@ inspiration-title
 }
 
 .img-holder img { 
-  width:800px;
+  max-width:100%;
 }
 
 

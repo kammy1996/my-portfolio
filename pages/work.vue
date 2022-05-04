@@ -15,7 +15,7 @@
                 class="project-img"
                 src="~/static/images/projects/todoers.jpg"
               ></b-img>
-                <ImageOverlay style="margin-top:-220px;position:relative" :project="projects[0]" />
+                <ImageOverlay style="margin-top:-200px;position:relative" :project="projects[0]" />
               </div>
             </b-col>
             
