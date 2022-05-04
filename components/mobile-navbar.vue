@@ -2,27 +2,27 @@
   <div>
     <b-row>
       <b-col lg="2">
-         <div class="navbar" title="Menu">
-        <font-awesome-icon
-          class="project-link-icon"
-          size="sm"
-          :icon="['fa', 'bars']"
-        />
-      </div>
-      <div class="close">
-        <font-awesome-icon
-          class="project-link-icon"
-          :icon="['fa', 'xmark']"
-        />
-      </div>
+        <div class="navbar" title="Menu">
+          <font-awesome-icon
+            class="project-link-icon"
+            size="sm"
+            :icon="['fa', 'bars']"
+          />
+        </div>
+        <div class="close">
+          <font-awesome-icon
+            class="project-link-icon"
+            :icon="['fa', 'xmark']"
+          />
+        </div>
       </b-col>
       <b-col lg="9">
         <div class="text-center mt-n5">
           <b-img
-          width="150px"
-          id="mob-main-logo"
-          src="~/static/images/logo.png"
-        ></b-img>
+            width="150px"
+            id="mob-main-logo"
+            src="~/static/images/logo.png"
+          ></b-img>
         </div>
       </b-col>
     </b-row>
@@ -52,19 +52,21 @@
           </ul>
         </nav>
         <div class="social">
-          <a href="https://www.instagram.com/kamranmemon99/">
+          <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
             <b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
             ></b-img
           ></a>
-          <a href="https://github.com/kammy1996"
+          <a href="https://github.com/kammy1996" target="_blank"
             ><b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/github.png"
             ></b-img
           ></a>
-          <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
+          <a
+            href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
+            target="_blank"
             ><b-img
               width="30%"
               src="https://img.icons8.com/dotty/80/000000/linkedin.png"
@@ -89,14 +91,12 @@ export default {
   mounted() {
     this.initAnimation();
   },
-
-};  
+};
 </script>
 
 <style lang="scss" scoped>
 @import "~/static/scss/main.scss";
 @import "~/static/scss/hover.css";
-
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -129,7 +129,7 @@ export default {
   top: 0;
   padding: 50px 0;
   overflow: hidden;
-  z-index:1,
+  z-index: 1;
 }
 nav ul {
   list-style-type: none;
@@ -142,17 +142,12 @@ nav ul li {
   overflow: hidden;
   font-weight: 700;
 }
-nav ul li:first-child {
-  font-size: 8vh;
-  overflow: visible;
-}
+
 @media (max-width: 750px) {
   nav ul li {
     font-size: 15vw;
   }
-  nav ul li:first-child {
-    font-size: 8vw;
-  }
+
 }
 nav a {
   color: white;
@@ -212,13 +207,10 @@ nav a:hover {
   color: #f24738;
 }
 
-// Media only for desktop 
+// Media only for desktop
 @media only screen and (min-width: 800px) {
- .navbar { 
-    display:none !important;
-    
+  .navbar {
+    display: none !important;
   }
 }
-
-
 </style>

@@ -8,45 +8,42 @@
         </h3>
         <div class="space-40"></div>
         <div class="projects-container">
-          <b-row class="project-row" no-gutters >
-            <b-col lg="6" class="project-col" >
+          <b-row class="project-row"  >
+            <b-col lg="6" >
               <div class="project-box">
-                <b-img
-                 
-                  class="project-img"
-                  src="~/static/images/projects/bikeme.jpg"
-                ></b-img>
-                <ImageOverlay :project="projects[0]" />
-              </div>
-            </b-col>
-            
-            <b-col lg="6" class="project-col">
-              <div class="project-box">
-
               <b-img
-                
                 class="project-img"
                 src="~/static/images/projects/todoers.jpg"
               ></b-img>
-              <ImageOverlay :project="projects[1]" />
+                <ImageOverlay style="margin-top:-220px;position:relative" :project="projects[0]" />
+              </div>
+            </b-col>
+            
+            <b-col lg="6" >
+              <div class="project-box">
+               <b-img
+                  class="project-img"
+                  src="~/static/images/projects/bikeme.jpg"
+                ></b-img>
+              <ImageOverlay style="margin-top:-200px;position:relative"  :project="projects[1]" />
               </div>
             </b-col>
           </b-row>
 
           <div class="space-40"></div>
-          <b-row class="project-row" no-gutters>
+          <b-row class="project-row">
             
-            <b-col lg="6" class="project-col" >
+            <b-col lg="6"  >
               <div class="project-box">
               <b-img
                 class="project-img"
                 src="~/static/images/projects/ace-visas.jpg"
               ></b-img>
-              <ImageOverlay :project="projects[2]" />
+              <ImageOverlay style="margin-top:-180px;position:relative" :project="projects[2]" />
               </div>
             </b-col>
             
-            <b-col lg="6"  class="project-col">
+            <b-col lg="6"  >
               <div class="project-box">
 
               <b-img
@@ -54,25 +51,25 @@
                 class="project-img"
                 src="~/static/images/projects/tp-visa.jpg"
               ></b-img>
-              <ImageOverlay :project="projects[3]" />
+              <ImageOverlay   style="margin-top:-180px;position:relative" :project="projects[3]" />
               </div>
             </b-col>
             
           </b-row>
 
           <div class="space-40"></div>
-          <b-row class="project-row" no-gutters>
-            <b-col lg="6" class="project-col" >
+          <b-row class="project-row" >
+            <b-col lg="6"  >
               <div class="project-box">
               <b-img
                 class="project-img"
                 src="~/static/images/projects/kj-academy.jpg"
               ></b-img>
-              <ImageOverlay :project="projects[4]" />
+              <ImageOverlay  style="margin-top:-180px;position:relative" :project="projects[4]" />
               </div>
             </b-col>
             
-            <b-col lg="6" class="project-col">
+            <b-col lg="6" >
               <div class="project-box">
 
               <b-img
@@ -80,7 +77,7 @@
                 class="project-img"
                 src="~/static/images/projects/merchant-uk.jpg"
               ></b-img>
-              <ImageOverlay :project="projects[5]" />
+              <ImageOverlay style="margin-top:-180px;position:relative"  :project="projects[5]" />
               </div>
             </b-col>
             
@@ -104,6 +101,18 @@ export default {
       return projects;
     },
   },
+  head() { 
+    return { 
+      title:'Work | Kamran Memon',
+      meta : [
+        {
+          name:'Work',
+          content:'3+ years of experience in Building Web Applications in Various Domains including Finance, Healthcare.'
+        }
+        
+      ]
+    }
+  },
   components: {
     ImageOverlay,
   },
@@ -126,14 +135,10 @@ export default {
   color: $primary-color;
 }
 
-
-
-
-
 .project-img { 
-  max-width:500px;
+  max-width:100%;
+  height:auto;
 }
-
 
 @media only screen and (min-width: 800px) {
   .projects-container { 

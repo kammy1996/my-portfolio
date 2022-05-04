@@ -1,13 +1,12 @@
 <template>
   <div>
-    <div class="space-30"></div>
 
     <template class="title-area">
       <b-row>
         <b-col lg="6 mr-4">
           <div class="img-holder">
             <b-img
-            class="title-img"
+            class="title-img d-none d-md-block d-lg-block"
             src="~/static/images/about-title-img.jpg"
           ></b-img>
           </div>
@@ -16,7 +15,7 @@
           <div class="title-area">
             <div class="space-100"></div>
             <h1 class="title-heading">Hello</h1>
-            <h1 class="title-heading">I'm Kamran</h1>
+            <h1 class="title-heading ">I'm Kamran</h1>
 
             <div class="space-50"></div>
             <p class="title-sub-text">
@@ -49,7 +48,7 @@
     <template class="work-history-area">
       <b-img
         width="600px"
-        class="image-bg-right"
+        class="image-bg-right d-none d-md-block d-lg-block"
         src="~/static/images/image-bg-right.png"
       ></b-img>
       <b-container>
@@ -91,8 +90,8 @@
 
     <template class="inspiration">
       <b-img
-        width="600px"
-        class="image-bg-left"
+        width="600px "
+        class="image-bg-left d-none d-md-block d-lg-block"
         src="~/static/images/image-bg-left.png"
       ></b-img>
       <b-container>
@@ -167,6 +166,18 @@ import * as gsap from "@/utils/animations/about"
 
 export default {
   name: "About",
+  head() { 
+    return { 
+      title:'About | Kamran Memon',
+      meta : [
+        {
+          name:'About',
+          content:'I am an Indian Full Stack Web Developer and a Technology Enthusiast.'
+        }
+        
+      ]
+    }
+  },
   components: {
     WorkHistoryElement,
   },
@@ -287,7 +298,7 @@ export default {
   font-size: 25px;
   font-weight: 700;
 }
-
+inspiration-title 
 .inspiration-text {
   font-size: 15px;
 }
@@ -334,6 +345,14 @@ export default {
   .inspiration-text { 
     text-align:center;
   }
+
+  .title-heading,
+  .title-sub-text
+  {
+    text-align:center;
+  }
+
+
 
 }
 

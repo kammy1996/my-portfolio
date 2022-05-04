@@ -3,7 +3,7 @@
     <template class="hero-area">
       <div class="space-30"></div>
       <b-img
-        class="image-bg"
+        class="image-bg d-none d-md-block d-lg-block"
         width="600px"
         src="~/static/images/image-bg-right.png"
       ></b-img>
@@ -35,21 +35,21 @@
                 <b>Learn build and grow,</b> So I'm Excited to share my Journey.
               </p>
               <div class="social-icons mt-n1">
-                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
+                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank"
                   ><b-img
                     width="22px"
                     class="mr-1"
                     src="~/static/images/linkedin.png"
                   ></b-img
                 ></a>
-                <a href="https://www.instagram.com/kamranmemon99/"
+                <a href="https://www.instagram.com/kamranmemon99/" target="_blank"
                   ><b-img
                     width="21px"
                     class="mr-1"
                     src="~/static/images/instagram.png"
                   ></b-img
                 ></a>
-                <a href="https://github.com/kammy1996"
+                <a href="https://github.com/kammy1996" target="_blank"
                   ><b-img
                     width="22px"
                     class="mr-1"
@@ -112,14 +112,14 @@
 
       <div class="space-20"></div>
       <b-img
-        class="image-bg-left"
+        class="image-bg-left d-none d-md-block d-lg-block"
         width="800px"
         src="~/static/images/image-bg-left.png"
       ></b-img>
       <b-container>
         <template class="stack-images">
           <b-row>
-            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block" > </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
@@ -180,11 +180,11 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
           </b-row>
           <div class="space-30"></div>
           <b-row>
-            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
@@ -246,7 +246,7 @@
               </div>
             </b-col>
 
-            <b-col lg="2" v-if="!isMobile"> </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
           </b-row>
         </template>
       </b-container>
@@ -261,50 +261,50 @@
       <p class="text-center">some of my best work.</p>
       <div class="space-40"></div>
       <b-row>
-        <b-col lg="2" v-if="!isMobile"></b-col>
+        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
-              class="project-img"
+              class="project-img "
               src="~/static/images/projects/bikeme.jpg"
             ></b-img>
-            <ImageOverlay :project="projects[0]" />
+            <ImageOverlay style="margin-top:-220px;" :project="projects[0]" />
           </div>
         </b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
-              class="project-img"
+              class="project-img "
               src="~/static/images/projects/todoers.jpg"
             ></b-img>
-            <ImageOverlay :project="projects[1]" />
+            <ImageOverlay style="margin-top:-200px;" :project="projects[1]" />
           </div>
         </b-col>
-        <b-col lg="2" v-if="!isMobile"></b-col>
+        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
       </b-row>
 
       <div class="space-30"></div>
       <b-row>
-        <b-col lg="2" v-if="!isMobile"></b-col>
+        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
-              class="project-img"
+              class="project-img "
               src="~/static/images/projects/ace-visas.jpg"
             ></b-img>
-            <ImageOverlay :project="projects[2]" />
+            <ImageOverlay style="margin-top:-180px;" :project="projects[2]" />
           </div>
         </b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
-              class="project-img"
+              class="project-img "
               src="~/static/images/projects/tp-visa.jpg"
             ></b-img>
-            <ImageOverlay :project="projects[3]" />
+            <ImageOverlay style="margin-top:-180px;" :project="projects[3]" />
           </div>
         </b-col>
-        <b-col lg="2" v-if="!isMobile"></b-col>
+        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
       </b-row>
       <div class="space-50"></div>
       <div class="space-30"></div>
@@ -323,7 +323,7 @@
     <div class="space-50"></div>
     <template class="hire-me">
       <b-img
-        class="hire-me-bg-img"
+        class="hire-me-bg-img d-none d-md-block d-lg-block"
         width="600px"
         src="~/static/images/image-bg-right.png"
       ></b-img>
@@ -381,6 +381,18 @@ import projects from "../model/projects";
 
 export default {
   name: "Home",
+  head() { 
+    return { 
+      title:'Home | Kamran Memon',
+      meta : [
+        {
+          name:'Home',
+          content:'I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript'
+        }
+        
+      ]
+    }
+  },
   components: {},
   computed: {
     projects() {
@@ -420,6 +432,8 @@ export default {
 <style lang="scss" scoped>
 @import "~/static/scss/main.scss";
 @import "~/static/scss/hover.css";
+
+
 
 .sub-text {
   font-size: 18px;
@@ -505,9 +519,8 @@ export default {
 }
 
 .project-box img {
-  width: auto;
-  max-width: 500px;
-  min-width:300px;
+  max-width: 100%;
+  height:auto;
 }
 
 .projects-btn {

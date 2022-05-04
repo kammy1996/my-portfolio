@@ -32,7 +32,7 @@
             </div>
         </b-col>
         <b-col >
-          <a class="project-link"  :href="project.link"
+          <a class="project-link"  :href="project.link" target="_blank"
             >View Project
             <font-awesome-icon class="project-link-icon" :icon="['fa', 'arrow-up-right-from-square']"
           /></a>
@@ -56,18 +56,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
-
-
 .overlay {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.05) ,rgba(0,0,0,1) );
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) ,rgba(0,0,0,1) ) ;
   height: auto;
-  width: 500px;
+  max-width:100%;
   color: white;
   padding:8px 20px 20px 20px;
-  position:absolute;
-  bottom:0;
 
   .overlay-title { 
     text-shadow:2px 2px 10px black;
@@ -83,7 +77,6 @@ export default {
     text-transform: uppercase;
     text-shadow:3px 3px 5px solid black;
   }
-
 
 
   .project-link { 
@@ -109,13 +102,6 @@ export default {
 .project-date { 
   float:right;
   font-size:14px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
- .overlay { 
-    width:auto;
-    padding:8px 36px 20px 20px;
   }
 }
 

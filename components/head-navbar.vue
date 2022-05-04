@@ -2,7 +2,7 @@
   <div>
     <b-container>
       <b-navbar>
-        <b-navbar-brand href="#">
+        <b-navbar-brand href="/">
           <b-img
             width="150px"
             id="main-logo"
