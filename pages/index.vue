@@ -330,25 +330,21 @@
       <b-container>
         <b-row>
           <b-col lg="7">
-            <b-row>
-              <b-col lg="3">
-                <h3 class="mt-1 hire-title">I can do</h3>
-              </b-col>
-              <b-col lg="9">
-                <div class="main-hire-area offset-sm-3">
-                  <h3>
-                    <ul class="hire-me-area">
-                      <li class="hire-text">UI/UX Design</li>
-                      <li class="hire-text">Frontend Development</li>
-                      <li class="hire-text">Backend Development</li>
-                      <li class="hire-text">App Architecture</li>
-                    </ul>
-                  </h3>
-                </div>
-              </b-col>
-            </b-row>
+            
+              <h3 class="mt-1 hire-title">I can do</h3>
+        
+              <div class="main-hire-area mt-n2 ">
+                <h3>
+                  <ul class="hire-me-area">
+                    <li class="hire-text">UI/UX Design</li>
+                    <li class="hire-text">Frontend Development</li>
+                    <li class="hire-text">Backend Development</li>
+                    <li class="hire-text">App Architecture</li>
+                  </ul>
+                </h3>
+              </div>
+             
 
-            <div class="space-10"></div>
             <p class="hire-me-text" >
               3+ years of experience in Building Web Applications in Various
               Domains including Finance, Healthcare. I Enjoy More of Frontend
@@ -588,9 +584,7 @@ export default {
     margin-top:25px;
   }
 
-  .main-hire-area { 
-    margin-left: -42px;
-  }
+
 
   .hire-me-bg-img {
     margin-top: -200px;
