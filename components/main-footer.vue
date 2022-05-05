@@ -2,7 +2,7 @@
   <div>
     <div class="footer-wrapper">
       <div class="space-30"></div>
-      <div height="100px" class="marquee">
+      <div class="marquee">
         <div class="track">
           <span class="quality">Avid Reader</span>
           <span class="quality">Self Learner</span>
@@ -23,7 +23,8 @@
         </div>
       </div>
 
-      <b-container class="mt-n5">
+      <div class="space-30 d-none d-md-block d-lg-block"></div>
+      <b-container >
         <b-row>
           <b-col lg="7">
             <h1 class="got-project">
@@ -80,6 +81,7 @@
           </b-col>
         </b-row>
       </b-container>
+       <div class="space-100 "></div>
     </div>
   </div>
 </template>
@@ -93,7 +95,7 @@ export default {
 <style lang="scss" scoped>
 .footer-wrapper {
   background: rgba(0, 0, 0, 0.05);
-  padding-bottom: 80px;
+
   width:100%;
 }
 
@@ -101,7 +103,7 @@ export default {
   position: relative;
   width: 100%;
   max-width: 100%;
-  height: 200px;
+  height: 100px;
   overflow-x: hidden;
 }
 
@@ -158,6 +160,19 @@ export default {
   }
 }
 
-.footer-social-icons {
+
+//media only for Mobile 
+@media only screen and (max-width: 800px) {
+  .got-project {
+    font-size: 35px;
+    text-align:center;
+    font-weight: 700;
+  }
+
+  .footer-email { 
+    font-size:16px;
+    text-align:center;
+  }
 }
+
 </style>

@@ -268,7 +268,7 @@
               class="project-img "
               src="~/static/images/projects/bikeme.jpg"
             ></b-img>
-            <ImageOverlay style="margin-top:-200px;" :project="projects[0]" />
+            <ImageOverlay style="margin-top:-220px;" :project="projects[0]" />
           </div>
         </b-col>
         <b-col lg="4" class="mx-2">
@@ -285,14 +285,14 @@
 
       <div class="space-30"></div>
       <b-row>
-        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
+        <b-col lg="2" class="d-none d-none d-md-block d-lg-b1lock"></b-col>
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
               class="project-img "
               src="~/static/images/projects/ace-visas.jpg"
             ></b-img>
-            <ImageOverlay style="margin-top:-180px;" :project="projects[2]" />
+            <ImageOverlay style="margin-top:-178px;" :project="projects[2]" />
           </div>
         </b-col>
         <b-col lg="4" class="mx-2">
@@ -301,7 +301,7 @@
               class="project-img "
               src="~/static/images/projects/tp-visa.jpg"
             ></b-img>
-            <ImageOverlay style="margin-top:-180px;" :project="projects[3]" />
+            <ImageOverlay style="margin-top:-178px;" :project="projects[3]" />
           </div>
         </b-col>
         <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
@@ -410,11 +410,7 @@ export default {
     initAnimations() {
       gsap.animateHome();
     },
-    playIntroAudio() {
-      const audio_file = require("../static/assets/intro-audio.mp3").default;
-      const beep = new Audio(audio_file);
-      beep.play();
-    },
+
     hoverBtn() {
       gsap.hoverBtn();
     },
@@ -424,7 +420,6 @@ export default {
   },
   mounted() {
     this.initAnimations();
-    this.playIntroAudio();
   },
 };
 </script>
@@ -577,6 +572,8 @@ export default {
 }
 
 
+
+
 // Media only for desktop 
 @media only screen and (min-width: 800px) {
  .avatar-img { 
@@ -606,6 +603,25 @@ export default {
   .main-hire-area { 
     margin-top: -25px;
   }
+
+  .main-title {
+    font-size: 25px;
+  }
+
+  
+  .sub-text {
+    font-size: 15px;
+  }
+ 
 }
+
+
+//media only for Mobile 
+@media only screen and (max-width: 450px) {
+  .project-box { 
+    max-width:96%;
+  }
+}
+
 
 </style>

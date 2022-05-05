@@ -208,4 +208,11 @@ export default {
     font-weight: 500;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .contact-title {
+    font-size: 35px;
+  }
+}
+
 </style>

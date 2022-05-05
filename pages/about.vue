@@ -248,8 +248,8 @@ export default {
 
 .title-sub-text {
   font-size: 22px;
-  margin: auto;
-  width: 400px;
+  max-width:60%;
+  margin-left:150px;
 }
 
 .journey {
@@ -350,10 +350,16 @@ inspiration-title
   .title-sub-text
   {
     text-align:center;
+    font-size:35px;
   }
 
-
-
+  .title-sub-text {
+    font-size: 18px;
+    margin:auto;
+    text-align:center !important;
+    max-width:80%;
+   
+  }
 }
 
 
