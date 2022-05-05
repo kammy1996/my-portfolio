@@ -91,7 +91,7 @@
                 <b-img
                   class="tweet-options"
                   width="200px"
-                  src="~/static/images/tweet-options.png"
+                  src="~/static/images/tweet-options.jpg"
                 ></b-img>
               </div>
             </b-col>
