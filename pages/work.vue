@@ -6,6 +6,7 @@
         <h3 class="main-title text-center">
           Selected <span class="title-highlight">Work</span>
         </h3>
+        <p class="text-center mt-n1">some of my best work.</p>
         <div class="space-40"></div>
         <div class="projects-container">
           <b-row class="project-row"  >

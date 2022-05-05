@@ -70,10 +70,10 @@
           <b-row>
             <b-col lg="3" sm="2" xs="2">
               <div class="text-center">
-                <div class="space-50"></div>
+                <div class="space-40"></div>
                 <b-img
                   class="avatar-img"
-                  width="70%"
+                  width="120%"
                   src="~/static/images/avatar.png"
                 ></b-img>
               </div>
