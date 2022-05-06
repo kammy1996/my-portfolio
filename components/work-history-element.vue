@@ -5,8 +5,8 @@
       <b-row>
         <b-col lg="2">
           <div v-if="work.company !== 'rugby-india'" class="space-10"></div>
-          <div :class="work.company == 'rugby-india' ? 'text-center' : ''">
-            <b-img :src="work.logo" :width="work.width"></b-img>
+          <div >
+            <b-img :src="work.logo" :id="work.company"  :width="work.width"></b-img>
           </div>
         </b-col>
         <b-col lg="7">
@@ -75,10 +75,15 @@ export default {
   .period { 
   float:right;
 
-  .location { 
-    float:right;
+    .location { 
+      float:right;
+    }
   }
-}
+
+  #rugby-india { 
+    margin:auto;
+    display:block;
+  }
 }
 
 //media only for Mobile 

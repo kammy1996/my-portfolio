@@ -117,7 +117,7 @@
       ></b-img>
       <b-container>
         <template class="stack-images">
-          <b-row>
+          <b-row class="ml-2">
             <b-col lg="2" class="d-none d-md-block d-lg-block" > </b-col>
             <b-col>
               <div class="stack-box">
@@ -182,7 +182,7 @@
             <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
           </b-row>
           <div class="space-30"></div>
-          <b-row>
+          <b-row class="ml-2">
             <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
             <b-col>
               <div class="stack-box">
