@@ -39,6 +39,19 @@ const projects = [
     link: "http://acevisas.in/",
   },
   {
+    name: "Watch For Now ",
+    date: "December 2018",
+    id: 1,
+    text: "Watch Brand selling varied watches, parts and engraving services online.",
+    stackImages: [
+      "/images/tech-stack/stack-html.png",
+      "/images/tech-stack/stack-css.png",
+      "/images/tech-stack/stack-bootstrap.png",
+      "/images/tech-stack/stack-jquery.png",
+    ],
+    link: "http://watchfornow.com/",
+  },
+  {
     name: "Travel Point Holidays ",
     date: "June 2018",
     id: 1,
@@ -52,19 +65,6 @@ const projects = [
     link: "https://www.tpvisa.com/",
   },
   {
-    name: "KJ Academy",
-    date: "March 2018",
-    id: 1,
-    text: "A full Fledged Judo Academy Website.",
-    stackImages: [
-      "/images/tech-stack/stack-html.png",
-      "/images/tech-stack/stack-css.png",
-      "/images/tech-stack/stack-bootstrap.png",
-      "/images/tech-stack/stack-jquery.png",
-    ],
-    link: "http://www.khushnoorjijina.net/",
-  },
-  {
     name: "Merchant & Associates",
     date: "September 2018",
     id: 1,
@@ -76,6 +76,20 @@ const projects = [
       "/images/tech-stack/stack-jquery.png",
     ],
     link: "https://www.merchantandassociates.co.uk/",
+  },
+
+  {
+    name: "KJ Academy",
+    date: "March 2018",
+    id: 1,
+    text: "A full Fledged Judo Academy Website.",
+    stackImages: [
+      "/images/tech-stack/stack-html.png",
+      "/images/tech-stack/stack-css.png",
+      "/images/tech-stack/stack-bootstrap.png",
+      "/images/tech-stack/stack-jquery.png",
+    ],
+    link: "http://www.khushnoorjijina.net/",
   },
 ];
 

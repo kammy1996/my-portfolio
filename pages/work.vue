@@ -50,9 +50,9 @@
               <b-img
                 
                 class="project-img"
-                src="~/static/images/projects/tp-visa.jpg"
+                src="~/static/images/projects/watch-for-now.jpg"
               ></b-img>
-              <ImageOverlay   style="margin-top:-180px;position:relative" :project="projects[3]" />
+              <ImageOverlay   style="margin-top:-200px;position:relative" :project="projects[3]" />
               </div>
             </b-col>
             
@@ -60,11 +60,11 @@
 
           <div class="space-40"></div>
           <b-row class="project-row" >
-            <b-col lg="6"  >
+              <b-col lg="6"  >
               <div class="project-box">
               <b-img
                 class="project-img"
-                src="~/static/images/projects/kj-academy.jpg"
+                src="~/static/images/projects/tp-visa.jpg"
               ></b-img>
               <ImageOverlay  style="margin-top:-180px;position:relative" :project="projects[4]" />
               </div>
@@ -81,6 +81,20 @@
               <ImageOverlay style="margin-top:-180px;position:relative"  :project="projects[5]" />
               </div>
             </b-col>
+            
+          </b-row>
+
+          <b-row class="project-row" >
+             <b-col lg="6"  >
+              <div class="project-box">
+              <b-img
+                class="project-img"
+                src="~/static/images/projects/kj-academy.jpg"
+              ></b-img>
+              <ImageOverlay  style="margin-top:-180px;position:relative" :project="projects[6]" />
+              </div>
+            </b-col>
+
             
           </b-row>
         </div>

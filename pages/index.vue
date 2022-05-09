@@ -299,14 +299,13 @@
           <div class="project-box">
             <b-img
               class="project-img "
-              src="~/static/images/projects/tp-visa.jpg"
+              src="~/static/images/projects/watch-for-now.jpg"
             ></b-img>
-            <ImageOverlay style="margin-top:-178px;" :project="projects[3]" />
+            <ImageOverlay style="margin-top:-200px;" :project="projects[3]" />
           </div>
         </b-col>
         <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
       </b-row>
-      <div class="space-50"></div>
       <div class="space-30"></div>
       <div class="text-center">
         <NuxtLink to="/work">
