@@ -64,10 +64,15 @@ export default {
       "https://626cdf84459f1a418c99312c--dapper-gelato-89bc3d.netlify.app",
   },
 
+  sitemap: {
+    hostname: 'https://codewithkamran.com',
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt",
+    "@nuxtjs/sitemap",
     "@nuxtjs/axios",
     [
       "nuxt-mail",
