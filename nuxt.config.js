@@ -15,7 +15,10 @@ export default {
       },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
-      { name:"google-site-verification", content:"FPy1ivfWZ7tTV3Sti2p1kwBWTBKU3KIffrDbGVGODrE"}
+      {
+        name: "google-site-verification",
+        content: "FPy1ivfWZ7tTV3Sti2p1kwBWTBKU3KIffrDbGVGODrE",
+      },
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
@@ -38,6 +41,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxtjs/fontawesome",
+    "@nuxtjs/google-analytics",
     [
       // Simple usage
       "@nuxtjs/vuetify",
@@ -65,7 +69,11 @@ export default {
   },
 
   sitemap: {
-    hostname: 'https://codewithkamran.com',
+    hostname: "https://codewithkamran.com",
+  },
+
+  googleAnalytics: {
+    id: "G-Z0L1YEB0TT",
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
