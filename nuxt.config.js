@@ -38,9 +38,7 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
   googleAnalytics: {
-    id: "GTM-M9GD742",
-    layer: "dataLayer",
-    pageTracking: true,
+    id: "UA-228420175-1",
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
