@@ -84,8 +84,7 @@
               </div>
               <div class="tweet-box">
                 <p class="type-write">
-                  Currently I’m working on a FinTech App to Manage Personal
-                  Financing.
+                  Currently I’m working on a payments solution enabling one-click checkout using Cryptocurrencies.
                 </p>
                 
                 <b-img
@@ -578,11 +577,6 @@ export default {
   .mind-text { 
     text-align:left !important;
   }
-
-  .tweet-options { 
-    margin-top:25px;
-  }
-
 
 
   .hire-me-bg-img {
