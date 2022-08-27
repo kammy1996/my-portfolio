@@ -40,6 +40,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    "@nuxtjs/sanity/module",
     "@nuxtjs/fontawesome",
     [
       // Simple usage
@@ -60,6 +61,11 @@ export default {
       solid: true,
       brands: true,
     },
+  },
+
+  sanity: {
+    projectId: "3ze9usig",
+    apiVersion: "2021-10-21",
   },
 
   axios: {
@@ -91,6 +97,12 @@ export default {
             pass: "Kam_mo@786",
           },
         },
+      },
+    ],
+    [
+      "nuxt-highlightjs",
+      {
+        style: "obsidian",
       },
     ],
   ],

@@ -23,6 +23,11 @@
           <b-nav-item class="custom-nav"
             ><NuxtLink to="/work">Work <span class="underline"></span></NuxtLink
           ></b-nav-item>
+
+          <b-nav-item class="custom-nav"
+            ><NuxtLink to="/blog">Blog <span class="underline"></span></NuxtLink
+          ></b-nav-item>
+
           <b-nav-item class="custom-nav"
             ><NuxtLink to="/contact"
               >Contact<span class="underline"></span
