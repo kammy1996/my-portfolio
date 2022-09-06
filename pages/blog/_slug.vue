@@ -2,7 +2,7 @@
   <div class="custom-container">
     <div class="space-50"></div>
     <div v-if="blog" class="blog">
-      <SanityImage v-if="blog.image" :asset-id="getImageURL(blog)"/>
+      <SanityImage v-if="blog.image" width="100%" :asset-id="getImageURL(blog)"/>
       <h3 class="title">{{ blog.title }}</h3>
       <div class="d-flex">
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
@@ -42,7 +42,7 @@
       <!-- <SanityContent :blocks="blog.text" /> -->
       <div v-for="(block, i) in blog.text" :key="i">
         <div v-if="block._type == 'image'">
-          <SanityImage :asset-id="block.asset._ref" />
+          <SanityImage width="100%" :asset-id="block.asset._ref" />
         </div>
         <div v-else-if="block._type == 'code'">
           <pre>
@@ -80,7 +80,6 @@ export default {
       }
     },
     getImageURL(blog) {
-      console.log("🚀 ~ file: _slug.vue ~ line 87 ~ getImageURL ~ blog", blog)
       return blog.image.asset._ref;
     },
     getFormattedDate(date) {
