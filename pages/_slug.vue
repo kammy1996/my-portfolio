@@ -2,6 +2,7 @@
   <div class="custom-container">
     <div class="space-50"></div>
     <div v-if="blog" class="blog">
+      <SanityImage v-if="blog.image" :asset-id="getImageURL(blog)"/>
       <h3 class="title">{{ blog.title }}</h3>
       <div class="d-flex">
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
@@ -70,10 +71,6 @@ export default {
       const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
       try {
         const response = await this.$sanity.fetch(query);
-        console.log(
-          "🚀 ~ file: _slug.vue ~ line 31 ~ getCurrentBlog ~ response",
-          response
-        );
         this.blog = response;
       } catch (error) {
         console.log(
@@ -82,8 +79,9 @@ export default {
         );
       }
     },
-    getImageURL(image) {
-      return image.asset._ref;
+    getImageURL(blog) {
+      console.log("🚀 ~ file: _slug.vue ~ line 87 ~ getImageURL ~ blog", blog)
+      return blog.image.asset._ref;
     },
     getFormattedDate(date) {
       return new Date(date).toLocaleDateString("en-us", {

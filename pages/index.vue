@@ -435,7 +435,7 @@ export default {
 }
 
 .tweet-box {
-  height: 120px;
+  height: auto;
   max-width: 700px;
   background: rgba(0, 0, 0, 0.06);
   border-radius: 30px;
