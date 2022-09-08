@@ -163,19 +163,15 @@
 <script>
 import WorkHistoryElement from "@/components/work-history-element";
 import * as gsap from "@/utils/animations/about"
+import { About } from '../model/site-meta.js'; 
+
 
 export default {
   name: "About",
   head() { 
     return { 
-      title:'About | Kamran Memon',
-      meta : [
-        {
-          name:'About',
-          content:'I am an Indian Full Stack Web Developer and a Technology Enthusiast.'
-        }
-        
-      ]
+      title:'About | Kamran Memon | Frontend Developer (Vue.js)',
+      meta : About
     }
   },
   components: {

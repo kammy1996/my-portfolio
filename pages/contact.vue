@@ -80,19 +80,15 @@
 
 <script>
 import * as gsap from "~/utils/animations/contact.js";
+import { Contact } from '../model/site-meta.js'; 
+
 
 export default {
   name: "Contact",
   head() {
     return {
-      title: "Contact | Kamran Memon",
-      meta: [
-        {
-          name: "Contact",
-          content:
-            "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript",
-        },
-      ],
+      title: "Contact | Kamran Memon | Frontend Developer (Vue.js)",
+      meta: Contact
     };
   },
   mounted() {

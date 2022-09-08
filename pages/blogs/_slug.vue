@@ -59,12 +59,20 @@
 
 <script>
 import { groq } from "@nuxtjs/sanity";
+import { Slug } from '../../model/site-meta.js'; 
+
 export default {
   name: "blogTemplate",
   data() {
     return {
       blog: {},
     };
+  },
+  head() { 
+    return { 
+      title: this.blog.title || 'Blog | Kamran Memon | Frontend Developer (Vue.js)',
+      meta : Slug
+    }
   },
   methods: {
     async getCurrentBlog() {

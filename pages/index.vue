@@ -372,19 +372,14 @@
 import * as gsap from "~/utils/animations/home.js";
 import ImageOverlay from "../components/project-overlay.vue";
 import projects from "../model/projects";
+import { Home } from '../model/site-meta.js'; 
 
 export default {
   name: "Home",
   head() { 
     return { 
-      title:'Home | Kamran Memon',
-      meta : [
-        {
-          name:'Home',
-          content:'I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript'
-        }
-        
-      ]
+      title:'Home | Kamran Memon | Frontend Developer (Vue.js)',
+      meta : Home,
     }
   },
   components: {},

@@ -108,6 +108,8 @@
 import ImageOverlay from "../components/project-overlay.vue";
 import projects from "../model/projects";
 import * as gsap from "../utils/animations/work"
+import { Work } from '../model/site-meta.js'; 
+
 
 export default {
   name: "Work",
@@ -118,14 +120,8 @@ export default {
   },
   head() { 
     return { 
-      title:'Work | Kamran Memon',
-      meta : [
-        {
-          name:'Work',
-          content:'3+ years of experience in Building Web Applications in Various Domains including Finance, Healthcare.'
-        }
-        
-      ]
+      title:'Work | Kamran Memon | Frontend Developer',
+      meta : Work
     }
   },
   components: {
