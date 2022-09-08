@@ -30,7 +30,7 @@ export const Home = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
@@ -66,7 +66,7 @@ export const About = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
@@ -103,7 +103,7 @@ export const Work = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
@@ -140,7 +140,7 @@ export const Blog = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
@@ -177,7 +177,7 @@ export const Contact = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
@@ -214,7 +214,7 @@ export const Slug = [
   {
     hid: "og-image",
     property: "og:image",
-    content: "../static/assets/card-image.png",
+    content: "https://codewithkamran.com/assets/card-image.png",
   },
   { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
