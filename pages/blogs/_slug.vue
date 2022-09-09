@@ -2,7 +2,7 @@
   <div class="custom-container">
     <div class="space-50"></div>
     <div v-if="blog" class="blog">
-      <SanityImage v-if="blog.image" width="100%" :asset-id="getImageURL(blog)"/>
+      <SanityImage  v-if="blog.image" width="100%" :asset-id="getImageURL(blog)"/>
       <h3 class="title">{{ blog.title }}</h3>
       <div class="d-flex">
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
@@ -42,7 +42,7 @@
       <!-- <SanityContent :blocks="blog.text" /> -->
       <div v-for="(block, i) in blog.text" :key="i">
         <div v-if="block._type == 'image'">
-          <SanityImage width="100%" :asset-id="block.asset._ref" />
+          <SanityImage  width="100%" :asset-id="block.asset._ref" />
         </div>
         <div v-else-if="block._type == 'code'">
           <pre>
@@ -74,42 +74,40 @@ export default {
       meta : Slug
     }
   },
+  async fetch() { 
+    const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
+    try {
+      const response = await this.$sanity.fetch(query);
+      this.blog = response;
+    } catch (error) {
+      console.log(
+        "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
+        error
+      );
+    }
+  },
   methods: {
-    async getCurrentBlog() {
-      const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
-      try {
-        const response = await this.$sanity.fetch(query);
-        this.blog = response;
-      } catch (error) {
-        console.log(
-          "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
-          error
-        );
-      }
-    },
+   
     getImageURL(blog) {
       return blog.image.asset._ref;
     },
     getFormattedDate(date) {
-      return new Date(date).toLocaleDateString("en-us", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      });
+      if(date) { 
+          return new Date(date).toLocaleDateString("en-us", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+      } else return '';
     },
-  },
-  mounted() {
-    this.getCurrentBlog();
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
-.custom-container { 
-  margin:0px 350px;
-
-}
+  .custom-container { 
+    margin:0px 350px;
+  }
 
 .blog {
   .title {
@@ -129,6 +127,31 @@ export default {
     font-size: 14px;
     padding: 5px 15px;
     border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .custom-container { 
+    margin:0px 30px;
+  }
+
+
+  .blog { 
+    .title { 
+        font-size:20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width:1200px) {
+  .custom-container { 
+    margin:0px 50px;
+  }
+
+  .blog { 
+    .title { 
+        font-size:20px;
+    }
   }
 }
 </style>

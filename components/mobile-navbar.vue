@@ -45,6 +45,11 @@
               ></NuxtLink>
             </li>
             <li>
+              <NuxtLink to="/blog"
+                >Blog <span class="underline"></span
+              ></NuxtLink>
+            </li>
+            <li>
               <NuxtLink to="/contact"
                 >Contact<span class="underline"></span
               ></NuxtLink>

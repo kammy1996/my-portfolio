@@ -6,17 +6,17 @@
     </h3>
     <p class="text-center mt-n1">I like to Journalize the journey.</p>
 
-    <div class="space-50"></div>
+    <div class="space-30"></div>
 
     <b-container class="blog">
       <div v-for="(blog, index) in blogsList" :key="index">
         <b-row class="mb-5">
-          <b-col cols="5">
+          <b-col lg="5" md="5" sm="12" cols="12">
             <nuxt-link :to="`/blog/${blog.slug.current}`">
               <SanityImage width="90%" :asset-id="getImageURL(blog)" />
             </nuxt-link>
           </b-col>
-          <b-col cols="7">
+          <b-col lg="7" md="7" sm="12" cols="12">
             <nuxt-link :to="`/blogs/${blog.slug.current}`">
               <h3 class="title">{{ blog.title }}</h3></nuxt-link
             >
@@ -50,21 +50,18 @@ export default {
       blogsList: [],
     };
   },
-  mounted() {
-    this.getAllBlogs();
+  async fetch() {
+    const query = groq`*[_type == "blogsList"]`;
+    try {
+      const response = await this.$sanity.fetch(query);
+      if (response) {
+        this.blogsList = response;
+      }
+    } catch (err) {
+      console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
+    }
   },
   methods: {
-    async getAllBlogs() {
-      const query = groq`*[_type == "blogsList"]`;
-      try {
-        const response = await this.$sanity.fetch(query);
-        if (response) {
-          this.blogsList = response;
-        }
-      } catch (err) {
-        console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
-      }
-    },
     getImageURL(blog) {
       return blog.image.asset._ref;
     },
