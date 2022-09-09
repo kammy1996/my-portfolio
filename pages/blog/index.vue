@@ -17,7 +17,7 @@
             </nuxt-link>
           </b-col>
           <b-col lg="7" md="7" sm="12" cols="12">
-            <nuxt-link :to="`/blogs/${blog.slug.current}`">
+            <nuxt-link :to="`/blog/${blog.slug.current}`">
               <h3 class="title">{{ blog.title }}</h3></nuxt-link
             >
             <p class="date">{{ getFormattedDate(blog.date) }}</p>
@@ -34,8 +34,8 @@
 </template>
 <script>
 import { groq } from "@nuxtjs/sanity";
-import { Blog } from '../model/site-meta.js'; 
-import * as gsap from '../utils/animations/blog'
+import { Blog } from '../../model/site-meta.js'; 
+import * as gsap from '../../utils/animations/blog'
 
 
 export default {

@@ -1,3 +1,4 @@
+import axios from 'axios';
 export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -61,6 +62,16 @@ export default {
       solid: true,
       brands: true,
     },
+  },
+
+  generate: {
+    routes() {
+      return axios.get('https://3ze9usig.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blogsList%22%5D').then(res => {
+        return res.data.result.map(blog => {
+          return '/blog/' + blog.slug.current
+        })
+      })
+    }
   },
 
   sanity: {
