@@ -4,6 +4,7 @@
     <b-img
       class="image-bg-right d-none d-md-block d-lg-block"
       width="600px"
+      alt="background-image"
       src="~/static/images/image-bg-right.png"
     ></b-img>
     <b-container>
@@ -74,7 +75,7 @@
     </b-container>
     <div class="space-50"></div>
 
-    <b-img class="contact-img" src="~/static/images/contact-img.jpg"></b-img>
+    <b-img class="contact-img" alt="Contact Kamran" src="~/static/images/contact-img.jpg"></b-img>
   </div>
 </template>
 

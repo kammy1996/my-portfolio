@@ -8,6 +8,11 @@ export const Home = [
     content:
       "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
+  },
   {
     hid: "keywords",
     name: "keywords",
@@ -44,6 +49,11 @@ export const About = [
     content:
       "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
+  },
   {
     hid: "keywords",
     name: "keywords",
@@ -79,6 +89,11 @@ export const Work = [
     name: "description",
     content:
       "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+  },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
   },
   {
     hid: "keywords",
@@ -117,6 +132,11 @@ export const Blog = [
     content:
       "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
+  },
   {
     hid: "keywords",
     name: "keywords",
@@ -154,6 +174,11 @@ export const Contact = [
     content:
       "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
+  },
   {
     hid: "keywords",
     name: "keywords",
@@ -190,6 +215,11 @@ export const Slug = [
     name: "description",
     content:
       "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+  },
+  { 
+    hid:'author',
+    name:'author',
+    content:'Kamran Memon'
   },
   {
     hid: "keywords",

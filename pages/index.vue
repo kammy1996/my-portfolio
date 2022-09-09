@@ -5,6 +5,7 @@
       <b-img
         class="image-bg d-none d-md-block d-lg-block"
         width="600px"
+        alt="background-image"
         src="~/static/images/image-bg-right.png"
       ></b-img>
       <b-container>
@@ -13,6 +14,7 @@
           <b-col lg="5">
             <div class="text-center">
               <b-img
+                alt="kamran profile image"
                 class="profile-img"
                 src="~/static/images/profile-img.png"
               ></b-img>
@@ -36,6 +38,7 @@
               <div class="social-icons mt-n1">
                 <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank"
                   ><b-img
+                    alt="linkedin"
                     width="22px"
                     class="mr-1"
                     src="~/static/images/linkedin.png"
@@ -43,6 +46,7 @@
                 ></a>
                 <a href="https://www.instagram.com/kamranmemon99/" target="_blank"
                   ><b-img
+                    alt="instagram"
                     width="21px"
                     class="mr-1"
                     src="~/static/images/instagram.png"
@@ -50,6 +54,7 @@
                 ></a>
                 <a href="https://github.com/kammy1996" target="_blank"
                   ><b-img
+                    alt="github"
                     width="22px"
                     class="mr-1"
                     src="~/static/images/github.png"
@@ -74,6 +79,7 @@
                 <b-img
                   class="avatar-img"
                   width="120%"
+                  alt="kamran avatar"
                   src="~/static/images/avatar.png"
                 ></b-img>
               </div>
@@ -90,6 +96,7 @@
                 <b-img
                   class="tweet-options"
                   width="200px"
+                  alt="tweet options"
                   src="~/static/images/tweet-options.jpg"
                 ></b-img>
               </div>
@@ -112,6 +119,7 @@
       <b-img
         class="image-bg-left d-none d-md-block d-lg-block"
         width="800px"
+        alt="background-image"
         src="~/static/images/image-bg-left.png"
       ></b-img>
       <b-container>
@@ -122,6 +130,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="bootstrap"
                   src="@/static/images/tech-stack/stack-bootstrap.png"
                   width="30px"
                   id="bootstrap"
@@ -131,6 +140,7 @@
             <b-col>
               <div class="stack-box">
                 <b-img
+                  alt="bitbucket"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-bitbucket.png"
                   width="30px"
@@ -141,6 +151,7 @@
             <b-col>
               <div class="stack-box">
                 <b-img
+                  alt="css"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-css.png"
                   width="30px"
@@ -151,6 +162,7 @@
             <b-col>
               <div class="stack-box">
                 <b-img
+                  alt="github"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-github.png"
                   width="30px"
@@ -171,6 +183,7 @@
             <b-col>
               <div class="stack-box">
                 <b-img
+                  alt="Javascript"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-js.png"
                   width="30px"
@@ -186,6 +199,7 @@
             <b-col>
               <div class="stack-box">
                 <b-img
+                  alt="MongoDD"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-mongo.png"
                   width="18px"
@@ -197,6 +211,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="Node.js"
                   src="@/static/images/tech-stack/stack-node.png"
                   width="30px"
                   id="node"
@@ -207,6 +222,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="Nuxt.js"
                   src="@/static/images/tech-stack/stack-nuxt.png"
                   width="30px"
                   id="nuxt"
@@ -217,6 +233,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="MySQL"
                   src="@/static/images/tech-stack/stack-sql.png"
                   width="30px"
                   id="sql"
@@ -227,6 +244,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="Vue.js"
                   src="@/static/images/tech-stack/stack-vue.png"
                   width="30px"
                   id="vue"
@@ -237,6 +255,7 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
+                  alt="Vuetify"
                   src="@/static/images/tech-stack/stack-vuetify.png"
                   width="30px"
                   id="vuetify"
@@ -264,6 +283,7 @@
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
+              alt="e-commerce website"
               class="project-img "
               src="~/static/images/projects/bikeme.jpg"
             ></b-img>
@@ -273,6 +293,7 @@
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
+              alt="To Do list web Application"
               class="project-img "
               src="~/static/images/projects/todoers.jpg"
             ></b-img>
@@ -288,6 +309,7 @@
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
+              alt="Travel Agency"
               class="project-img "
               src="~/static/images/projects/ace-visas.jpg"
             ></b-img>
@@ -297,6 +319,7 @@
         <b-col lg="4" class="mx-2">
           <div class="project-box">
             <b-img
+              alt="Online Watch boutique"
               class="project-img "
               src="~/static/images/projects/watch-for-now.jpg"
             ></b-img>
@@ -323,6 +346,7 @@
       <b-img
         class="hire-me-bg-img d-none d-md-block d-lg-block"
         width="600px"
+        alt="background-image"
         src="~/static/images/image-bg-right.png"
       ></b-img>
       <b-container>

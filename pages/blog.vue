@@ -13,7 +13,7 @@
         <b-row class="mb-5">
           <b-col lg="5" md="5" sm="12" cols="12">
             <nuxt-link :to="`/blog/${blog.slug.current}`">
-              <SanityImage width="90%" :asset-id="getImageURL(blog)" />
+              <SanityImage :alt="blog.title" width="90%" :asset-id="getImageURL(blog)" />
             </nuxt-link>
           </b-col>
           <b-col lg="7" md="7" sm="12" cols="12">
@@ -35,6 +35,7 @@
 <script>
 import { groq } from "@nuxtjs/sanity";
 import { Blog } from '../model/site-meta.js'; 
+import * as gsap from '../utils/animations/blog'
 
 
 export default {
@@ -61,7 +62,13 @@ export default {
       console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
     }
   },
+  mounted() { 
+    this.initAnimations();
+  },
   methods: {
+    initAnimations() { 
+      gsap.initAnime()
+    },
     getImageURL(blog) {
       return blog.image.asset._ref;
     },

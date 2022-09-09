@@ -13,6 +13,7 @@
             <b-col lg="6" >
               <div class="project-box">
               <b-img
+                alt="To do list web application"
                 class="project-img"
                 src="~/static/images/projects/todoers.jpg"
               ></b-img>
@@ -23,6 +24,7 @@
             <b-col lg="6" >
               <div class="project-box">
                <b-img
+                  alt="e-commerce website"
                   class="project-img"
                   src="~/static/images/projects/bikeme.jpg"
                 ></b-img>
@@ -38,6 +40,7 @@
               <div class="project-box">
               <b-img
                 class="project-img"
+                alt="Travel Agency Website"
                 src="~/static/images/projects/ace-visas.jpg"
               ></b-img>
               <ImageOverlay style="margin-top:-180px;position:relative" :project="projects[2]" />
@@ -48,7 +51,7 @@
               <div class="project-box">
 
               <b-img
-                
+                alt="online watch shop"
                 class="project-img"
                 src="~/static/images/projects/watch-for-now.jpg"
               ></b-img>
@@ -64,6 +67,7 @@
               <div class="project-box">
               <b-img
                 class="project-img"
+                alt="tours and travels agency website"
                 src="~/static/images/projects/tp-visa.jpg"
               ></b-img>
               <ImageOverlay  style="margin-top:-180px;position:relative" :project="projects[4]" />
@@ -74,7 +78,7 @@
               <div class="project-box">
 
               <b-img
-                
+                alt="merchant and associate architect website"
                 class="project-img"
                 src="~/static/images/projects/merchant-uk.jpg"
               ></b-img>
@@ -88,6 +92,7 @@
              <b-col lg="6"  >
               <div class="project-box">
               <b-img
+                alt="khushnoor Jijina "
                 class="project-img"
                 src="~/static/images/projects/kj-academy.jpg"
               ></b-img>

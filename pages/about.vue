@@ -7,6 +7,7 @@
           <div class="img-holder ">
             <b-img
             class="title-img"
+            alt="Kamran Cover Image"
             src="~/static/images/about-title-img.jpg"
           ></b-img>
           </div>
@@ -49,6 +50,7 @@
       <b-img
         width="600px"
         class="image-bg-right d-none d-md-block d-lg-block"
+        alt="background-image"
         src="~/static/images/image-bg-right.png"
       ></b-img>
       <b-container>
@@ -92,6 +94,7 @@
       <b-img
         width="600px "
         class="image-bg-left d-none d-md-block d-lg-block"
+        alt="background-image"
         src="~/static/images/image-bg-left.png"
       ></b-img>
       <b-container>
@@ -105,7 +108,7 @@
           <b-row>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="50%" src="~/static/images/web-dev.png"></b-img>
+                <b-img width="50%" alt="Web Development" src="~/static/images/web-dev.png"></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Web Development</h4>
                 <div class="space-20"></div>
@@ -120,7 +123,7 @@
             </b-col>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="55%" src="~/static/images/books.png"></b-img>
+                <b-img width="55%" alt="Book reading" src="~/static/images/books.png"></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Books</h4>
                 <div class="space-20"></div>
@@ -137,7 +140,7 @@
             </b-col>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="55%" src="~/static/images/finance.png" style="opacity:0.8"></b-img>
+                <b-img width="55%" alt="Finance Enthusiast" src="~/static/images/finance.png" style="opacity:0.8"></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Finance</h4>
                 <div class="space-20"></div>
