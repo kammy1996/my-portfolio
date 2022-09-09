@@ -76,22 +76,23 @@ export default {
       meta : Slug
     }
   },
-  async fetch() { 
-    const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
-    try {
-      const response = await this.$sanity.fetch(query);
-      this.blog = response;
-    } catch (error) {
-      console.log(
-        "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
-        error
-      );
-    }
-  },
   mounted() { 
+    this.getCurrentBlog();
     this.initAnimations();
   },
   methods: {
+    async getCurrentBlog() { 
+      const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
+      try {
+        const response = await this.$sanity.fetch(query);
+        this.blog = response;
+      } catch (error) {
+        console.log(
+          "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
+          error
+        );
+      }
+    },
     initAnimations() { 
       gsap.initAnime()
     },

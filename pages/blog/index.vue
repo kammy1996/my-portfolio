@@ -23,9 +23,11 @@
             <p class="date">{{ getFormattedDate(blog.date) }}</p>
 
             <p class="subtext">{{ blog.subtext }}</p>
-            <span class="tag" v-for="(tag, index) in blog.tags" :key="index">
-              {{ tag }}
-            </span>
+            <div v-if="blog.tags && blog.tags.length > 0">
+               <span class="tag" v-for="(tag, index) in blog.tags" :key="index">
+                {{ tag }}
+              </span>
+            </div>
           </b-col>
         </b-row>
       </div>
@@ -51,21 +53,23 @@ export default {
       blogsList: [],
     };
   },
-  async fetch() {
-    const query = groq`*[_type == "blogsList"]`;
-    try {
-      const response = await this.$sanity.fetch(query);
-      if (response) {
-        this.blogsList = response;
-      }
-    } catch (err) {
-      console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
-    }
-  },
+ 
   mounted() { 
+    this.getAllBlogs();
     this.initAnimations();
   },
   methods: {
+    async getAllBlogs() {
+      const query = groq`*[_type == "blogsList"]`;
+      try {
+        const response = await this.$sanity.fetch(query);
+        if (response) {
+          this.blogsList = response;
+        }
+      } catch (err) {
+        console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
+      }
+    },
     initAnimations() { 
       gsap.initAnime()
     },
