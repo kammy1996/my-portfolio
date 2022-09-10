@@ -99,8 +99,6 @@
               <ImageOverlay  style="margin-top:-180px;position:relative" :project="projects[6]" />
               </div>
             </b-col>
-
-            
           </b-row>
         </div>
       </div>
@@ -134,6 +132,7 @@ export default {
   },
   mounted() { 
     this.initAnimations();
+    console.log(`projects`,projects );
   },
   methods : { 
     initAnimations() { 

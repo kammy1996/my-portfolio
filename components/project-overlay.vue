@@ -21,14 +21,13 @@
       <b-row >
         <b-col 
           ><div class="project-stack-images">
-          
               <b-img
                 v-for="(img,index) in project.stackImages"
-                :src="img"
+                :src="img && img.url"
+                :alt="img && img.alt"
                 :key="index"
                 class="mx-1"
-                width="20%"> </b-img>
-
+                width="20%"></b-img>
             </div>
         </b-col>
         <b-col >
@@ -43,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ProjectOverlay",
   props: { 

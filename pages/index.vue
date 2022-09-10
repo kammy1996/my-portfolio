@@ -176,6 +176,7 @@
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-html.png"
                   width="30px"
+                  alt="HTML"
                   id="html"
                 ></b-img>
               </div>

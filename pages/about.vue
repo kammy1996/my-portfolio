@@ -195,6 +195,7 @@ export default {
           company: "rocketfuel",
           logo: "/images/work-history/rocket-fuel.svg",
           url:'https://www.rocketfuelblockchain.com/',
+          imgAlt:'RocketFuel Blockchain',
           designation: "Senior Frontend Engineer",
           period: "July 2022 - Present",
           location: "Remote",
@@ -206,6 +207,7 @@ export default {
           company: "aventior",
           url:'https://aventior.com/',
           logo: "/images/work-history/aventior.png",
+          imgAlt:'Aventior Digital',
           designation: "Frontend Developer",
           period: "Nov 2020 - July 2022",
           location: "Remote",
@@ -215,6 +217,7 @@ export default {
         {
           company: "weizmann",
           logo: "/images/work-history/weizmann.png",
+          imgAlt:'Weizmann forex',
           url:'https://www.weizmannimpex.com/',
           designation: "Web & Graphic Designer",
           period: "April 2019 - Nov 2020",

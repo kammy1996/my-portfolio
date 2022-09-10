@@ -61,18 +61,21 @@
             <div class="footer-social-icons text-center">
               <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
                 <b-img
+                  alt="Instagram"
                   width="30%"
                   src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
                 ></b-img
               ></a>
               <a href="https://github.com/kammy1996" target="_blank"
                 ><b-img
+                  alt="Github"
                   width="30%"
                   src="https://img.icons8.com/dotty/80/000000/github.png"
                 ></b-img
               ></a>
               <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank"
                 ><b-img
+                  alt="Linkedin"
                   width="30%"
                   src="https://img.icons8.com/dotty/80/000000/linkedin.png"
                 ></b-img

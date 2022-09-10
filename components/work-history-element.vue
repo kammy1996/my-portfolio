@@ -7,7 +7,7 @@
           <div v-if="work.company !== 'rugby-india'" class="space-10"></div>
           <div >
             <a :href="work.url" target="_blank">
-              <b-img :src="work.logo" :id="work.company"  :width="work.width"></b-img>
+              <b-img :src="work.logo" :alt="work.imgAlt" :id="work.company"  :width="work.width"></b-img>
             </a>
           </div>
         </b-col>

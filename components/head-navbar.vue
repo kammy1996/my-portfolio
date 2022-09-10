@@ -4,6 +4,7 @@
       <b-navbar>
         <b-navbar-brand href="/">
           <b-img
+            alt="Kamran Logo"
             width="150px"
             id="main-logo"
             src="~/static/images/logo.png"
