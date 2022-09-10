@@ -16,7 +16,7 @@ export const Home = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
+    content: "Code, Kamran memon, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
@@ -47,7 +47,7 @@ export const About = [
     hid: "description",
     name: "description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "I am a Frontend Developer with primary experience in Vue.js, Vuetify, Nuxt.js and have worked in Fintech and Health Care Industries",
   },
   { 
     hid:'author',
@@ -57,7 +57,7 @@ export const About = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
+    content: "Code, Kamran memon, Vue.js, Nuxt.js, Vuetify, Node.js, Website Development",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
@@ -70,7 +70,7 @@ export const About = [
     hid: "og-desc",
     property: "og:description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+       "I am a Frontend Developer with primary experience in Vue.js, Vuetify, Nuxt.js and have worked in Fintech and Health Care Industries",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -99,7 +99,7 @@ export const Work = [
     hid: "keywords",
     name: "keywords",
     content:
-      "e-commerce, web development, freelance, financial technology, Vue.js",
+      "Code, e-commerce, web development, freelance, financial technology, Vue.js",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
@@ -111,8 +111,8 @@ export const Work = [
   {
     hid: "og-desc",
     property: "og:description",
-    content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+     content:
+      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -130,7 +130,7 @@ export const Blog = [
     hid: "description",
     name: "description",
     content:
-      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "My Blog is about all Programming Tips, Vue.js, Nuxt.js, Node.js and General Productivity Tips. Follow me to stay up to date with Web Development trends",
   },
   { 
     hid:'author',
@@ -140,8 +140,7 @@ export const Blog = [
   {
     hid: "keywords",
     name: "keywords",
-    content:
-      "e-commerce, web development, freelance, financial technology, Vue.js",
+    content: "Code, Blog, Vue.js, Nuxt.js, Javascript, Frontend Developer, Full stack Developer",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
@@ -154,7 +153,7 @@ export const Blog = [
     hid: "og-desc",
     property: "og:description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "My Blog is about all Programming Tips, Vue.js, Nuxt.js, Node.js and General Productivity Tips. Follow me to stay up to date with Web Development trends",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -172,7 +171,7 @@ export const Contact = [
     hid: "description",
     name: "description",
     content:
-      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "Contact me for Freelance or any Project which is related to my Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
   { 
     hid:'author',
@@ -182,8 +181,7 @@ export const Contact = [
   {
     hid: "keywords",
     name: "keywords",
-    content:
-      "e-commerce, web development, freelance, financial technology, Vue.js",
+    content: "Code, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
@@ -196,7 +194,7 @@ export const Contact = [
     hid: "og-desc",
     property: "og:description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "Contact me for Freelance or any Project which is related to my Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -214,7 +212,7 @@ export const Slug = [
     hid: "description",
     name: "description",
     content:
-      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+       "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
   },
   { 
     hid:'author',
@@ -224,8 +222,7 @@ export const Slug = [
   {
     hid: "keywords",
     name: "keywords",
-    content:
-      "e-commerce, web development, freelance, financial technology, Vue.js",
+    content: "Code, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
