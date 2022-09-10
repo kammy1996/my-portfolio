@@ -3,7 +3,7 @@
     <div class="space-50"></div>
     <div v-if="blog" class="blog">
       <SanityImage  :alt="blog.title" v-if="blog.image" width="100%" :asset-id="getImageURL(blog)"/>
-      <h3 class="title">{{ blog.title }}</h3>
+      <h3 class="title mt-2">{{ blog.title }}</h3>
       <div class="d-flex">
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
       </div>
@@ -12,7 +12,7 @@
           {{ tag }}
         </span>
       </div>
-      <div class="social-icons mt-3">
+      <div class="social-icons mt-3" v-if="blog && blog.title">
         <a
           href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
           target="_blank"
@@ -130,11 +130,12 @@ export default {
   }
 
   .tag {
-    background: rgba(0, 0, 0, 0.05);
+    background: transparent;
+    border:1px solid black;
     margin-right: 5px;
     font-size: 14px;
     padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 5px;
   }
 }
 
