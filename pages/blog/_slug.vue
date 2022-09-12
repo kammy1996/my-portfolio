@@ -3,12 +3,12 @@
     <div class="space-50"></div>
     <div v-if="blog" class="blog">
       <SanityImage  :alt="blog.title" v-if="blog.image" width="100%" :asset-id="getImageURL(blog)"/>
-      <h3 class="title mt-2">{{ blog.title }}</h3>
+      <h3 class="title mt-4">{{ blog.title }}</h3>
       <div class="d-flex">
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
       </div>
       <div class="tags mt-n1">
-        <span class="tag" v-for="(tag, index) in blog.tags" :key="index">
+        <span class="tag mt" v-for="(tag, index) in blog.tags" :key="index">
           {{ tag }}
         </span>
       </div>
@@ -40,7 +40,7 @@
 
       <div class="space-50"></div>
       <!-- <SanityContent :blocks="blog.text" /> -->
-      <div v-for="(block, i) in blog.text" :key="i">
+      <div v-for="(block, i) in blog.text" :key="i" >
         <div v-if="block._type == 'image'">
           <SanityImage :alt="blog.title" width="100%" :asset-id="block.asset._ref" />
         </div>
@@ -49,7 +49,9 @@
             <code v-highlight class="javascript">{{ block.code }}</code>
           </pre>
         </div>
-        <div v-else>
+        <div v-else >
+          <div v-if="block.style === 'h2'" class="space-20"></div>
+          <div v-if="block.style === 'h4'" class="space-10"></div>
           <SanityContent :blocks="[block]" />
         </div>
       </div>
