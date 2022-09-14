@@ -26,10 +26,10 @@
                 <h3 class="title">{{ blog.title }}</h3></nuxt-link
               >
               <p class="date">{{ getFormattedDate(blog.date) }}</p>
-                 <div class="tags" v-if="blog.tags && blog.tags.length > 0">
-                    <div class="tag" v-for="(tag, index) in blog.tags" :key="index">
-                      {{ tag }}
-                    </div>
+              <div class="tags" v-if="blog.tags && blog.tags.length > 0">
+                  <div class="tag" v-for="(tag, index) in blog.tags" :key="index">
+                    {{ tag }}
+                  </div>
               </div>
               <p class="subtext mt-3">{{ blog.subtext }}</p>
             </div>
@@ -119,12 +119,9 @@ export default {
     margin-top: -15px;
   }
 
-  .tag { 
-     display:inline-block; 
-  }
-
 
   .tag {
+    display:inline-block; 
     background: transparent;
     border: 1px solid black;
     margin-right: 5px;

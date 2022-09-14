@@ -8,9 +8,11 @@
         <p class="date">{{ getFormattedDate(blog.date) }}</p>
       </div>
       <div class="tags mt-n1">
-        <span class="tag mt" v-for="(tag, index) in blog.tags" :key="index">
-          {{ tag }}
-        </span>
+        <div class="tags" v-if="blog.tags && blog.tags.length > 0">
+            <div class="tag" v-for="(tag, index) in blog.tags" :key="index">
+              {{ tag }}
+            </div>
+        </div>
       </div>
       <div class="social-icons mt-3" v-if="blog && blog.title">
         <a
@@ -62,7 +64,6 @@
 
 <script>
 import { groq } from "@nuxtjs/sanity";
-import { Slug } from '../../model/site-meta.js'; 
 import * as gsap from '../../utils/animations/blog'
 
 
@@ -71,24 +72,82 @@ export default {
   data() {
     return {
       blog: {},
+      titleImage:'',
     };
   },
   head() { 
     return { 
       title: this.blog.title || 'Blog | Kamran Memon | Frontend Developer (Vue.js)',
-      meta : Slug
+      meta : // Global
+          [ {
+            hid: "description",
+            name: "description",
+            content: this.blog && this.blog.subtext || "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+          },
+          { 
+            hid:'author',
+            name:'author',
+            content:'Kamran Memon'
+          },
+          {
+            hid: "keywords",
+            name: "keywords",
+            content: this.blog && this.blog.tags ? this.blog.tags.toString() : "Code, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
+          },
+          //Open Graph
+          { hid: "og-type", property: "og:type", content: "website" },
+          {
+            hid: "og-title",
+            property: "og:title",
+            content: this.blog.title || 'Blog | Kamran Memon | Frontend Developer (Vue.js)',
+          },
+          {
+            hid: "og-desc",
+            property: "og:description",
+            content: this.blog && this.blog.subtext || "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+          },
+          //Upload the Image on the netlify server and paste the link here
+          {
+            hid: "og-image",
+            property: "og:image",
+            content: this.titleImage || "https://codewithkamran.com/assets/card-image.png",
+          },
+          { 
+            hid: "og-url",
+            property: "og:url",
+            content: this.blog && this.blog.slug ? `https://codewithkamran.com/blog/${this.blog.slug.current} `  : `https://codewithkamran.com/blog` 
+          },
+          { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
+        ],
     }
   },
   mounted() { 
+    this.getTitleImage();
     this.getCurrentBlog();
     this.initAnimations();
   },
   methods: {
+    async getTitleImage() { 
+      const query = groq`*[_type == 'blogsList']{"image": image.asset->url }[0]`
+      try {
+        const response = await this.$sanity.fetch(query);
+        if(response) { 
+          this.titleImage = response.image;
+        }
+      } catch (error) {
+        console.log(
+          "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
+          error
+        );
+      }
+    },
     async getCurrentBlog() { 
       const query = groq`*[_type == "blogsList" && slug.current == "${this.$route.params.slug}"][0]`;
       try {
         const response = await this.$sanity.fetch(query);
-        this.blog = response;
+        if(response) { 
+          this.blog = response;
+        }
       } catch (error) {
         console.log(
           "🚀 ~ file: _slug.vue ~ line 33 ~ getCurrentBlog ~ error",
@@ -139,6 +198,8 @@ export default {
     font-size: 14px;
     padding: 5px 15px;
     border-radius: 5px;
+    display:inline-block;
+    margin-bottom:10px;
   }
 }
 
