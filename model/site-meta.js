@@ -206,43 +206,4 @@ export const Contact = [
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
 ];
 
-export const Slug = [
-  // Global
-  {
-    hid: "description",
-    name: "description",
-    content:
-       "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
-  },
-  { 
-    hid:'author',
-    name:'author',
-    content:'Kamran Memon'
-  },
-  {
-    hid: "keywords",
-    name: "keywords",
-    content: "Code, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
-  },
-  //Open Graph
-  { hid: "og-type", property: "og:type", content: "website" },
-  {
-    hid: "og-title",
-    property: "og:title",
-    content: "Blog | Kamran Memon | Frontend Developer (Vue.js)",
-  },
-  {
-    hid: "og-desc",
-    property: "og:description",
-    content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
-  },
-  //Upload the Image on the netlify server and paste the link here
-  {
-    hid: "og-image",
-    property: "og:image",
-    content: "https://codewithkamran.com/assets/card-image.png",
-  },
-  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
-  { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
-];
+  
