@@ -122,9 +122,11 @@ export default {
     }
   },
   mounted() { 
+    this.initAnimations();
+  },
+  created() { 
     this.getTitleImage();
     this.getCurrentBlog();
-    this.initAnimations();
   },
   methods: {
     async getTitleImage() { 

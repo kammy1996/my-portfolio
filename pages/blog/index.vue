@@ -59,8 +59,10 @@ export default {
   },
 
   mounted() {
-    this.getAllBlogs();
     this.initAnimations();
+  },
+  created() { 
+    this.getAllBlogs();
   },
   methods: {
     async getAllBlogs() {
