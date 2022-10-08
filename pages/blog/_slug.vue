@@ -121,6 +121,10 @@ export default {
         ],
     }
   },
+ async fetch() { 
+    await this.getCurrentBlog();
+    await this.getTitleImage();
+  },  
   mounted() { 
     this.initAnimations();
   },
