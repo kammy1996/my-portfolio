@@ -121,20 +121,16 @@ export default {
         ],
     }
   },
- async fetch() { 
+  async fetch() { 
     await this.getCurrentBlog();
     await this.getTitleImage();
   },  
   mounted() { 
     this.initAnimations();
   },
-  created() { 
-    this.getTitleImage();
-    this.getCurrentBlog();
-  },
   methods: {
     async getTitleImage() { 
-      const query = groq`*[_type == 'blogsList']{"image": image.asset->url }[0]`
+      const query = groq`*[_type == 'blogsList' && slug.current == "${this.$route.params.slug}"]{"image": image.asset->url }[0]`
       try {
         const response = await this.$sanity.fetch(query);
         if(response) { 
