@@ -43,6 +43,7 @@
 import { groq } from "@nuxtjs/sanity";
 import { Blog } from "../../model/site-meta.js";
 import * as gsap from "../../utils/animations/blog";
+import _ from 'lodash';
 
 export default {
   name: "Blog",
@@ -70,7 +71,7 @@ export default {
       try {
         const response = await this.$sanity.fetch(query);
         if (response) {
-          this.blogsList = response;
+          this.blogsList = _.orderBy(response,'date',['desc']);
         }
       } catch (err) {
         console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
