@@ -125,9 +125,6 @@ export default {
     await this.getCurrentBlog();
     await this.getTitleImage();
   },  
-  mounted() { 
-    this.initAnimations();
-  },
   methods: {
     async getTitleImage() { 
       const query = groq`*[_type == 'blogsList' && slug.current == "${this.$route.params.slug}"]{"image": image.asset->url }[0]`
@@ -157,9 +154,6 @@ export default {
         );
       }
     },
-    initAnimations() { 
-      gsap.initAnime()
-    },
     getImageURL(blog) {
       return blog.image.asset._ref;
     },
@@ -177,6 +171,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+a { 
+  text-decoration:underline !important;
+}
+
   .custom-container { 
     margin:0px 350px;
   }

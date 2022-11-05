@@ -8,7 +8,7 @@
           <span class="quality">Self Learner</span>
           <span class="quality">Loves Automation</span>
           <span class="quality">Nerd with Humour</span>
-          <span class="quality">Gym Freak</span>
+          <span class="quality">Content Writer</span>
           <span class="quality">Team Player</span>
           <span class="quality"
             >Javascript is

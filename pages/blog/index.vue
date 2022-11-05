@@ -59,9 +59,6 @@ export default {
     };
   },
 
-  mounted() {
-    this.initAnimations();
-  },
   created() { 
     this.getAllBlogs();
   },
@@ -76,9 +73,6 @@ export default {
       } catch (err) {
         console.log("🚀 ~ file: blog.vue ~ line 36 ~ getAllBlogs ~ err", err);
       }
-    },
-    initAnimations() {
-      gsap.initAnime();
     },
     getImageURL(blog) {
       return blog.image.asset._ref;
