@@ -191,28 +191,29 @@ export default {
   data() {
     return {
       workHistory: [
-        {
-          company: "rocketfuel",
-          logo: "/images/work-history/rocket-fuel.svg",
-          url:'https://www.rocketfuelblockchain.com/',
-          imgAlt:'RocketFuel Blockchain',
-          designation: "Senior Frontend Engineer",
-          period: "July 2022 - Present",
-          location: "Remote",
-          width: "130px",
-          desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
-          current: true,
-        },
+        // {
+        //   company: "rocketfuel",
+        //   logo: "/images/work-history/rocket-fuel.svg",
+        //   url:'https://www.rocketfuelblockchain.com/',
+        //   imgAlt:'RocketFuel Blockchain',
+        //   designation: "Senior Frontend Engineer",
+        //   period: "July 2022 - Present",
+        //   location: "Remote",
+        //   width: "130px",
+        //   desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
+        //   current: true,
+        // },
         {
           company: "aventior",
           url:'https://aventior.com/',
           logo: "/images/work-history/aventior.png",
           imgAlt:'Aventior Digital',
           designation: "Frontend Developer",
-          period: "Nov 2020 - July 2022",
+          period: "Nov 2020 - Present",
           location: "Remote",
           width: "130px",
           desc: "worked on an enterprise-level product named Thread. It is a fully configurable decentralized clinical trial product and the only no-code platform in the industry.",
+          current: true,
         },
         {
           company: "weizmann",
