@@ -36,6 +36,14 @@
                 <b>Learn build and grow,</b> So I'm Excited to share my Journey.
               </p>
               <div class="social-icons mt-n1">
+                <a href="https://twitter.com/kamranmemon25" target="_blank"
+                  ><b-img
+                    alt="twitter"
+                    width="30px"
+                    class="mr-1"
+                    src="~/static/images/twitter.png"
+                  ></b-img
+                ></a>
                 <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank"
                   ><b-img
                     alt="linkedin"
@@ -369,7 +377,7 @@
              
 
             <p class="hire-me-text" >
-              3+ years of experience in Building Web Applications in Various
+              5+ years of experience in Building Web Applications in Various
               Domains including Finance, Healthcare. I Enjoy More of Frontend
               Development and Consider it as my Strongest Side.
             </p>

@@ -70,6 +70,8 @@
         <div class="line"></div>
         <WorkHistoryElement :work="workHistory[2]" />
         <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[3]" />
+        <div class="line"></div>
       </b-container>
     </template>
 
@@ -191,18 +193,18 @@ export default {
   data() {
     return {
       workHistory: [
-        // {
-        //   company: "rocketfuel",
-        //   logo: "/images/work-history/rocket-fuel.svg",
-        //   url:'https://www.rocketfuelblockchain.com/',
-        //   imgAlt:'RocketFuel Blockchain',
-        //   designation: "Senior Frontend Engineer",
-        //   period: "July 2022 - Present",
-        //   location: "Remote",
-        //   width: "130px",
-        //   desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
-        //   current: true,
-        // },
+        {
+          company: "rocketfuel",
+          logo: "/images/work-history/rocket-fuel.svg",
+          url:'https://www.rocketfuelblockchain.com/',
+          imgAlt:'RocketFuel Blockchain',
+          designation: "Senior Frontend Engineer",
+          period: "July 2022 - Present",
+          location: "Remote",
+          width: "130px",
+          desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
+          current: true,
+        },
         {
           company: "aventior",
           url:'https://aventior.com/',

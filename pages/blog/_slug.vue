@@ -15,6 +15,14 @@
         </div>
       </div>
       <div class="social-icons mt-3" v-if="blog && blog.title">
+        <a href="https://twitter.com/kamranmemon25" target="_blank"
+          ><b-img
+            alt="twitter"
+            width="30px"
+            class="mr-1"
+            src="~/static/images/twitter.png"
+          ></b-img
+        ></a>
         <a
           href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
           target="_blank"

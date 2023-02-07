@@ -59,6 +59,13 @@
         </nav>
         <div class="social">
           <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
+            <a href="https://twitter.com/kamranmemon25" target="_blank">
+              <b-img
+                alt="Twitter"
+                width="30%"
+                src="https://img.icons8.com/dotty/80/null/twitter.png"
+              ></b-img
+            ></a>
             <b-img
               alt="instagram"
               width="30%"

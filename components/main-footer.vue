@@ -52,6 +52,11 @@
                 ></NuxtLink>
               </li>
               <li>
+                <NuxtLink to="/blog"
+                  >Blog <span class="underline"></span
+                ></NuxtLink>
+              </li>
+              <li>
                 <NuxtLink to="/contact"
                   >Contact<span class="underline"></span
                 ></NuxtLink>
@@ -59,11 +64,11 @@
             </ul>
             <div class="space-10"></div>
             <div class="footer-social-icons text-center">
-              <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
+              <a href="https://twitter.com/kamranmemon25" target="_blank">
                 <b-img
-                  alt="Instagram"
+                  alt="Twitter"
                   width="30%"
-                  src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
+                  src="https://img.icons8.com/dotty/80/null/twitter.png"
                 ></b-img
               ></a>
               <a href="https://github.com/kammy1996" target="_blank"
@@ -78,6 +83,13 @@
                   alt="Linkedin"
                   width="30%"
                   src="https://img.icons8.com/dotty/80/000000/linkedin.png"
+                ></b-img
+              ></a>
+               <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
+                <b-img
+                  alt="Instagram"
+                  width="30%"
+                  src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
                 ></b-img
               ></a>
             </div>
