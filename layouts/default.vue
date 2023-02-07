@@ -1,9 +1,11 @@
 <template>
   <div class="ma-0 pa-0">
-    <MobileNavbar class="mobile-navbar"/>
-    <MainHeader class="main-header" />
-    <Nuxt />
-    <MainFooter />
+    <client-only>
+      <MobileNavbar class="mobile-navbar"/>
+      <MainHeader class="main-header" />
+      <Nuxt />
+      <MainFooter />
+    </client-only>
   </div>
 </template>
 
