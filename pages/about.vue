@@ -215,7 +215,6 @@ export default {
           location: "Remote",
           width: "130px",
           desc: "worked on an enterprise-level product named Thread. It is a fully configurable decentralized clinical trial product and the only no-code platform in the industry.",
-          current: true,
         },
         {
           company: "weizmann",
