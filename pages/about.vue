@@ -175,7 +175,7 @@ export default {
   name: "About",
   head() { 
     return { 
-      title:'About | Kamran Memon | Frontend Developer (Vue.js)',
+      title:'About | Kamran Memon | Portfolio',
       meta : About
     }
   },

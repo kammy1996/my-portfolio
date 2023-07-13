@@ -3,11 +3,52 @@ export default {
   target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "my-portfolio",
+    title: "Kamran Memon | Portfolio",
     htmlAttrs: {
       lang: "en",
     },
     meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
+      },
+      { 
+        hid:'author',
+        name:'author',
+        content:'Kamran Memon'
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content: "Kamran Memon",
+      },
+
+      //Open Graph
+      { hid: "og-type", property: "og:type", content: "website" },
+      {
+        hid: "og-title",
+        property: "og:title",
+        content: "Kamran Memon | Portfolio",
+      },
+      {
+        hid: "og-desc",
+        property: "og:description",
+        content:
+          "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
+      },
+      {
+        hid: "og-image",
+        property: "og:image",
+        content: "https://codewithkamran.com/assets/card-image.png",
+      },
+      { hid: "og-url", property: "og:url", content: "https://codewithkamran.com" },
+
+      //Twitter
+      { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
+
+
       { charset: "utf-8" },
       {
         name: "viewport",

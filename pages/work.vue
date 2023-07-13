@@ -123,7 +123,7 @@ export default {
   },
   head() { 
     return { 
-      title:'Work | Kamran Memon | Frontend Developer',
+      title:'Work | Kamran Memon | Portfolio',
       meta : Work
     }
   },

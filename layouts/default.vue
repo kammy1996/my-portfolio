@@ -1,11 +1,11 @@
 <template>
   <div class="ma-0 pa-0">
-    <client-only>
-      <MobileNavbar class="mobile-navbar"/>
-      <MainHeader class="main-header" />
+      <client-only>
+        <MobileNavbar class="mobile-navbar"/>
+        <MainHeader class="main-header" />
+      </client-only>
       <Nuxt />
       <MainFooter />
-    </client-only>
   </div>
 </template>
 

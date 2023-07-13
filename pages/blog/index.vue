@@ -49,7 +49,7 @@ export default {
   name: "Blog",
   head() {
     return {
-      title: "Blog | Kamran Memon | Frontend Developer (Vue.js)",
+      title: "Blog | Kamran Memon | Portfolio",
       meta: Blog,
     };
   },

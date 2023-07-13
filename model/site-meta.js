@@ -6,7 +6,7 @@ export const Home = [
     hid: "description",
     name: "description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   { 
     hid:'author',
@@ -16,20 +16,20 @@ export const Home = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Code, Kamran memon, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
+    content: "Kamran Memon,",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
   {
     hid: "og-title",
     property: "og:title",
-    content: "Home | Kamran Memon | Frontend Developer (Vue.js)",
+    content: "Home | Kamran Memon | Portfolio",
   },
   {
     hid: "og-desc",
     property: "og:description",
     content:
-      "I am a Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+      "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -37,7 +37,7 @@ export const Home = [
     property: "og:image",
     content: "https://codewithkamran.com/assets/card-image.png",
   },
-  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
+  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
 ];
 
@@ -47,7 +47,7 @@ export const About = [
     hid: "description",
     name: "description",
     content:
-      "I am a Frontend Developer with primary experience in Vue.js, Vuetify, Nuxt.js and have worked in Fintech and Health Care Industries",
+    "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   { 
     hid:'author',
@@ -57,20 +57,20 @@ export const About = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Code, Kamran memon, Vue.js, Nuxt.js, Vuetify, Node.js, Website Development",
+    content: "Kamran Memon",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
   {
     hid: "og-title",
     property: "og:title",
-    content: "About | Kamran Memon | Frontend Developer (Vue.js)",
+    content: "About | Kamran Memon | Portfolio",
   },
   {
     hid: "og-desc",
     property: "og:description",
     content:
-       "I am a Frontend Developer with primary experience in Vue.js, Vuetify, Nuxt.js and have worked in Fintech and Health Care Industries",
+      "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -78,7 +78,7 @@ export const About = [
     property: "og:image",
     content: "https://codewithkamran.com/assets/card-image.png",
   },
-  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
+  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/about" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
 ];
 
@@ -87,8 +87,7 @@ export const Work = [
   {
     hid: "description",
     name: "description",
-    content:
-      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+    content: "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js"
   },
   { 
     hid:'author',
@@ -99,28 +98,27 @@ export const Work = [
     hid: "keywords",
     name: "keywords",
     content:
-      "Code, e-commerce, web development, freelance, financial technology, Vue.js",
+      "Kamran Memon",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
   {
     hid: "og-title",
     property: "og:title",
-    content: "Work | Kamran Memon | Frontend Developer (Vue.js)",
+    content: "Work | Kamran Memon | Portfolio",
   },
   {
     hid: "og-desc",
     property: "og:description",
      content:
-      "Web Developer with over 4 years of experience working in the Fin-tech and Health Care Industry, Worked on various freelance website including e-commerce portals. My Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+     "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
-  //Upload the Image on the netlify server and paste the link here
   {
     hid: "og-image",
     property: "og:image",
     content: "https://codewithkamran.com/assets/card-image.png",
   },
-  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
+  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/work" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
 ];
 
@@ -130,7 +128,7 @@ export const Blog = [
     hid: "description",
     name: "description",
     content:
-      "My Blog is about all Programming Tips, Vue.js, Nuxt.js, Node.js and General Productivity Tips. Follow me to stay up to date with Web Development trends",
+    "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   { 
     hid:'author',
@@ -140,22 +138,21 @@ export const Blog = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Code, Blog, Vue.js, Nuxt.js, Javascript, Frontend Developer, Full stack Developer",
+    content: "Kamran Memon",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
   {
     hid: "og-title",
     property: "og:title",
-    content: "Blog | Kamran Memon | Frontend Developer (Vue.js)",
+    content: "Blog | Kamran Memon | Portfolio",
   },
   {
     hid: "og-desc",
     property: "og:description",
     content:
-      "My Blog is about all Programming Tips, Vue.js, Nuxt.js, Node.js and General Productivity Tips. Follow me to stay up to date with Web Development trends",
+    "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
-  //Upload the Image on the netlify server and paste the link here
   {
     hid: "og-image",
     property: "og:image",
@@ -171,7 +168,7 @@ export const Contact = [
     hid: "description",
     name: "description",
     content:
-      "Contact me for Freelance or any Project which is related to my Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+    "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   { 
     hid:'author',
@@ -181,20 +178,20 @@ export const Contact = [
   {
     hid: "keywords",
     name: "keywords",
-    content: "Code, Vue.js, Nuxt.js, Javascript, Frontend Developer, Web Development",
+    content: "Kamran Memon",
   },
   //Open Graph
   { hid: "og-type", property: "og:type", content: "website" },
   {
     hid: "og-title",
     property: "og:title",
-    content: "Contact | Kamran Memon | Frontend Developer (Vue.js)",
+    content: "Contact | Kamran Memon | Portfolio",
   },
   {
     hid: "og-desc",
     property: "og:description",
     content:
-      "Contact me for Freelance or any Project which is related to my Tech Stack- Vue.js | Express.js | Node.js | MongoDB",
+    "I am Kamran Memon, A Fullstack Web Developer and a Tech Enthusiast who is addicted to Learning and loves Javascript, My Tech Stack- Vue.js | Nuxt.js | Node.js",
   },
   //Upload the Image on the netlify server and paste the link here
   {
@@ -202,7 +199,7 @@ export const Contact = [
     property: "og:image",
     content: "https://codewithkamran.com/assets/card-image.png",
   },
-  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/blog" },
+  { hid: "og-url", property: "og:url", content: "https://codewithkamran.com/contact" },
   { hid: "t-type", name: "twitter:card", content: "summary_large_image" },
 ];
 

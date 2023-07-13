@@ -88,7 +88,7 @@ export default {
   name: "Contact",
   head() {
     return {
-      title: "Contact | Kamran Memon | Frontend Developer (Vue.js)",
+      title: "Contact | Kamran Memon | Portfolio",
       meta: Contact
     };
   },

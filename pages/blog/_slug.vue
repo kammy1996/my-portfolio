@@ -85,7 +85,7 @@ export default {
   },
   head() { 
     return { 
-      title: this.blog.title || 'Blog | Kamran Memon | Frontend Developer (Vue.js)',
+      title: this.blog.title || 'Blog | Kamran Memon | Portfolio',
       meta : // Global
           [ {
             hid: "description",
