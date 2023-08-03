@@ -9,6 +9,7 @@
           <span class="quality">Loves Automation</span>
           <span class="quality">Nerd with Humour</span>
           <span class="quality">Content Writer</span>
+          <span class="quality">Finance enthusiast </span>
           <span class="quality">Team Player</span>
           <span class="quality"
             >Javascript is
@@ -18,8 +19,7 @@
               :icon="['fas', 'heart']"
           /></span>
           <span class="quality">Long term Investor </span>
-          <span class="quality">Productivity is bae </span>
-          <span class="quality">Health before Wealth</span>
+          <span class="quality">Less is more</span>
         </div>
       </div>
 
