@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="custom-container">
-
+        <div class="container">
+            <div class="space-30"></div>
             <img :src="currentProject.image" :alt="currentProject.alt"/>
           
 
@@ -33,6 +33,8 @@
                     </div>
                 </div>
             </div>
+
+            <div class="space-50"></div>
         </div>
     </div>
 </template>
@@ -60,8 +62,6 @@ export default {
 <style lang='scss' scoped>
 @import "~/static/scss/hover.css";
 
-.custom-container {
-    margin: 50px 300px 100px 300px;
 
     img {
         max-width: 100%;
@@ -102,7 +102,7 @@ export default {
     .help-text {
         margin-top: -15px;
     }
-}
+
 
 .tech-stack {
     display: flex;
