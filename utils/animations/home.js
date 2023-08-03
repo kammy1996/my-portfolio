@@ -10,7 +10,7 @@ export const animateHome = () => {
   heroArea();
   currentMind();
   techStack();
-  showProjects();
+  // showProjects();
   hireMeAnimate();
 };
 

@@ -194,16 +194,28 @@ export default {
     return {
       workHistory: [
         {
+          company: "encora",
+          logo: "/images/work-history/encora.svg",
+          url:'https://www.encora.com/',
+          imgAlt:'Encora',
+          designation: "Senior Software Engineer",
+          period: "Mar 2022 - Present",
+          location: "Remote",
+          width: "150px",
+          desc: "Encora is a leading player in outsourced product development, partnering with fast-growing tech companies to drive innovation through agile methodologies, expertise in cutting-edge technologies, and a global talent pool",
+          current: true,
+        },
+        {
           company: "rocketfuel",
           logo: "/images/work-history/rocket-fuel.svg",
           url:'https://www.rocketfuelblockchain.com/',
           imgAlt:'RocketFuel Blockchain',
           designation: "Senior Software Engineer",
-          period: "July 2022 - Present",
+          period: "July 2022 - Feb 2023",
           location: "Remote",
           width: "130px",
           desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
-          current: true,
+          current: false,
         },
         {
           company: "aventior",

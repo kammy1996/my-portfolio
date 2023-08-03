@@ -148,33 +148,11 @@
             <b-col>
               <div class="stack-box">
                 <b-img
-                  alt="bitbucket"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-bitbucket.png"
-                  width="30px"
-                  id="bitbucket"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
                   alt="css"
                   class="stack-image"
                   src="@/static/images/tech-stack/stack-css.png"
                   width="30px"
                   id="css"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="github"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-github.png"
-                  width="30px"
-                  id="github"
                 ></b-img>
               </div>
             </b-col>
@@ -200,17 +178,12 @@
                 ></b-img>
               </div>
             </b-col>
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
-          </b-row>
-          <div class="space-30"></div>
-          <b-row class="ml-2">
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
                   alt="MongoDD"
                   class="stack-image"
-                  src="@/static/images/tech-stack/stack-mongo.png"
+                  src="@/static/images/tech-stack/stack-mongo-big.png"
                   width="18px"
                   id="mongo"
                 ></b-img>
@@ -227,6 +200,11 @@
                 ></b-img>
               </div>
             </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
+          </b-row>
+          <div class="space-30"></div>
+          <b-row class="ml-2">
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
@@ -246,6 +224,28 @@
                   src="@/static/images/tech-stack/stack-sql.png"
                   width="30px"
                   id="sql"
+                ></b-img>
+              </div>
+            </b-col>
+            <b-col>
+              <div class="stack-box">
+                <b-img
+                  alt="bitbucket"
+                  class="stack-image"
+                  src="@/static/images/tech-stack/stack-typescript.png"
+                  width="30px"
+                  id="bitbucket"
+                ></b-img>
+              </div>
+            </b-col>            
+            <b-col>
+              <div class="stack-box">
+                <b-img
+                  alt="bitbucket"
+                  class="stack-image"
+                  src="@/static/images/tech-stack/stack-tailwind.png"
+                  width="30px"
+                  id="bitbucket"
                 ></b-img>
               </div>
             </b-col>
@@ -287,56 +287,28 @@
       </h2>
       <p class="text-center">some of my best work.</p>
       <div class="space-40"></div>
-      <b-row>
-        <b-col lg="2" class="d-none d-md-block d-lg-block"></b-col>
-        <b-col lg="4" class="mx-2">
-          <div class="project-box">
-            <b-img
-              alt="e-commerce website"
-              class="project-img "
-              src="~/static/images/projects/bikeme.jpg"
-            ></b-img>
-            <ImageOverlay style="margin-top:-220px;" :project="projects[0]" />
-          </div>
-        </b-col>
-        <b-col lg="4" class="mx-2">
-          <div class="project-box">
-            <b-img
-              alt="To Do list web Application"
-              class="project-img "
-              src="~/static/images/projects/todoers.jpg"
-            ></b-img>
-            <ImageOverlay style="margin-top:-200px;" :project="projects[1]" />
-          </div>
-        </b-col>
-        <b-col lg="2" class=" d-none d-md-block d-lg-block"></b-col>
-      </b-row>
 
-      <div class="space-30"></div>
-      <b-row>
-        <b-col lg="2" class="d-none d-none d-md-block d-lg-b1lock"></b-col>
-        <b-col lg="4" class="mx-2">
-          <div class="project-box">
+      <div class="container">
+        <div class="row gap-5">
+          <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 project-card" v-for="project in homeProjects" @click="goToProject(project)">
             <b-img
-              alt="Travel Agency"
-              class="project-img "
-              src="~/static/images/projects/ace-visas.jpg"
-            ></b-img>
-            <ImageOverlay style="margin-top:-178px;" :project="projects[2]" />
+              :src="project.image"
+              :alt="project.alt"
+              class="project-img"
+            >
+   
+            </b-img>
+            
+            <div class="overlay hvr-bounce-to-top-black">
+              <h2>{{  project.name }}</h2>
+              <p>{{  project.shortDescription }}</p>
+            </div>
           </div>
-        </b-col>
-        <b-col lg="4" class="mx-2">
-          <div class="project-box">
-            <b-img
-              alt="Online Watch boutique"
-              class="project-img "
-              src="~/static/images/projects/watch-for-now.jpg"
-            ></b-img>
-            <ImageOverlay style="margin-top:-200px;" :project="projects[3]" />
-          </div>
-        </b-col>
-        <b-col lg="2" class="d-none d-none d-md-block d-lg-block"></b-col>
-      </b-row>
+        </div>
+      </div>
+
+
+
       <div class="space-30"></div>
       <div class="text-center">
         <NuxtLink to="/work">
@@ -403,7 +375,6 @@
 
 <script>
 import * as gsap from "~/utils/animations/home.js";
-import ImageOverlay from "../components/project-overlay.vue";
 import projects from "../model/projects";
 import { Home } from '../model/site-meta.js'; 
 
@@ -423,22 +394,24 @@ export default {
     isMobile() {
       return this.$store.getters[`getMobileState`];
     },
-  },
-  components: {
-    ImageOverlay,
+    homeProjects() {
+       return projects.slice(0,4)
+    }
   },
 
   methods: {
     initAnimations() {
       gsap.animateHome();
     },
-
     hoverBtn() {
       gsap.hoverBtn();
     },
     unHoverBtn() {
       gsap.unHoverBtn();
     },
+    goToProject(project) { 
+      this.$router.push(`/project/${project.key}`)
+    }
   },
   mounted() {
     this.initAnimations();
@@ -449,6 +422,40 @@ export default {
 <style lang="scss" scoped>
 @import "~/static/scss/main.scss";
 @import "~/static/scss/hover.css";
+
+.project-card { 
+  cursor: pointer;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    margin:12px 0px 0px 12px;
+    opacity:0;
+    height:95%;
+    width:96%;
+    padding:50px;
+    transition:0.6s;
+  }
+
+  .overlay:hover {
+      opacity: 1;
+
+    }
+   
+
+    .overlay h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .overlay p {
+      font-size: 20px;
+      color: #99918b
+    }
 
 
 
