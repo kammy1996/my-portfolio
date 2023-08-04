@@ -112,7 +112,8 @@ export default {
           return '/blog/' + blog.slug.current
         })
       })
-    }
+    },
+    fallback: true
   },
 
   sanity: {

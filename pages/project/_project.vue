@@ -45,7 +45,7 @@ export default {
     name: 'ProjectDetails',
     computed: {
         currentProject() {
-            let project = projects.filter(project => project.key === this.projectKey)
+            let project = projects.filter(project => project.key === this.$router.currentRoute?.params?.project)
             if (project && project.length > 0) {
                 return project[0];
             }
@@ -55,10 +55,6 @@ export default {
         return { 
             projectKey: '',
         }
-    },
-    created() { 
-        this.projectKey = this.$router.currentRoute?.params?.project;
-        this.$store.commit(`setCurrentProjectKey`,this.projectKey);
     },
     methods : { 
         goToProject() { 
