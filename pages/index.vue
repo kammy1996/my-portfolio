@@ -288,7 +288,7 @@
       <p class="text-center">some of my best work.</p>
       <div class="space-40"></div>
 
-      <div class="container">
+      <div class="blog-container">
         <div class="row gap-5">
           <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 project-card" v-for="project in homeProjects" @click="goToProject(project)">
             <b-img

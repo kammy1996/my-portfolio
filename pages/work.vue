@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="container">
+    <div class="blog-container">
+      <div class="space-30"></div>
       <h3 class="main-title text-center">
           Selected <span class="title-highlight">Work</span>
         </h3>

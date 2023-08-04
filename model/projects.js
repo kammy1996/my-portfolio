@@ -1,38 +1,38 @@
 const projects = [
-  {
-    id: 1,
-    date: "April 2023",
-    name: "AI Handy",
-    shortDescription: "Get your call answered by an intelligent Assistant powered by AI.",
-    projectDescription: "Introducing AI Handy - South Korea's VIP AI service. Enjoy AI modes, real-time conversations & personalized call answering. Elevate your communication!.",
-    helpText: "As a Frontend lead, I spearheaded the project in the latest tech stack, developing UI for applications in both dark and light modes. I seamlessly integrated internationalization features, ensuring global accessibility. Additionally, I got the opportunity to build hybrid application for Android and iOS platforms, and been a part of the whole SDLC.",
-    key:'ai-handy',
-    image: "/images/projects/ai-handy.jpg",
-    alt:"AI hand Assistant",
-    stackImages: [  
-      { 
-        url:"/images/tech-stack/stack-nuxt.png",
-        alt:'nuxt.js'
-      },
-      {
-        url:"/images/tech-stack/stack-tailwind.png",
-        alt:'tailwind.css'
-      },
-      {
-        url:"/images/tech-stack/stack-vue.png",
-        alt:'Vue.js'
-      },
-      {
-        url:"/images/tech-stack/stack-pinia.png",
-        alt:'pinia'
-      },
-      {
-        url:"/images/tech-stack/stack-typescript.png",
-        alt:'typescript'
-      },
-    ],
-    link: "https://hand-assistant.netlify.app/",
-  },
+  // {
+  //   id: 1,
+  //   date: "April 2023",
+  //   name: "AI Handy",
+  //   shortDescription: "Get your call answered by an intelligent Assistant powered by AI.",
+  //   projectDescription: "Introducing AI Handy - South Korea's VIP AI service. Enjoy AI modes, real-time conversations & personalized call answering. Elevate your communication!.",
+  //   helpText: "As a Frontend lead, I spearheaded the project in the latest tech stack, developing UI for applications in both dark and light modes. I seamlessly integrated internationalization features, ensuring global accessibility. Additionally, I got the opportunity to build hybrid application for Android and iOS platforms, and been a part of the whole SDLC.",
+  //   key:'ai-handy',
+  //   image: "/images/projects/ai-handy.jpg",
+  //   alt:"AI hand Assistant",
+  //   stackImages: [  
+  //     { 
+  //       url:"/images/tech-stack/stack-nuxt.png",
+  //       alt:'nuxt.js'
+  //     },
+  //     {
+  //       url:"/images/tech-stack/stack-tailwind.png",
+  //       alt:'tailwind.css'
+  //     },
+  //     {
+  //       url:"/images/tech-stack/stack-vue.png",
+  //       alt:'Vue.js'
+  //     },
+  //     {
+  //       url:"/images/tech-stack/stack-pinia.png",
+  //       alt:'pinia'
+  //     },
+  //     {
+  //       url:"/images/tech-stack/stack-typescript.png",
+  //       alt:'typescript'
+  //     },
+  //   ],
+  //   link: "https://hand-assistant.netlify.app/",
+  // },
   {
     id: 2,
     date: "Feb 2022",

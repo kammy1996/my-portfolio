@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container">
+        <div class="blog-container">
             <div class="space-30"></div>
             <img :src="currentProject.image" :alt="currentProject.alt"/>
           
@@ -18,8 +18,8 @@
 
    
 
-            <div class="action-row">
-                <div >
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
                     <p class="stack-title">Technology Stack</p>
                     <div class="tech-stack">
                         <div v-for="img in currentProject.stackImages">
@@ -27,8 +27,8 @@
                         </div>
                     </div>
                 </div>
-                <div >
-                    <div class="text-center view-project-btn">
+                <div  class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="view-project-btn">
                         <b-btn class="projects-btn hvr-bounce-to-top" @click="goToProject">View Project ></b-btn>
                     </div>
                 </div>
@@ -45,11 +45,20 @@ export default {
     name: 'ProjectDetails',
     computed: {
         currentProject() {
-            let project = projects.filter(project => project.key === this.$router.currentRoute?.params?.project)
+            let project = projects.filter(project => project.key === this.projectKey)
             if (project && project.length > 0) {
                 return project[0];
             }
         }
+    },
+    data() { 
+        return { 
+            projectKey: '',
+        }
+    },
+    created() { 
+        this.projectKey = this.$router.currentRoute?.params?.project;
+        this.$store.commit(`setCurrentProjectKey`,this.projectKey);
     },
     methods : { 
         goToProject() { 
@@ -124,7 +133,12 @@ export default {
 }
 
 .view-project-btn {
-    margin-top: 20px;
+   
+
+    @media (min-width:960px) {
+        float:right;
+        margin-top: 20px;
+    }
 }
 
 .action-row { 

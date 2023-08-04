@@ -10,7 +10,21 @@ a {
 }
 
 .blog-container { 
-  margin: 0px 250px;
+  @media (max-width: 640px) {
+    margin:0px 20px;
+  }
+  
+  @media (min-width:640px) and (max-width: 1024px) {
+    margin:0px 50px;
+  }
+
+  @media (min-width:1025px) and (max-width:1280px) { 
+    margin:0px 150px;
+  }
+
+  @media (min-width:1290px)  { 
+    margin:0px 250px;
+  }
 }
 
 .space-100 { 
