@@ -98,7 +98,7 @@
               </div>
               <div class="tweet-box">
                 <p class="type-write">
-                  Currently I’m working on a payments solution enabling one-click checkout using Cryptocurrencies.
+                  Currently I’m working on a communication solution for School/university in Korea.
                 </p>
                 
                 <b-img
