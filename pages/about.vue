@@ -199,7 +199,7 @@ export default {
           url:'https://www.encora.com/',
           imgAlt:'Encora',
           designation: "Senior Software Engineer",
-          period: "Mar 2022 - Present",
+          period: "Mar 2023 - Present",
           location: "Remote",
           width: "150px",
           desc: "Encora is a leading player in outsourced product development, partnering with fast-growing tech companies to drive innovation through agile methodologies, expertise in cutting-edge technologies, and a global talent pool",
