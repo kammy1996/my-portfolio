@@ -1,6 +1,39 @@
 const projects = [
   {
     id: 1,
+    date: "June 2024",
+    name: "Unitalk",
+    shortDescription: "Communication solution for universities in south Korea.",
+    projectDescription: "Unitalk is a communication platform designed to connect universities with their faculty, staff, and students. It enables professors, employees, and students to access class information, mark attendance, and perform various other tasks seamlessly.",
+    helpText: "I designed the architecture and structure of the application's components. As the lead of the frontend team, I developed a custom in-house chat application and the classroom calendar module. The application is a hybrid solution and supports multiple languages, including Korean, English, and Chinese.",
+    image: "/images/projects/ai-handy.jpg",
+    alt:"Unitalk ",
+    stackImages: [  
+      {
+        url:"/images/tech-stack/stack-js.png",
+        alt:'Javascript'
+      },
+      {
+        url:"/images/tech-stack/stack-tailwind.png",
+        alt:'tailwind.css'
+      },
+      {
+        url:"/images/tech-stack/stack-vue.png",
+        alt:'Vue.js'
+      },
+      {
+        url:"/images/tech-stack/stack-pinia.png",
+        alt:'pinia'
+      },
+      {
+        url:"/images/tech-stack/stack-typescript.png",
+        alt:'typescript'
+      },
+    ],
+    link: "http://54.180.245.238:3000",
+  },
+  {
+    id: 2,
     date: "April 2023",
     name: "AI Handy",
     shortDescription: "Get your call answered by an intelligent Assistant powered by AI.",
@@ -34,7 +67,7 @@ const projects = [
     link: "https://aihandy.ploonet.com",
   },
   {
-    id: 2,
+    id: 3,
     date: "Feb 2022",
     name: "Rocketfuel Blockchain",
     shortDescription: "Building one-click checkout solution with crypto currencies.",
@@ -64,7 +97,7 @@ const projects = [
     link: "https://rocketfuel.inc/",
   },
   {
-    id: 2,
+    id: 4,
     date: "Jan 2021",
     name: "NFIB",
     shortDescription: "New platform to manage franchise businesses insurance.",
@@ -98,7 +131,7 @@ const projects = [
     link: "https://www.nfib.net.au/",
   },
   {
-    id: 4,
+    id: 5,
     date: "May 2020",
     name: "Bikeme",
     shortDescription: "E-commerce solution for Bikes & bike accessories.",
@@ -132,7 +165,7 @@ const projects = [
     link: "https://bikeme.in/",
   },
   {
-    id: 5,
+    id: 6,
     date: "Feb 2019",
     name: "To Doers",
     shortDescription: "A Personal To Do list Application supporting all the major functionalities.",
@@ -165,7 +198,7 @@ const projects = [
     link: "https://to-doers.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     date: "March 2018",
     name: "Ace Visas",
     shortDescription: "Travel Agency portal to stay upto date with Travel Industry.",
@@ -199,7 +232,7 @@ const projects = [
     link: "https://acevisas.in/",
   },
   {
-    id: 7,
+    id: 8,
     date: "September 2017",
     name: "Merchant & Associates",
     shortDescription: "Civil & Interior Design consultancy based in UK.",
