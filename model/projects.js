@@ -6,7 +6,8 @@ const projects = [
     shortDescription: "Communication solution for universities in south Korea.",
     projectDescription: "Unitalk is a communication platform designed to connect universities with their faculty, staff, and students. It enables professors, employees, and students to access class information, mark attendance, and perform various other tasks seamlessly.",
     helpText: "I designed the architecture and structure of the application's components. As the lead of the frontend team, I developed a custom in-house chat application and the classroom calendar module. The application is a hybrid solution and supports multiple languages, including Korean, English, and Chinese.",
-    image: "/images/projects/ai-handy.jpg",
+    key:'unitalk',
+    image: "/images/projects/unitalk.jpg",
     alt:"Unitalk ",
     stackImages: [  
       {

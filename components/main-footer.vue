@@ -32,7 +32,6 @@
               Let's Connect
             </h1>
             <div class="space-20"></div>
-            <a href="mailto:kamranmemon25@gmail.com"><h3 class="footer-email">kamranmemon25@gmail.com</h3></a>
           </b-col>
           <b-col lg="5">
             <ul class="footer-links">

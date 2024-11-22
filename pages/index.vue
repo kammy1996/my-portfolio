@@ -83,7 +83,7 @@
           <b-row>
             <b-col lg="3" sm="2" xs="2">
               <div class="text-center">
-                <div class="space-40"></div>
+                <div class="space-20"></div>
                 <b-img
                   class="avatar-img"
                   width="120%"
@@ -138,10 +138,10 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
-                  alt="bootstrap"
-                  src="@/static/images/tech-stack/stack-bootstrap.png"
+                  alt="vue"
+                  src="@/static/images/tech-stack/stack-vue.png"
                   width="30px"
-                  id="bootstrap"
+                  id="vue"
                 ></b-img>
               </div>
             </b-col>
@@ -181,11 +181,11 @@
             <b-col>
               <div class="stack-box">
                 <b-img
-                  alt="MongoDD"
+                  alt="react"
                   class="stack-image"
-                  src="@/static/images/tech-stack/stack-mongo-big.png"
-                  width="18px"
-                  id="mongo"
+                  src="@/static/images/tech-stack/stack-react.png"
+                  width="30px"
+                  id="react"
                 ></b-img>
               </div>
             </b-col>
@@ -253,10 +253,10 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
-                  alt="Vue.js"
-                  src="@/static/images/tech-stack/stack-vue.png"
+                  alt="github"
+                  src="@/static/images/tech-stack/stack-github.png"
                   width="30px"
-                  id="vue"
+                  id="github"
                 ></b-img>
               </div>
             </b-col>
@@ -264,10 +264,10 @@
               <div class="stack-box">
                 <b-img
                   class="stack-image"
-                  alt="Vuetify"
-                  src="@/static/images/tech-stack/stack-vuetify.png"
-                  width="30px"
-                  id="vuetify"
+                  alt="pinia"
+                  src="@/static/images/tech-stack/stack-pinia.png"
+                  width="36px"
+                  id="pinia"
                 ></b-img>
               </div>
             </b-col>
@@ -349,9 +349,7 @@
              
 
             <p class="hire-me-text" >
-              5+ years of experience in Building Web Applications in Various
-              Domains including Finance, Healthcare. I Enjoy More of Frontend
-              Development and Consider it as my Strongest Side.
+              With over 7 years of experience building web applications across diverse domains, including finance and healthcare, I specialize in frontend development, which I consider my strongest expertise and greatest passion.
             </p>
             <div class="space-10"></div>
             <NuxtLink to="/contact">
@@ -368,8 +366,22 @@
     </template>
 
     <div class="space-100"></div>
-    <div class="space-100"></div>
     <div class="space-50"></div>
+
+    <b-container>
+      <section >
+        <div class="recognition-box">
+          <h5 class="recognition-title">Recognition at <span > Hyperhire</span></h5>
+          <div class="recognition-text">
+            <p>I was recently featured on Hyperhire's website for my significant contributions to their projects. Check out the full interview with the CEO of Hyperhire. </p>
+            <a href="https://blog.hyperhire.in/CEO-interview" target="_blank">Checkout</a>
+          </div>
+          </div>
+      </section>
+    </b-container>
+  
+
+    <div class="space-100"></div>
   </div>
 </template>
 
@@ -476,6 +488,20 @@ export default {
   border-radius: 30px;
   padding: 15px 20px 0px 20px;
 }
+
+.recognition-box {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 20px 30px;
+  border-bottom: 4px solid $primary-color;
+}
+
+.recognition-text { 
+  display: flex;
+  gap: 20px;
+}
+
+
 
 .type-write {
   font-size: 16px;

@@ -11,14 +11,7 @@
       <p class="page-title">Contact</p>
       <h1 class="contact-title">Let's make it <br />happen</h1>
       <div class="space-10"></div>
-      <p class="email-line">
-        If you like mails click
-        <span class="email"
-          ><a href="mailto:kamranmemon@gmail.com"
-            >kamranmemon25@gmail.com</a
-          ></span
-        >
-      </p>
+
 
       <div class="space-50"></div>
       <div class="contact-form" v-if="!isFormSubmitted">
