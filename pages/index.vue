@@ -31,9 +31,11 @@
                 <span class="box mt-n1"></span>
               </h3>
               <p class="sub-text">
-                I'm a Fullstack Web Developer and a Tech Enthusiast who is
-                addicted to Learning and loves Javascript. I live by the motto
-                <b>Learn build and grow,</b> So I'm Excited to share my Journey.
+                A tech enthusiast and full stack developer at heart, I thrive on
+                learning and exploring new technologies, with <b>Vue.js</b> as a
+                particular favorite. I live by
+                <b>‘Learn, Build, and Grow’</b> and love to journal my
+                experiences along the way.
               </p>
               <div class="social-icons mt-n1">
                 <a href="https://twitter.com/kamranmemon25" target="_blank"
@@ -44,7 +46,9 @@
                     src="~/static/images/twitter.png"
                   ></b-img
                 ></a>
-                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank"
+                <a
+                  href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
+                  target="_blank"
                   ><b-img
                     alt="linkedin"
                     width="22px"
@@ -52,7 +56,9 @@
                     src="~/static/images/linkedin.png"
                   ></b-img
                 ></a>
-                <a href="https://www.instagram.com/kamranmemon99/" target="_blank"
+                <a
+                  href="https://www.instagram.com/kamranmemon99/"
+                  target="_blank"
                   ><b-img
                     alt="instagram"
                     width="21px"
@@ -93,14 +99,15 @@
               </div>
             </b-col>
             <b-col lg="9" sm="10" xs="10">
-              <div >
+              <div>
                 <p class="ml-2 text-center mind-text">What's on my mind?</p>
               </div>
               <div class="tweet-box">
                 <p class="type-write">
-                  Currently I’m working on a communication solution for School/university in Korea.
+                  Currently, I am exploring the possibilities of AI and how it
+                  is transforming the software engineering industry.
                 </p>
-                
+
                 <b-img
                   class="tweet-options"
                   width="200px"
@@ -133,7 +140,7 @@
       <b-container>
         <template class="stack-images">
           <b-row class="ml-2">
-            <b-col lg="2" class="d-none d-md-block d-lg-block" > </b-col>
+            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
@@ -237,7 +244,7 @@
                   id="bitbucket"
                 ></b-img>
               </div>
-            </b-col>            
+            </b-col>
             <b-col>
               <div class="stack-box">
                 <b-img
@@ -280,8 +287,8 @@
 
     <div class="space-100"></div>
     <div class="space-50"></div>
-      
-    <template class="projects pr-10" >
+
+    <template class="projects pr-10">
       <h2 class="text-center">
         Latest <span class="title-highlight">Projects</span>
       </h2>
@@ -290,24 +297,21 @@
 
       <div class="blog-container">
         <div class="row gap-5">
-          <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 project-card" v-for="project in homeProjects" @click="goToProject(project)">
-            <b-img
-              :src="project.image"
-              :alt="project.alt"
-              class="project-img"
-            >
-   
+          <div
+            class="col-md-6 col-sm-12 col-xs-12 col-lg-6 project-card"
+            v-for="project in homeProjects"
+            @click="goToProject(project)"
+          >
+            <b-img :src="project.image" :alt="project.alt" class="project-img">
             </b-img>
-            
+
             <div class="overlay hvr-bounce-to-top-black">
-              <h2>{{  project.name }}</h2>
-              <p>{{  project.shortDescription }}</p>
+              <h2>{{ project.name }}</h2>
+              <p>{{ project.shortDescription }}</p>
             </div>
           </div>
         </div>
       </div>
-
-
 
       <div class="space-30"></div>
       <div class="text-center">
@@ -333,23 +337,22 @@
       <b-container>
         <b-row>
           <b-col lg="7">
-            
-              <h3 class="mt-1 hire-title">I can do</h3>
-        
-              <div class="main-hire-area mt-n2 ">
-                <h3>
-                  <ul class="hire-me-area">
-                    <li class="hire-text">UI/UX Design</li>
-                    <li class="hire-text">Frontend Development</li>
-                    <li class="hire-text">Backend Development</li>
-                    <li class="hire-text">App Architecture</li>
-                  </ul>
-                </h3>
-              </div>
-             
+            <h3 class="mt-1 hire-title">I can do</h3>
 
-            <p class="hire-me-text" >
-              With over 7 years of experience building web applications across diverse domains, including finance and healthcare, I specialize in frontend development, which I consider my strongest expertise and greatest passion.
+            <div class="main-hire-area mt-n2">
+              <h3>
+                <ul class="hire-me-area">
+                  <li class="hire-text">Software development</li>
+                  <li class="hire-text">System Design</li>
+                  <li class="hire-text">Software Architecture</li>
+                </ul>
+              </h3>
+            </div>
+
+            <p class="hire-me-text">
+              The web is evolving rapidly with the advent of AI, and with over 8
+              years of industry experience, I specialize in building performant,
+              Scalable, accessible, and secure web applications.
             </p>
             <div class="space-10"></div>
             <NuxtLink to="/contact">
@@ -369,17 +372,24 @@
     <div class="space-50"></div>
 
     <b-container>
-      <section >
+      <section>
         <div class="recognition-box">
-          <h5 class="recognition-title">Recognition at <span > Hyperhire</span></h5>
+          <h5 class="recognition-title">
+            Recognition at <span> Hyperhire</span>
+          </h5>
           <div class="recognition-text">
-            <p>I was recently featured on Hyperhire's website for my significant contributions to their projects. Check out the full interview with the CEO of Hyperhire. </p>
-            <a href="https://blog.hyperhire.in/CEO-interview" target="_blank">Checkout</a>
+            <p>
+              I was recently featured on Hyperhire's website for my significant
+              contributions to their projects. Check out the full interview with
+              the CEO of Hyperhire.
+            </p>
+            <a href="https://blog.hyperhire.in/CEO-interview" target="_blank"
+              >Checkout</a
+            >
           </div>
-          </div>
+        </div>
       </section>
     </b-container>
-  
 
     <div class="space-100"></div>
   </div>
@@ -388,15 +398,15 @@
 <script>
 import * as gsap from "~/utils/animations/home.js";
 import projects from "../model/projects";
-import { Home } from '../model/site-meta.js'; 
+import { Home } from "../model/site-meta.js";
 
 export default {
   name: "Home",
-  head() { 
-    return { 
-      title:'Home | Kamran Memon | Portfolio',
-      meta : Home,
-    }
+  head() {
+    return {
+      title: "Home | Kamran Memon | Portfolio",
+      meta: Home,
+    };
   },
   components: {},
   computed: {
@@ -407,8 +417,8 @@ export default {
       return this.$store.getters[`getMobileState`];
     },
     homeProjects() {
-       return projects.slice(0,4)
-    }
+      return projects.slice(0, 4);
+    },
   },
 
   methods: {
@@ -421,9 +431,9 @@ export default {
     unHoverBtn() {
       gsap.unHoverBtn();
     },
-    goToProject(project) { 
-      this.$router.push(`/project/${project.key}`)
-    }
+    goToProject(project) {
+      this.$router.push(`/project/${project.key}`);
+    },
   },
   mounted() {
     this.initAnimations();
@@ -435,41 +445,36 @@ export default {
 @import "~/static/scss/main.scss";
 @import "~/static/scss/hover.css";
 
-.project-card { 
+.project-card {
   cursor: pointer;
 }
 
-
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    margin:12px 0px 0px 12px;
-    opacity:0;
-    height:95%;
-    width:96%;
-    padding:50px;
-    transition:0.6s;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  margin: 12px 0px 0px 12px;
+  opacity: 0;
+  height: 95%;
+  width: 96%;
+  padding: 50px;
+  transition: 0.6s;
+}
 
-  .overlay:hover {
-      opacity: 1;
+.overlay:hover {
+  opacity: 1;
+}
 
-    }
-   
+.overlay h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
 
-    .overlay h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .overlay p {
-      font-size: 20px;
-      color: #99918b
-    }
-
-
+.overlay p {
+  font-size: 20px;
+  color: #99918b;
+}
 
 .sub-text {
   font-size: 18px;
@@ -496,13 +501,11 @@ export default {
   border-bottom: 4px solid $primary-color;
 }
 
-.recognition-text { 
+.recognition-text {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-
 
 .type-write {
   font-size: 16px;
@@ -571,7 +574,7 @@ export default {
 
 .project-img {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .projects-btn {
@@ -581,7 +584,7 @@ export default {
   padding: 10px 20px;
   cursor: pointer;
   border: 1px solid black;
-  z-index:1;
+  z-index: 1;
 }
 
 .main-hire-area {
@@ -618,38 +621,33 @@ export default {
   right: 0%;
 }
 
-.hire-me-text { 
-  font-size:18px;
+.hire-me-text {
+  font-size: 18px;
 }
 
-.profile-img { 
-  max-width:80%;
-  height:auto;
+.profile-img {
+  max-width: 80%;
+  height: auto;
 }
 
-
-
-
-// Media only for desktop 
+// Media only for desktop
 @media only screen and (min-width: 800px) {
- .avatar-img { 
-  float:right;
-}
-
-  .mind-text { 
-    text-align:left !important;
+  .avatar-img {
+    float: right;
   }
 
+  .mind-text {
+    text-align: left !important;
+  }
 
   .hire-me-bg-img {
     margin-top: -200px;
   }
 }
 
-//media only for Mobile 
+//media only for Mobile
 @media only screen and (max-width: 800px) {
-
-  .main-hire-area { 
+  .main-hire-area {
     margin-top: -25px;
   }
 
@@ -657,20 +655,15 @@ export default {
     font-size: 25px;
   }
 
-  
   .sub-text {
     font-size: 15px;
   }
- 
 }
 
-
-//media only for Mobile 
+//media only for Mobile
 @media only screen and (max-width: 450px) {
-  .project-box { 
-    max-width:96%;
+  .project-box {
+    max-width: 96%;
   }
 }
-
-
 </style>

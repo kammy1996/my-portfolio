@@ -4,19 +4,19 @@
     <template class="title-area">
       <b-row no-gutters>
         <b-col lg="6">
-          <div class="img-holder ">
+          <div class="img-holder">
             <b-img
-            class="title-img"
-            alt="Kamran Cover Image"
-            src="~/static/images/about-title-img.jpg"
-          ></b-img>
+              class="title-img"
+              alt="Kamran Cover Image"
+              src="~/static/images/about-title-img.jpg"
+            ></b-img>
           </div>
         </b-col>
         <b-col>
           <div class="title-area">
             <div class="space-100"></div>
             <h1 class="title-heading">Hello</h1>
-            <h1 class="title-heading ">I'm Kamran</h1>
+            <h1 class="title-heading">I'm Kamran</h1>
 
             <div class="space-50"></div>
             <p class="title-sub-text">
@@ -54,7 +54,7 @@
         src="~/static/images/image-bg-right.png"
       ></b-img>
       <b-container>
-        <a class="resume-btn" href="/assets/my-resume.pdf"  target="_blank"
+        <a class="resume-btn" href="/assets/my-resume.pdf" target="_blank"
           ><font-awesome-icon
             class="project-link-icon"
             size="sm"
@@ -71,6 +71,10 @@
         <WorkHistoryElement :work="workHistory[2]" />
         <div class="line"></div>
         <WorkHistoryElement :work="workHistory[3]" />
+        <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[4]" />
+        <div class="line"></div>
+        <WorkHistoryElement :work="workHistory[5]" />
         <div class="line"></div>
       </b-container>
     </template>
@@ -110,7 +114,11 @@
           <b-row>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="50%" alt="Web Development" src="~/static/images/web-dev.png"></b-img>
+                <b-img
+                  width="50%"
+                  alt="Web Development"
+                  src="~/static/images/web-dev.png"
+                ></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Web Development</h4>
                 <div class="space-20"></div>
@@ -125,7 +133,11 @@
             </b-col>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="55%" alt="Book reading" src="~/static/images/books.png"></b-img>
+                <b-img
+                  width="55%"
+                  alt="Book reading"
+                  src="~/static/images/books.png"
+                ></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Books</h4>
                 <div class="space-20"></div>
@@ -142,16 +154,21 @@
             </b-col>
             <b-col lg="4">
               <div class="inspiration-box">
-                <b-img width="55%" alt="Finance Enthusiast" src="~/static/images/finance.png" style="opacity:0.8"></b-img>
+                <b-img
+                  width="55%"
+                  alt="Finance Enthusiast"
+                  src="~/static/images/finance.png"
+                  style="opacity: 0.8"
+                ></b-img>
                 <div class="space-20"></div>
                 <h4 class="inspiration-list-title">Finance</h4>
                 <div class="space-20"></div>
                 <div class="line"></div>
                 <p class="inspiration-list-text">Warren Buffet</p>
                 <div class="line"></div>
-                <p class="inspiration-list-text">Akshat Srivastava</p>
+                <p class="inspiration-list-text">Charlie Munger</p>
                 <div class="line"></div>
-                <p class="inspiration-list-text">Ankur Warikoo</p>
+                <p class="inspiration-list-text">Morgan Housel</p>
                 <div class="line"></div>
               </div>
             </b-col>
@@ -167,72 +184,83 @@
 
 <script>
 import WorkHistoryElement from "@/components/work-history-element";
-import * as gsap from "@/utils/animations/about"
-import { About } from '../model/site-meta.js'; 
-
+import * as gsap from "@/utils/animations/about";
+import { About } from "../model/site-meta.js";
 
 export default {
   name: "About",
-  head() { 
-    return { 
-      title:'About | Kamran Memon | Portfolio',
-      meta : About
-    }
+  head() {
+    return {
+      title: "About | Kamran Memon | Portfolio",
+      meta: About,
+    };
   },
   components: {
     WorkHistoryElement,
   },
-  mounted() { 
+  mounted() {
     this.initAnimations();
   },
-  methods : { 
+  methods: {
     initAnimations() {
       gsap.animateAbout();
-    }
+    },
   },
   data() {
     return {
       workHistory: [
         {
+          company: "digitas-india",
+          logo: "/images/work-history/digitas.png",
+          url: "https://www.digitas.com/en-us",
+          imgAlt: "Digitas India",
+          designation: "Lead Frontend Engineer",
+          period: "Mar 2025 - Present",
+          location: "Mumbai, India",
+          width: "100px",
+          desc: "As a Lead Frontend Engineer specializing in Nuxt 3 and Vue 3, I oversee system design, accessibility, testing, and security. I'm also involved in mentoring the team, Code reviews, and engaging with business stakeholders to shape the site’s future direction.",
+          current: true,
+        },
+        {
           company: "encora",
           logo: "/images/work-history/encora.svg",
-          url:'https://www.encora.com/',
-          imgAlt:'Encora',
+          url: "https://www.encora.com/",
+          imgAlt: "Encora",
           designation: "Senior Software Engineer",
-          period: "Mar 2023 - Present",
+          period: "Mar 2023 - Mar 2025",
           location: "Remote",
           width: "150px",
-          desc: "Encora is a leading player in outsourced product development, partnering with fast-growing tech companies to drive innovation through agile methodologies, expertise in cutting-edge technologies, and a global talent pool",
-          current: true,
+          desc: "Worked as a senior frontend developer at Encora, a leading player in outsourced product development, partnering with fast-growing tech companies to drive innovation through agile methodologies, expertise in cutting-edge technologies, and a global talent pool.",
+          current: false,
         },
         {
           company: "rocketfuel",
           logo: "/images/work-history/rocket-fuel.svg",
-          url:'https://www.rocketfuelblockchain.com/',
-          imgAlt:'RocketFuel Blockchain',
+          url: "https://www.rocketfuelblockchain.com/",
+          imgAlt: "RocketFuel Blockchain",
           designation: "Senior Software Engineer",
           period: "July 2022 - Feb 2023",
           location: "Remote",
           width: "130px",
-          desc: "RocketFuel is global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
+          desc: "Worked as a Senior frontend developer at RocketFuel, a global payments processing company offering highly efficient one-click check-out solutions using cryptocurrencies.",
           current: false,
         },
         {
           company: "aventior",
-          url:'https://aventior.com/',
+          url: "https://aventior.com/",
           logo: "/images/work-history/aventior.png",
-          imgAlt:'Aventior Digital',
+          imgAlt: "Aventior Digital",
           designation: "Frontend Developer - Vue.js",
           period: "Nov 2020 - July 2022",
           location: "Remote",
           width: "130px",
-          desc: "worked on an enterprise-level product named Thread. It is a fully configurable decentralized clinical trial product and the only no-code platform in the industry.",
+          desc: "Worked on an enterprise-level product named Thread. It is a fully configurable decentralized clinical trial product and the only no-code platform in the industry.",
         },
         {
           company: "weizmann",
           logo: "/images/work-history/weizmann.png",
-          imgAlt:'Weizmann forex',
-          url:'https://www.weizmannimpex.com/',
+          imgAlt: "Weizmann forex",
+          url: "https://www.weizmannimpex.com/",
           designation: "Web Developer",
           period: "April 2019 - Nov 2020",
           location: "Mumbai",
@@ -242,8 +270,8 @@ export default {
         {
           company: "rugby-india",
           logo: "/images/work-history/rugby-india.png",
-          imgAlt:'Rugby India',
-          url:'https://indiarugby.com/',
+          imgAlt: "Rugby India",
+          url: "https://indiarugby.com/",
           designation: "Web  Designer",
           period: "June 2017 - Nov 2019",
           location: "Mumbai",
@@ -278,8 +306,8 @@ export default {
 
 .title-sub-text {
   font-size: 22px;
-  max-width:60%;
-  margin-left:150px;
+  max-width: 60%;
+  margin-left: 150px;
 }
 
 .journey {
@@ -297,7 +325,7 @@ export default {
 
 .journey-text {
   font-size: 20px;
-  margin:0% 5%
+  margin: 0% 5%;
 }
 
 .resume-btn {
@@ -328,8 +356,7 @@ export default {
   font-size: 25px;
   font-weight: 700;
 }
-inspiration-title 
-.inspiration-text {
+inspiration-title .inspiration-text {
   font-size: 15px;
 }
 
@@ -342,16 +369,15 @@ inspiration-title
   margin: 20px 0px;
 }
 
-.inspiration-box { 
-  margin:0px 30px;
+.inspiration-box {
+  margin: 0px 30px;
 }
 
-.img-holder img { 
-  max-width:100%;
+.img-holder img {
+  max-width: 100%;
 }
 
-
-//media only for Desktop 
+//media only for Desktop
 @media only screen and (min-width: 800px) {
   .title-heading {
     margin-left: -50px;
@@ -362,36 +388,31 @@ inspiration-title
   }
 }
 
-//media only for Mobile 
+//media only for Mobile
 @media only screen and (max-width: 800px) {
-  .img-holder img { 
-    width:400px;
+  .img-holder img {
+    width: 400px;
   }
 
-  .inspiration-title { 
-    text-align:center;
+  .inspiration-title {
+    text-align: center;
   }
 
-  .inspiration-text { 
-    text-align:center;
+  .inspiration-text {
+    text-align: center;
   }
 
   .title-heading,
-  .title-sub-text
-  {
-    text-align:center;
-    font-size:35px;
+  .title-sub-text {
+    text-align: center;
+    font-size: 35px;
   }
 
   .title-sub-text {
     font-size: 18px;
-    margin:auto;
-    text-align:center !important;
-    max-width:80%;
-   
+    margin: auto;
+    text-align: center !important;
+    max-width: 80%;
   }
 }
-
-
-
 </style>
