@@ -1,32 +1,23 @@
 <template>
   <div>
-    <b-row>
-      <b-col lg="2">
+    <div class="flex">
+      <div class="w-auto">
         <div class="navbar" title="Menu">
-          <font-awesome-icon
-            class="project-link-icon"
-            size="sm"
-            :icon="['fa', 'bars']"
-          />
+          <Icon name="fa-solid:bars" class="project-link-icon" size="sm" />
         </div>
         <div class="close">
-          <font-awesome-icon
-            class="project-link-icon"
-            :icon="['fa', 'xmark']"
-          />
+          <Icon name="fa-solid:times" class="project-link-icon" />
         </div>
-      </b-col>
-      <b-col lg="9">
-        <div class="text-center mt-n5">
-          <b-img
-            alt="Kamran Logo"
-            width="150px"
-            id="mob-main-logo"
-            src="~/static/images/logo.png"
-          ></b-img>
-        </div>
-      </b-col>
-    </b-row>
+      </div>
+      <div class="flex-1 text-center" style="margin-top: -20px">
+        <img
+          alt="Kamran Logo"
+          style="width: 150px"
+          id="mob-main-logo"
+          src="/images/logo.png"
+        />
+      </div>
+    </div>
     <section></section>
     <div id="navigationWrap">
       <div class="container menu">
@@ -36,83 +27,64 @@
               <NuxtLink to="/">Home <span class="underline"></span></NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/about"
-                >About <span class="underline"></span
-              ></NuxtLink>
+              <NuxtLink to="/about">About <span class="underline"></span></NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/work"
-                >Work <span class="underline"></span
-              ></NuxtLink>
+              <NuxtLink to="/work">Work <span class="underline"></span></NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/blog"
-                >Blog <span class="underline"></span
-              ></NuxtLink>
+              <NuxtLink to="/blog">Blog <span class="underline"></span></NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/contact"
-                >Contact<span class="underline"></span
-              ></NuxtLink>
+              <NuxtLink to="/contact">Contact<span class="underline"></span></NuxtLink>
             </li>
           </ul>
         </nav>
         <div class="social">
+          <a href="https://twitter.com/kamranmemon25" target="_blank">
+            <img
+              alt="Twitter"
+              style="width: 30%"
+              src="https://img.icons8.com/dotty/80/null/twitter.png"
+            />
+          </a>
           <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
-            <a href="https://twitter.com/kamranmemon25" target="_blank">
-              <b-img
-                alt="Twitter"
-                width="30%"
-                src="https://img.icons8.com/dotty/80/null/twitter.png"
-              ></b-img
-            ></a>
-            <b-img
-              alt="instagram"
-              width="30%"
+            <img
+              alt="Instagram"
+              style="width: 30%"
               src="https://img.icons8.com/dotty/80/000000/instagram-new.png"
-            ></b-img
-          ></a>
-          <a href="https://github.com/kammy1996" target="_blank"
-            ><b-img
-              alt="github"
-              width="30%"
+            />
+          </a>
+          <a href="https://github.com/kammy1996" target="_blank">
+            <img
+              alt="Github"
+              style="width: 30%"
               src="https://img.icons8.com/dotty/80/000000/github.png"
-            ></b-img
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
-            target="_blank"
-            ><b-img
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank">
+            <img
               alt="Linkedin"
-              width="30%"
+              style="width: 30%"
               src="https://img.icons8.com/dotty/80/000000/linkedin.png"
-            ></b-img
-          ></a>
+            />
+          </a>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import * as gsap from "~/utils/animations/mobile-nav.js";
+<script setup>
+import * as gsapAnims from '~/utils/animations/mobile-nav.js'
 
-export default {
-  name: "MobileNavbar",
-  methods: {
-    initAnimation() {
-      gsap.initAnime();
-    },
-  },
-  mounted() {
-    this.initAnimation();
-  },
-};
+onMounted(() => {
+  gsapAnims.initAnime()
+})
 </script>
 
 <style lang="scss" scoped>
-@import "~/static/scss/main.scss";
-@import "~/static/scss/hover.css";
+$primary-color: #F5989D;
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -128,7 +100,7 @@ export default {
   }
 }
 
-/* Clearing –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Clearing */
 .container:after {
   content: "";
   display: table;
@@ -163,14 +135,9 @@ nav ul li {
   nav ul li {
     font-size: 15vw;
   }
-
 }
 nav a {
   color: white;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -197,12 +164,7 @@ nav a:hover {
   cursor: pointer;
 }
 .social a {
-  color: #484848;
   color: white;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -213,10 +175,6 @@ nav a:hover {
   color: #484848;
   padding-right: 12px;
   font-size: 1.8em !important;
-  -o-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .fa:hover {

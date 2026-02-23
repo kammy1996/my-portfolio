@@ -1,26 +1,26 @@
 <template>
   <div>
-    <template class="hero-area">
+    <div class="hero-area">
       <div class="space-30"></div>
-      <b-img
-        class="image-bg d-none d-md-block d-lg-block"
-        width="600px"
+      <img
+        class="image-bg hidden md:block -z-10"
+        style="width: 600px; position: absolute; right: 0"
         alt="background-image"
-        src="~/static/images/image-bg-right.png"
-      ></b-img>
-      <b-container>
+        src="/images/image-bg-right.png"
+      />
+      <div class="container mx-auto px-4">
         <div class="space-50"></div>
-        <b-row>
-          <b-col lg="5">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-5/12">
             <div class="text-center">
-              <b-img
+              <img
                 alt="kamran profile image"
                 class="profile-img"
-                src="~/static/images/profile-img.png"
-              ></b-img>
+                src="/images/profile-img.png"
+              />
             </div>
-          </b-col>
-          <b-col lg="6">
+          </div>
+          <div class="w-full lg:w-6/12">
             <div class="space-50"></div>
             <div class="space-30"></div>
             <div class="text-content">
@@ -28,267 +28,116 @@
                 <span class="hi">Hi, I'm</span>
                 <span class="change-text"></span>
                 <span class="cursor">_</span>
-                <span class="box mt-n1"></span>
               </h3>
               <p class="sub-text">
                 A tech enthusiast and full stack developer at heart, I thrive on
                 learning and exploring new technologies, with <b>Vue.js</b> as a
                 particular favorite. I live by
-                <b>‘Learn, Build, and Grow’</b> and love to journal my
+                <b>'Learn, Build, and Grow'</b> and love to journal my
                 experiences along the way.
               </p>
-              <div class="social-icons mt-n1">
-                <a href="https://twitter.com/kamranmemon25" target="_blank"
-                  ><b-img
-                    alt="twitter"
-                    width="30px"
-                    class="mr-1"
-                    src="~/static/images/twitter.png"
-                  ></b-img
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/kamran-memon-1003a2111/"
-                  target="_blank"
-                  ><b-img
-                    alt="linkedin"
-                    width="22px"
-                    class="mr-1"
-                    src="~/static/images/linkedin.png"
-                  ></b-img
-                ></a>
-                <a
-                  href="https://www.instagram.com/kamranmemon99/"
-                  target="_blank"
-                  ><b-img
-                    alt="instagram"
-                    width="21px"
-                    class="mr-1"
-                    src="~/static/images/instagram.png"
-                  ></b-img
-                ></a>
-                <a href="https://github.com/kammy1996" target="_blank"
-                  ><b-img
-                    alt="github"
-                    width="22px"
-                    class="mr-1"
-                    src="~/static/images/github.png"
-                  ></b-img
-                ></a>
+              <div class="flex gap-2 mt-2" >
+                <a href="https://twitter.com/kamranmemon25" target="_blank">
+                  <img alt="twitter" style="width: 30px" class="mr-1" src="/images/twitter.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/kamran-memon-1003a2111/" target="_blank">
+                  <img alt="linkedin" style="width: 22px" class="mr-1" src="/images/linkedin.png" />
+                </a>
+                <a href="https://www.instagram.com/kamranmemon99/" target="_blank">
+                  <img alt="instagram" style="width: 21px" class="mr-1" src="/images/instagram.png" />
+                </a>
+                <a href="https://github.com/kammy1996" target="_blank">
+                  <img alt="github" style="width: 22px" class="mr-1" src="/images/github.png" />
+                </a>
               </div>
             </div>
-          </b-col>
-        </b-row>
-      </b-container>
-    </template>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="space-100"></div>
 
-    <template class="current-mind">
-      <b-container>
+    <div class="current-mind">
+      <div class="container mx-auto px-4">
         <div class="mx-20 current-working">
-          <b-row>
-            <b-col lg="3" sm="2" xs="2">
+          <div class="flex flex-wrap items-center">
+            <div class="w-full lg:w-3/12">
               <div class="text-center">
                 <div class="space-20"></div>
-                <b-img
+                <img
                   class="avatar-img"
-                  width="120%"
                   alt="kamran avatar"
-                  src="~/static/images/avatar.png"
-                ></b-img>
+                  src="/images/avatar.png"
+                />
               </div>
-            </b-col>
-            <b-col lg="9" sm="10" xs="10">
+            </div>
+            <div class="w-full lg:w-9/12">
               <div>
                 <p class="ml-2 text-center mind-text">What's on my mind?</p>
               </div>
-              <div class="tweet-box">
-                <p class="type-write">
+              <div class="tweet-box mt-2">
+                <p class="type-write my-2 ml-4">
                   Currently, I am exploring the possibilities of AI and how it
                   is transforming the software engineering industry.
                 </p>
-
-                <b-img
-                  class="tweet-options"
-                  width="200px"
+                <img
+                  class="tweet-options pb-2"
+                  style="width: 200px"
                   alt="tweet options"
-                  src="~/static/images/tweet-options.jpg"
-                ></b-img>
+                  src="/images/tweet-options.jpg"
+                />
               </div>
-            </b-col>
-          </b-row>
+            </div>
+          </div>
         </div>
-      </b-container>
-    </template>
+      </div>
+    </div>
 
     <div class="space-100"></div>
     <div class="space-50"></div>
 
-    <template class="tech-stack">
+    <div class="tech-stack">
       <h2 class="text-center">
         <span class="title-highlight">Tech</span> Stack
       </h2>
-      <p class="text-center mt-n1">The Tools I love to build In.</p>
-
+      <p class="text-center" >The Tools I love to build In.</p>
       <div class="space-20"></div>
-      <b-img
-        class="image-bg-left d-none d-md-block d-lg-block"
-        width="800px"
+      <img
+        class="image-bg-left hidden md:block"
+        style="width: 800px; position: absolute; z-index: -1"
         alt="background-image"
-        src="~/static/images/image-bg-left.png"
-      ></b-img>
-      <b-container>
-        <template class="stack-images">
-          <b-row class="ml-2">
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="vue"
-                  src="@/static/images/tech-stack/stack-vue.png"
-                  width="30px"
-                  id="vue"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="css"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-css.png"
-                  width="30px"
-                  id="css"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-html.png"
-                  width="30px"
-                  alt="HTML"
-                  id="html"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="Javascript"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-js.png"
-                  width="30px"
-                  id="js"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="react"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-react.png"
-                  width="30px"
-                  id="react"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="Node.js"
-                  src="@/static/images/tech-stack/stack-node.png"
-                  width="30px"
-                  id="node"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
-          </b-row>
-          <div class="space-30"></div>
-          <b-row class="ml-2">
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="Nuxt.js"
-                  src="@/static/images/tech-stack/stack-nuxt.png"
-                  width="30px"
-                  id="nuxt"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="MySQL"
-                  src="@/static/images/tech-stack/stack-sql.png"
-                  width="30px"
-                  id="sql"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="bitbucket"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-typescript.png"
-                  width="30px"
-                  id="bitbucket"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  alt="bitbucket"
-                  class="stack-image"
-                  src="@/static/images/tech-stack/stack-tailwind.png"
-                  width="30px"
-                  id="bitbucket"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="github"
-                  src="@/static/images/tech-stack/stack-github.png"
-                  width="30px"
-                  id="github"
-                ></b-img>
-              </div>
-            </b-col>
-            <b-col>
-              <div class="stack-box">
-                <b-img
-                  class="stack-image"
-                  alt="pinia"
-                  src="@/static/images/tech-stack/stack-pinia.png"
-                  width="36px"
-                  id="pinia"
-                ></b-img>
-              </div>
-            </b-col>
-
-            <b-col lg="2" class="d-none d-md-block d-lg-block"> </b-col>
-          </b-row>
-        </template>
-      </b-container>
-    </template>
+        src="/images/image-bg-left.png"
+      />
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap ml-2">
+          <div class="w-full lg:w-2/12 hidden md:block"></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="vue" src="/images/tech-stack/stack-vue.png" style="width:30px" id="vue" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="css" src="/images/tech-stack/stack-css.png" style="width:30px" id="css" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" src="/images/tech-stack/stack-html.png" style="width:30px" alt="HTML" id="html" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="Javascript" src="/images/tech-stack/stack-js.png" style="width:30px" id="js" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="react" src="/images/tech-stack/stack-react.png" style="width:30px" id="react" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="Node.js" src="/images/tech-stack/stack-node.png" style="width:30px" id="node" /></div></div>
+          <div class="w-full lg:w-2/12 hidden md:block"></div>
+        </div>
+        <div class="space-30"></div>
+        <div class="flex flex-wrap ml-2">
+          <div class="w-full lg:w-2/12 hidden md:block"></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="Nuxt.js" src="/images/tech-stack/stack-nuxt.png" style="width:30px" id="nuxt" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="MySQL" src="/images/tech-stack/stack-sql.png" style="width:30px" id="sql" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="TypeScript" src="/images/tech-stack/stack-typescript.png" style="width:30px" id="typescript" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="Tailwind" src="/images/tech-stack/stack-tailwind.png" style="width:30px" id="tailwind" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="github" src="/images/tech-stack/stack-github.png" style="width:30px" id="github" /></div></div>
+          <div class="w-auto lg:flex-1"><div class="stack-box"><img class="stack-image" alt="pinia" src="/images/tech-stack/stack-pinia.png" style="width:36px" id="pinia" /></div></div>
+          <div class="w-full lg:w-2/12 hidden md:block"></div>
+        </div>
+      </div>
+    </div>
 
     <div class="space-100"></div>
     <div class="space-50"></div>
 
-    <template class="projects pr-10">
+    <div class="projects">
       <h2 class="text-center">
         Latest <span class="title-highlight">Projects</span>
       </h2>
@@ -296,16 +145,15 @@
       <div class="space-40"></div>
 
       <div class="blog-container">
-        <div class="row gap-5">
+        <div class="flex flex-wrap gap-5">
           <div
-            class="col-md-6 col-sm-12 col-xs-12 col-lg-6 project-card"
+            class="w-full md:w-[calc(50%-10px)] project-card"
             v-for="project in homeProjects"
+            :key="project.key"
             @click="goToProject(project)"
           >
-            <b-img :src="project.image" :alt="project.alt" class="project-img">
-            </b-img>
-
-            <div class="overlay hvr-bounce-to-top-black">
+            <img :src="project.image" :alt="project.alt" class="project-img" />
+            <div class="overlay">
               <h2>{{ project.name }}</h2>
               <p>{{ project.shortDescription }}</p>
             </div>
@@ -316,30 +164,30 @@
       <div class="space-30"></div>
       <div class="text-center">
         <NuxtLink to="/work">
-          <b-btn
-            class="projects-btn hvr-bounce-to-top"
+          <button
+            class="projects-btn"
             @mouseover="hoverBtn"
             @mouseleave="unHoverBtn"
-            >View all Projects</b-btn
-          >
+          >View all Projects</button>
         </NuxtLink>
       </div>
-    </template>
+    </div>
+
     <div class="space-100"></div>
     <div class="space-50"></div>
-    <template class="hire-me">
-      <b-img
-        class="hire-me-bg-img d-none d-md-block d-lg-block"
-        width="600px"
-        alt="background-image"
-        src="~/static/images/image-bg-right.png"
-      ></b-img>
-      <b-container>
-        <b-row>
-          <b-col lg="7">
-            <h3 class="mt-1 hire-title">I can do</h3>
 
-            <div class="main-hire-area mt-n2">
+    <div class="hire-me">
+      <img
+        class="hire-me-bg-img hidden md:block"
+        style="width: 600px; position: absolute; right: 0"
+        alt="background-image"
+        src="/images/image-bg-right.png"
+      />
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-7/12">
+            <h3 class="mt-1 hire-title">I can do</h3>
+            <div class="main-hire-area" style="margin-top: -8px">
               <h3>
                 <ul class="hire-me-area">
                   <li class="hire-text">Software development</li>
@@ -348,7 +196,6 @@
                 </ul>
               </h3>
             </div>
-
             <p class="hire-me-text">
               The web is evolving rapidly with the advent of AI, and with over 8
               years of industry experience, I specialize in building performant,
@@ -356,26 +203,24 @@
             </p>
             <div class="space-10"></div>
             <NuxtLink to="/contact">
-              <b-btn class="hire-me-btn hvr-underline-from-left"
-                >Hire Me
-                <font-awesome-icon
-                  class="project-link-icon"
-                  size="sm"
-                  :icon="['fa', 'arrow-right-long']" /></b-btn
-            ></NuxtLink>
-          </b-col>
-        </b-row>
-      </b-container>
-    </template>
+              <button class="hire-me-btn">
+                Hire Me
+                <Icon name="fa-solid:long-arrow-alt-right" class="project-link-icon" size="sm" />
+              </button>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="space-100"></div>
     <div class="space-50"></div>
 
-    <b-container>
+    <div class="container mx-auto px-4">
       <section>
         <div class="recognition-box">
           <h5 class="recognition-title">
-            Recognition at <span> Hyperhire</span>
+            Recognition at <span>Hyperhire</span>
           </h5>
           <div class="recognition-text">
             <p>
@@ -383,70 +228,48 @@
               contributions to their projects. Check out the full interview with
               the CEO of Hyperhire.
             </p>
-            <a href="https://blog.hyperhire.in/CEO-interview" target="_blank"
-              >Checkout</a
-            >
+            <a href="https://blog.hyperhire.in/CEO-interview" target="_blank">Checkout</a>
           </div>
         </div>
       </section>
-    </b-container>
+    </div>
 
     <div class="space-100"></div>
   </div>
 </template>
 
-<script>
-import * as gsap from "~/utils/animations/home.js";
-import projects from "../model/projects";
-import { Home } from "../model/site-meta.js";
+<script setup>
+import * as gsapAnims from '~/utils/animations/home.js'
+import projects from '~/model/projects'
+import { Home } from '~/model/site-meta.js'
 
-export default {
-  name: "Home",
-  head() {
-    return {
-      title: "Home | Kamran Memon | Portfolio",
-      meta: Home,
-    };
-  },
-  components: {},
-  computed: {
-    projects() {
-      return projects;
-    },
-    isMobile() {
-      return this.$store.getters[`getMobileState`];
-    },
-    homeProjects() {
-      return projects.slice(0, 4);
-    },
-  },
+useHead({
+  title: 'Home | Kamran Memon | Portfolio',
+  meta: Home,
+})
 
-  methods: {
-    initAnimations() {
-      gsap.animateHome();
-    },
-    hoverBtn() {
-      gsap.hoverBtn();
-    },
-    unHoverBtn() {
-      gsap.unHoverBtn();
-    },
-    goToProject(project) {
-      this.$router.push(`/project/${project.key}`);
-    },
-  },
-  mounted() {
-    this.initAnimations();
-  },
-};
+const router = useRouter()
+
+const homeProjects = computed(() => projects.slice(0, 4))
+
+const goToProject = (project) => {
+  router.push(`/project/${project.key}`)
+}
+
+const hoverBtn = () => gsapAnims.hoverBtn()
+const unHoverBtn = () => gsapAnims.unHoverBtn()
+
+onMounted(() => {
+  gsapAnims.animateHome()
+})
 </script>
 
 <style lang="scss" scoped>
-@import "~/static/scss/main.scss";
-@import "~/static/scss/hover.css";
+$primary-color: #F5989D;
 
 .project-card {
   cursor: pointer;
+  position: relative;
 }
 
 .overlay {
@@ -460,6 +283,7 @@ export default {
   width: 96%;
   padding: 50px;
   transition: 0.6s;
+  background: rgba(0,0,0,0.6);
 }
 
 .overlay:hover {
@@ -479,11 +303,6 @@ export default {
 .sub-text {
   font-size: 18px;
   line-height: 28px;
-}
-
-.image-bg {
-  position: absolute;
-  right: 0;
 }
 
 .tweet-box {
@@ -525,7 +344,6 @@ export default {
   .cursor {
     font-weight: 300;
   }
-
   .box {
     background: $primary-color;
     height: 4px;
@@ -533,18 +351,12 @@ export default {
     z-index: -1;
     display: none;
   }
-
   .change-text {
     display: inline;
     background: $primary-color;
     color: white;
     text-shadow: 2px 2px 25px rgba(0, 0, 0, 0.1);
   }
-}
-
-.image-bg-left {
-  position: absolute;
-  z-index: -1;
 }
 
 .stack-box {
@@ -610,10 +422,31 @@ export default {
 }
 
 .hire-me-btn {
-  background: white !important;
-  color: black !important;
+  background: white;
+  color: black;
+  border: 1px solid black;
   border-radius: 0px;
   padding: 5px 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.hire-me-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: $primary-color;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.hire-me-btn:hover::before {
+  transform: scaleX(1);
 }
 
 .hire-me-bg-img {
@@ -645,7 +478,7 @@ export default {
   }
 }
 
-//media only for Mobile
+// Media only for Mobile
 @media only screen and (max-width: 800px) {
   .main-hire-area {
     margin-top: -25px;
@@ -657,13 +490,6 @@ export default {
 
   .sub-text {
     font-size: 15px;
-  }
-}
-
-//media only for Mobile
-@media only screen and (max-width: 450px) {
-  .project-box {
-    max-width: 96%;
   }
 }
 </style>

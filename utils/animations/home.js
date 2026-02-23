@@ -83,18 +83,18 @@ const currentMind = () => {
 
 const techStack = () => {
   let stack = [
-    `bootstrap`,
-    `bitbucket`,
+    `vue`,
     `css`,
-    `github`,
     `html`,
     `js`,
-    `mongo`,
+    `react`,
     `node`,
     `nuxt`,
     `sql`,
-    `vue`,
-    `vuetify`,
+    `typescript`,
+    `tailwind`,
+    `github`,
+    `pinia`,
   ];
   let tl = gsap.timeline({
     scrollTrigger: {

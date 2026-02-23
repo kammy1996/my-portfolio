@@ -1,57 +1,39 @@
 <template>
   <div class="my-3">
-    <b-container>
-      <b-row>
-        <b-col lg="2">
-          <div>
-            <a :href="work.url" target="_blank">
-              <b-img
-                :src="work.logo"
-                :alt="work.imgAlt"
-                :id="work.company"
-                :width="work.width"
-                style="display: block; margin: auto; "
-              ></b-img>
-            </a>
-          </div>
-        </b-col>
-        <b-col lg="7">
-          <h3 class="designation">{{ work.designation }}</h3>
-          <p class="company-work-desc">{{ work.desc }}</p>
-        </b-col>
-        <b-col lg="3">
-          <div class="period">
-            <p>
-              <span v-if="work.current">
-                <font-awesome-icon
-                  color="green"
-                  :icon="['fa', 'circle']"
-                  class="green-circle mr-1"
-                />
-              </span>
-              {{ work.period }}
-            </p>
-
-            <p class="mt-n3 location">{{ work.location }}</p>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-2/12 mb-3 lg:mb-0">
+        <a :href="work.url" target="_blank">
+          <img
+            :src="work.logo"
+            :alt="work.imgAlt"
+            :id="work.company"
+            :style="`width: ${work.width}; display: block; margin: auto;`"
+          />
+        </a>
+      </div>
+      <div class="w-full lg:w-7/12">
+        <h3 class="designation">{{ work.designation }}</h3>
+        <p class="company-work-desc">{{ work.desc }}</p>
+      </div>
+      <div class="w-full lg:w-3/12">
+        <div class="period">
+          <p>
+            <span v-if="work.current">
+              <Icon name="fa-solid:circle" color="green" class="green-circle mr-1" />
+            </span>
+            {{ work.period }}
+          </p>
+          <p class="location" style="margin-top: -12px">{{ work.location }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-// Animate Title Image from slowly showing
-// animate the text in the right in title area
-// animate green circle in work history
-//animate the scroll bar button in the title area
-
-export default {
-  name: "WorkHistoryElement",
-  props: {
-    work: Object,
-  },
-};
+<script setup>
+const props = defineProps({
+  work: Object,
+})
 </script>
 
 <style lang="scss" scoped>
@@ -70,7 +52,7 @@ export default {
   font-size: 10px;
 }
 
-//media only for Desktop
+// Media only for Desktop
 @media only screen and (min-width: 800px) {
   .period {
     float: right;

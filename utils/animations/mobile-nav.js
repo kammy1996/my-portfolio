@@ -1,10 +1,7 @@
 import { gsap } from "gsap";
-import { TimelineLite } from "gsap";
-
-gsap.registerPlugin(TimelineLite);
 
 export const initAnime = () => {
-  let navigation = new TimelineLite({ paused: true, reversed: true });
+  let navigation = gsap.timeline({ paused: true, reversed: true });
   navigation
     .to("#navigationWrap", 0.5, { opacity: 1, display: "block" })
     .to(".navbar", 0.2, { opacity: 0 }, "-=0.1")

@@ -1,64 +1,36 @@
 <template>
-  <div class="ma-0 pa-0">
-      <client-only>
-        <MobileNavbar class="mobile-navbar"/>
-        <MainHeader class="main-header" />
-      </client-only>
-      <Nuxt />
-      <MainFooter />
+  <div class="m-0 p-0">
+    <ClientOnly>
+      <div>
+        <MobileNavbar class="mobile-navbar" />
+        <HeadNavbar class="main-header" />
+      </div>
+    </ClientOnly>
+    <slot />
+    <MainFooter />
   </div>
 </template>
 
-<script>
-import MainHeader from "../components/head-navbar.vue";
-import MainFooter from "../components/main-footer.vue";
-import MobileNavbar from "../components/mobile-navbar.vue";
-
-export default {
-  components: {
-    MainHeader,
-    MainFooter,
-    MobileNavbar,
-  },
-  //  computed: {
-  //   getWidth () {
-  //     console.log(`getting the width`);
-  //     if (process.browser){
-  //       let width = window.outerWidth;
-
-  //       if(width <= 800) { 
-  //         this.$store.commit(`changeMobileState`,true)
-  //       }
-  //       return width;
-  //     } 
-  //   },
-  //   isMobile() { 
-  //     return this.$store.getters[`getMobileState`];
-  //   }
-  // },
-};
+<script setup>
+// Components are auto-imported by Nuxt
 </script>
 
-<style lang="scss" >
-  body {
-  font-family: "Poppins" ;
+<style lang="scss">
+body {
+  font-family: 'Poppins';
 }
 
-
-// Media only for desktop 
+// Media only for desktop
 @media only screen and (min-width: 800px) {
-  mobile-navbar { 
-    display:none !important;
-    
+  .mobile-navbar {
+    display: none !important;
   }
 }
 
-//media only for Mobile 
+// Media only for mobile
 @media only screen and (max-width: 800px) {
-.main-header { 
-  display:none !important;
-}
-
+  .main-header {
+    display: none !important;
+  }
 }
 </style>
- 
